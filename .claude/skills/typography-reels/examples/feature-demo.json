@@ -1,0 +1,431 @@
+{
+  "meta": {
+    "day": 10,
+    "title": "Feature demo - title cards and devices",
+    "duration": 15.0,
+    "watermark": {
+      "text": "Day 10"
+    }
+  },
+  "scenes": [
+    {
+      "id": "title-pixel",
+      "start": 0.1,
+      "end": 3.25,
+      "box": {
+        "x": 6,
+        "y": 18,
+        "w": 70
+      },
+      "rows": [
+        {
+          "gap": 0.6,
+          "items": [
+            {
+              "id": "thisis",
+              "text": "This Is",
+              "style": "heavy",
+              "size": 7,
+              "at": 0.15,
+              "overlap": true
+            },
+            {
+              "text": "Day",
+              "style": "gothic",
+              "color": "mint",
+              "size": 44,
+              "at": 0.6,
+              "case": "none",
+              "overlap": true
+            },
+            {
+              "id": "two",
+              "text": "2",
+              "style": "pixel",
+              "color": "mint",
+              "size": 66,
+              "at": 0.75,
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "floaters": [
+        {
+          "text": "Going From",
+          "style": "round-semi",
+          "size": 4.6,
+          "x": 41,
+          "y": 40,
+          "at": 1.3
+        },
+        {
+          "text": "ZERO",
+          "style": "gothic",
+          "size": 7.5,
+          "color": "ink",
+          "box": true,
+          "x": 57,
+          "y": 26,
+          "at": 1.9
+        },
+        {
+          "text": "SOMETHING",
+          "style": "geo-black",
+          "size": 4.6,
+          "color": "ink",
+          "box": true,
+          "x": 70,
+          "y": 74,
+          "at": 2.4
+        }
+      ],
+      "stickers": [
+        {
+          "name": "monkey-peace-bow",
+          "at": 0.6,
+          "anchor": {
+            "to": "thisis",
+            "pos": "tr",
+            "dx": 4,
+            "dy": -11
+          },
+          "h": 24
+        }
+      ]
+    },
+    {
+      "id": "title-arc",
+      "start": 3.7,
+      "end": 7.0,
+      "box": {
+        "x": 10,
+        "y": 36,
+        "w": 48
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "id": "yay",
+              "text": "DAY",
+              "style": "victorian",
+              "color": "mint",
+              "size": 22,
+              "outline": true,
+              "outlineWidth": 0.03,
+              "at": 4.1
+            }
+          ]
+        },
+        {
+          "mt": -1,
+          "items": [
+            {
+              "text": "Of Going From",
+              "style": "round-black",
+              "size": 7.5,
+              "at": 4.6
+            }
+          ]
+        }
+      ],
+      "floaters": [
+        {
+          "text": "THIS IS",
+          "style": "geo-light-italic",
+          "size": 5,
+          "x": 88,
+          "y": 70,
+          "at": 3.75
+        },
+        {
+          "id": "five",
+          "text": "5",
+          "style": "round-black",
+          "color": "mint",
+          "size": 78,
+          "x": 66,
+          "y": 52,
+          "at": 4.4
+        },
+        {
+          "text": "ZERO",
+          "style": "geo-italic",
+          "size": 5.5,
+          "color": "ink",
+          "box": true,
+          "radius": 0.6,
+          "x": 74,
+          "y": 20,
+          "at": 5.4
+        }
+      ],
+      "arcs": [
+        {
+          "text": "To Something",
+          "style": "elegant-bold",
+          "size": 4.6,
+          "cx": 66.5,
+          "cy": 67,
+          "r": 19,
+          "start": 250,
+          "end": 480,
+          "at": 5.9,
+          "anim": "fade"
+        }
+      ],
+      "stickers": [
+        {
+          "name": "monkey-yay",
+          "at": 4.2,
+          "anchor": {
+            "to": "yay",
+            "pos": "l",
+            "dx": -2,
+            "dy": 0
+          },
+          "h": 20
+        }
+      ]
+    },
+    {
+      "id": "title-ten",
+      "start": 7.25,
+      "end": 10.5,
+      "box": {
+        "x": 30,
+        "y": 14,
+        "w": 45
+      },
+      "rows": [
+        {
+          "gap": 1.5,
+          "items": [
+            {
+              "id": "one",
+              "text": "1",
+              "style": "block",
+              "color": "mint",
+              "size": 72,
+              "at": 7.8,
+              "anim": "rise",
+              "overlap": true
+            },
+            {
+              "id": "zero",
+              "text": "0",
+              "style": "block",
+              "color": "mint",
+              "size": 72,
+              "at": 8.0,
+              "anim": "rise",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "floaters": [
+        {
+          "text": "This Is Day",
+          "style": "elegant-italic",
+          "size": 7,
+          "x": 17,
+          "y": 36,
+          "at": 7.3
+        },
+        {
+          "text": "Of Going From",
+          "style": "label",
+          "size": 5.5,
+          "x": 17,
+          "y": 47,
+          "at": 8.3
+        },
+        {
+          "text": "ZERO",
+          "style": "geo-black",
+          "size": 3,
+          "color": "ink",
+          "x": 54,
+          "y": 50,
+          "at": 8.6
+        },
+        {
+          "text": "SOMETHING",
+          "style": "blast",
+          "size": 7,
+          "color": "ink",
+          "x": 39,
+          "y": 10,
+          "at": 9.3,
+          "anim": "pop"
+        }
+      ],
+      "draws": [
+        {
+          "shape": "curve-arrow-up",
+          "x": 40,
+          "y": 15,
+          "w": 13,
+          "h": 30,
+          "flipX": true,
+          "at": 9.0,
+          "dur": 0.35
+        }
+      ],
+      "stickers": [
+        {
+          "name": "monkey-sleepy-zzz",
+          "at": 8.7,
+          "x": 49,
+          "y": 70,
+          "h": 16
+        }
+      ],
+      "effects": [
+        {
+          "type": "rain",
+          "sticker": "party",
+          "at": 9.35,
+          "dur": 1.1,
+          "count": 14,
+          "x0": 10,
+          "x1": 90,
+          "size": 6,
+          "seed": 21
+        }
+      ]
+    },
+    {
+      "id": "devices",
+      "start": 10.7,
+      "end": 15.0,
+      "box": {
+        "x": 9,
+        "y": 26,
+        "w": 80
+      },
+      "rows": [
+        {
+          "gap": 0.8,
+          "items": [
+            {
+              "text": "Mostly Ideas Were",
+              "style": "skinny-serif",
+              "size": 9,
+              "at": 10.75
+            },
+            {
+              "id": "too",
+              "text": "Toooo",
+              "style": "round-black",
+              "color": "mint",
+              "size": 10,
+              "at": 11.3,
+              "anim": "stretch"
+            }
+          ]
+        },
+        {
+          "mt": 1,
+          "gap": 1,
+          "items": [
+            {
+              "text": "WHAT I",
+              "style": "geo",
+              "color": "mint",
+              "size": 8,
+              "at": 12.0
+            },
+            {
+              "sticker": "heart",
+              "size": 7,
+              "at": 12.2
+            },
+            {
+              "text": "THE MOST",
+              "style": "geo",
+              "color": "mint",
+              "size": 8,
+              "at": 12.4
+            }
+          ]
+        },
+        {
+          "mt": 1,
+          "items": [
+            {
+              "text": "It Looked EASY",
+              "style": "bookish-italic",
+              "size": 7,
+              "at": 13.0,
+              "strike": {
+                "at": 13.6
+              }
+            }
+          ]
+        }
+      ],
+      "floaters": [
+        {
+          "text": "Competitors",
+          "style": "round-regular",
+          "size": 2.6,
+          "x": 75,
+          "y": 73,
+          "rot": 14,
+          "at": 13.2
+        },
+        {
+          "text": "Pricing",
+          "style": "round-regular",
+          "size": 2.6,
+          "x": 86,
+          "y": 64,
+          "rot": -16,
+          "at": 13.5
+        },
+        {
+          "text": "Blah",
+          "style": "round-regular",
+          "size": 2.6,
+          "x": 62,
+          "y": 80,
+          "rot": 0,
+          "at": 13.8
+        }
+      ],
+      "draws": [
+        {
+          "shape": "clock",
+          "x": 80,
+          "y": 30,
+          "h": 10,
+          "at": 11.4,
+          "turns": 3
+        }
+      ],
+      "stickers": [
+        {
+          "name": "raised-hands",
+          "at": 11.5,
+          "anchor": {
+            "to": "too",
+            "pos": "t",
+            "dy": -4
+          },
+          "h": 11,
+          "wobble": 6
+        }
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "type": "glitch",
+      "at": 3.3,
+      "dur": 0.33
+    }
+  ]
+}

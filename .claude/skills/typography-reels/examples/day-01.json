@@ -1,0 +1,748 @@
+{
+  "meta": {
+    "day": 1,
+    "title": "Day 1 - Zero to Something (recreation)",
+    "duration": 42.0,
+    "handle": "@your.soulpreneur",
+    "watermark": {
+      "text": "DAY 1"
+    }
+  },
+  "audio": [
+    {
+      "id": "vo",
+      "src": "audio/day-01.m4a",
+      "volume": 1
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "start": 0.1,
+      "end": 2.55,
+      "exit": "fade",
+      "box": {
+        "x": 13,
+        "y": 15,
+        "w": 72
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "id": "idea",
+              "text": "We Have No Idea",
+              "style": "label",
+              "size": 6,
+              "at": 0.13,
+              "anim": "swing"
+            }
+          ]
+        },
+        {
+          "mt": -0.5,
+          "items": [
+            {
+              "text": "WHAT WE'RE",
+              "style": "poster",
+              "size": 21,
+              "at": 1.0,
+              "anim": "type",
+              "dur": 0.45
+            }
+          ]
+        },
+        {
+          "mt": -2,
+          "fit": 0.97,
+          "items": [
+            {
+              "id": "build",
+              "text": "GOING TO BUILD",
+              "style": "blast",
+              "color": "mint",
+              "size": 26,
+              "at": 1.5,
+              "anim": "rise"
+            }
+          ]
+        },
+        {
+          "align": "right",
+          "mt": -1.5,
+          "items": [
+            {
+              "text": "Yet :)",
+              "style": "bookish-regular",
+              "size": 6.5,
+              "at": 2.2,
+              "anim": "pop"
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "monkey-thinking",
+          "at": 1.8,
+          "x": 69,
+          "y": 14,
+          "h": 28,
+          "tag": {
+            "text": ".!!?",
+            "pos": "tr",
+            "size": 4.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "find-one",
+      "start": 2.6,
+      "end": 4.98,
+      "box": {
+        "x": 8,
+        "y": 20,
+        "w": 84
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "id": "so",
+              "text": "So",
+              "style": "label",
+              "size": 11,
+              "at": 2.6
+            }
+          ]
+        },
+        {
+          "mt": -2,
+          "fit": 1,
+          "items": [
+            {
+              "id": "today",
+              "text": "TODAY WE'RE GOING TO",
+              "style": "poster",
+              "size": 20,
+              "at": 3.1
+            }
+          ]
+        },
+        {
+          "align": "right",
+          "mt": -1,
+          "items": [
+            {
+              "text": "FIND ONE",
+              "style": "geo-black",
+              "color": "mint",
+              "size": 15,
+              "at": 4.4
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "monkey-giggle",
+          "at": 3.4,
+          "anchor": {
+            "to": "today",
+            "pos": "c",
+            "dx": -1,
+            "dy": -3
+          },
+          "h": 30
+        },
+        {
+          "name": "magnifier",
+          "at": 4.4,
+          "anchor": {
+            "to": "so",
+            "pos": "r",
+            "dx": 4,
+            "dy": -4
+          },
+          "h": 22,
+          "rot": 10
+        }
+      ]
+    },
+    {
+      "id": "title",
+      "start": 5.1,
+      "end": 8.55,
+      "box": {
+        "x": 10.5,
+        "y": 33,
+        "w": 84
+      },
+      "rows": [
+        {
+          "fit": 0.79,
+          "items": [
+            {
+              "text": "THIS IS DAY 1 OF",
+              "style": "geo-black",
+              "size": 15,
+              "at": 5.1
+            }
+          ]
+        },
+        {
+          "mt": -1,
+          "fit": 1,
+          "items": [
+            {
+              "text": "ZERO TO SOMETHING",
+              "style": "blast",
+              "color": "mint",
+              "size": 22,
+              "at": 7.2,
+              "anim": "rise"
+            }
+          ]
+        }
+      ],
+      "floaters": [
+        {
+          "text": "GOING FROM",
+          "style": "label-bold",
+          "size": 5.4,
+          "x": 6,
+          "y": 48,
+          "vertical": true,
+          "at": 6.2
+        }
+      ],
+      "draws": [
+        {
+          "shape": "swoosh-arrow",
+          "x": 27,
+          "y": 65,
+          "w": 41,
+          "h": 14,
+          "at": 7.3,
+          "dur": 0.35
+        }
+      ],
+      "stickers": [
+        {
+          "name": "monkey-rapper",
+          "at": 7.3,
+          "x": 78,
+          "y": 14,
+          "h": 31
+        }
+      ]
+    },
+    {
+      "id": "hunting",
+      "start": 8.7,
+      "end": 11.45,
+      "box": {
+        "x": 13,
+        "y": 27,
+        "w": 74
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "So Today",
+              "style": "label",
+              "size": 8,
+              "at": 8.7
+            }
+          ]
+        },
+        {
+          "fit": 1,
+          "items": [
+            {
+              "id": "hunting",
+              "text": "I WENT HUNTING FOR",
+              "style": "geo-black",
+              "size": 13,
+              "at": 9.7
+            }
+          ]
+        },
+        {
+          "mt": -1,
+          "fit": 1,
+          "items": [
+            {
+              "text": "BUSINESS IDEAS",
+              "style": "elegant",
+              "color": "mint",
+              "case": "upper",
+              "size": 18,
+              "at": 10.3
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "monkey-rich-laugh",
+          "at": 10.3,
+          "anchor": {
+            "to": "hunting",
+            "pos": "c",
+            "dx": -6,
+            "dy": 6
+          },
+          "h": 36
+        }
+      ]
+    },
+    {
+      "id": "hours",
+      "start": 11.7,
+      "end": 14.65,
+      "box": {
+        "x": 11,
+        "y": 21,
+        "w": 78
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "I Spent Hours",
+              "style": "geo",
+              "size": 6.5,
+              "at": 11.7
+            }
+          ]
+        },
+        {
+          "mt": -1,
+          "items": [
+            {
+              "id": "through",
+              "text": "GOING THROUGH",
+              "style": "poster",
+              "size": 21,
+              "at": 12.5
+            }
+          ]
+        },
+        {
+          "mt": -1.5,
+          "fit": 1,
+          "items": [
+            {
+              "text": "FIVE DIFFERENT WEBSITES",
+              "style": "poster",
+              "color": "mint",
+              "size": 18,
+              "at": 13.3
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "monkey-shocked-laptop",
+          "at": 13.3,
+          "anchor": {
+            "to": "through",
+            "pos": "r",
+            "dx": 8,
+            "dy": -1
+          },
+          "h": 24
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "start": 14.7,
+      "end": 21.55,
+      "box": {
+        "x": 11,
+        "y": 29,
+        "w": 72
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "1. TRENDING PRODUCTS",
+              "style": "poster",
+              "color": "mint",
+              "size": 14,
+              "at": 14.7
+            }
+          ]
+        },
+        {
+          "mt": -0.5,
+          "indent": 1,
+          "items": [
+            {
+              "text": "2. INTERNATIONAL BUSINESSES",
+              "style": "poster",
+              "color": "mint",
+              "size": 12.5,
+              "at": 16.3
+            }
+          ]
+        },
+        {
+          "mt": -0.5,
+          "indent": 1,
+          "items": [
+            {
+              "text": "3. IDEAS MIGHT WORK IN INDIA",
+              "style": "poster",
+              "color": "mint",
+              "size": 12.5,
+              "at": 18.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saved",
+      "start": 21.7,
+      "end": 24.05,
+      "box": {
+        "x": 13,
+        "y": 38,
+        "w": 74
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "id": "saved",
+              "text": "I SAVED EVERYTHING",
+              "style": "poster",
+              "size": 17,
+              "at": 21.7
+            }
+          ]
+        },
+        {
+          "mt": -1,
+          "fit": 1,
+          "items": [
+            {
+              "text": "That Looked Interesting",
+              "style": "airy",
+              "color": "mint",
+              "size": 13,
+              "at": 22.8
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "monkey-doctor",
+          "at": 22.8,
+          "x": 67,
+          "y": 19,
+          "h": 36
+        }
+      ]
+    },
+    {
+      "id": "more-ideas",
+      "start": 24.1,
+      "end": 27.35,
+      "box": {
+        "x": 6,
+        "y": 35,
+        "w": 86
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "id": "honestly",
+              "text": "And Honestly There",
+              "style": "label",
+              "size": 9.5,
+              "at": 24.1
+            }
+          ]
+        },
+        {
+          "mt": -1.5,
+          "fit": 1,
+          "items": [
+            {
+              "text": "WERE WAY MORE IDEAS",
+              "style": "elegant",
+              "color": "mint",
+              "size": 15,
+              "at": 25.2
+            }
+          ]
+        },
+        {
+          "align": "right",
+          "mt": -1.5,
+          "items": [
+            {
+              "text": "THAN I EXPECTED",
+              "style": "label-caps",
+              "size": 9,
+              "at": 26.4
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "monkey-laughing-hat",
+          "at": 25.8,
+          "anchor": {
+            "to": "honestly",
+            "pos": "r",
+            "dx": 7,
+            "dy": -4
+          },
+          "h": 28
+        }
+      ]
+    },
+    {
+      "id": "hard-part",
+      "start": 27.8,
+      "end": 31.95,
+      "box": {
+        "x": 12,
+        "y": 35,
+        "w": 80
+      },
+      "rows": [
+        {
+          "gap": 0.8,
+          "items": [
+            {
+              "id": "hard",
+              "text": "But Now Comes The Hard Part",
+              "style": "label",
+              "size": 8,
+              "at": 27.8
+            },
+            {
+              "text": "WHICH ONE IS",
+              "style": "geo-black",
+              "size": 3.6,
+              "at": 29.8
+            }
+          ]
+        },
+        {
+          "mt": -1,
+          "fit": 1,
+          "items": [
+            {
+              "text": "ACTUALLY WORTH",
+              "style": "poster",
+              "color": "mint",
+              "size": 15,
+              "at": 30.6
+            },
+            {
+              "text": "BUILDING",
+              "style": "blast",
+              "color": "mint",
+              "size": 15,
+              "at": 30.6,
+              "underline": {
+                "at": 30.8
+              }
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "monkey-shades-cash",
+          "at": 30.6,
+          "x": 6,
+          "y": 16,
+          "h": 21
+        }
+      ],
+      "effects": [
+        {
+          "type": "rain",
+          "sticker": "dollar",
+          "at": 30.75,
+          "dur": 1.2,
+          "count": 22,
+          "x0": 30,
+          "x1": 78,
+          "size": 7.5,
+          "seed": 3
+        }
+      ]
+    },
+    {
+      "id": "tomorrow",
+      "start": 32.2,
+      "end": 34.05,
+      "box": {
+        "x": 12,
+        "y": 31,
+        "w": 75
+      },
+      "rows": [
+        {
+          "fit": 1,
+          "items": [
+            {
+              "text": "THAT'S WHAT WE'RE",
+              "style": "poster",
+              "size": 18,
+              "at": 32.2
+            }
+          ]
+        },
+        {
+          "mt": -1,
+          "fit": 1,
+          "items": [
+            {
+              "text": "Figuring Out Tomorrow",
+              "style": "airy",
+              "color": "mint",
+              "size": 13,
+              "at": 33.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "start": 34.2,
+      "end": 38.85,
+      "box": {
+        "x": 11,
+        "y": 31,
+        "w": 79
+      },
+      "rows": [
+        {
+          "fit": 1,
+          "items": [
+            {
+              "text": "If You Want The 5 Sites I Used",
+              "style": "round",
+              "size": 7,
+              "at": 34.2
+            }
+          ]
+        },
+        {
+          "fit": 1,
+          "items": [
+            {
+              "text": "Comment 'IDEAS'",
+              "style": "label-bold",
+              "color": "mint",
+              "size": 15,
+              "at": 36.3
+            }
+          ]
+        },
+        {
+          "fit": 1,
+          "items": [
+            {
+              "text": "I'LL SEND THEM TO YOU",
+              "style": "poster",
+              "size": 16,
+              "at": 37.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "see-you",
+      "start": 38.9,
+      "end": 40.55,
+      "box": {
+        "x": 11,
+        "y": 43,
+        "w": 78
+      },
+      "rows": [
+        {
+          "fit": 1,
+          "items": [
+            {
+              "text": "SEE YOU TOMORROW",
+              "style": "geo-black",
+              "color": "mint",
+              "size": 11,
+              "at": 38.9
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "monkey-goodbye",
+          "at": 39.0,
+          "x": 15,
+          "y": 9,
+          "h": 36,
+          "tag": {
+            "text": "GOODBYE",
+            "pos": "tl",
+            "size": 2.6,
+            "color": "ink",
+            "rot": -12
+          }
+        }
+      ]
+    },
+    {
+      "id": "follow",
+      "start": 40.6,
+      "end": 42.0,
+      "box": {
+        "x": 11,
+        "y": 43,
+        "w": 78
+      },
+      "rows": [
+        {
+          "fit": 1,
+          "items": [
+            {
+              "text": "LIKE, SHARE, FOLLOW",
+              "style": "geo-black",
+              "color": "mint",
+              "size": 11,
+              "at": 40.6
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "monkey-rock-angry",
+          "at": 40.7,
+          "x": 44,
+          "y": 25,
+          "h": 22
+        }
+      ]
+    }
+  ]
+}
