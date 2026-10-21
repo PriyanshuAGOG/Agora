@@ -659,6 +659,14 @@ function renderGlitch(g, k) {
 }
 
 // ---------- audio ----------
+// Audio clips that overlap in time must sit on different tracks: reuse the lowest track that is free again.
+const audioLanes = [];
+function audioTrack(start, end) {
+  let lane = audioLanes.findIndex((free) => free <= start + 1e-3);
+  if (lane < 0) lane = audioLanes.push(0) - 1;
+  audioLanes[lane] = end;
+  return 10 + lane;
+}
 function renderAudio(a, k) {
   const rel = a.rel || resolveFile("audio", a.src);
   const id = a.id || `audio-${k + 1}`;
@@ -668,7 +676,7 @@ function renderAudio(a, k) {
   const dur = Math.min(natural, meta.duration - start);
   if (dur <= 0.01) return "";
   return `
-      <audio id="${id}" src="${rel}" data-start="${round(start)}" data-duration="${round(dur)}" data-media-start="${a.from ?? 0}" data-volume="${a.volume ?? 1}" data-track-index="${10 + Math.min(k, 30)}"></audio>`;
+      <audio id="${id}" src="${rel}" data-start="${round(start)}" data-duration="${round(dur)}" data-media-start="${a.from ?? 0}" data-volume="${a.volume ?? 1}" data-track-index="${audioTrack(start, start + dur)}"></audio>`;
 }
 
 // ---------- series progress bar (optional retention device) ----------

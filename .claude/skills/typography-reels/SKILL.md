@@ -81,6 +81,9 @@ HyperFrames itself is installed in `.agents/skills/` (`/hyperframes`, `/hyperfra
 - **Stickers:** `x/y/h`, or `anchor: {to: <item id>, pos}` to cover letters. Names resolve episode → brand kit → mascots → animated → 3D → flat; force a source with `brand:` / `3d:` / `anim:` / `lib:` / `emoji:`.
 - **Letter animations** (`bounce`, `jitter`, `fix`, `wave`, `scatter`, …) must finish before the scene ends. With `fix`, set `fixAt` ≈ the spoken word, and keep total stagger under ~0.3 s.
 - **Colour fonts** (`color-3d` Nabla, `honk`, `spice`) render flat/black in headless renders; prefer `fx` effects on normal fonts.
+- **STEP numerals** use `titan` (Titan One, mint, `fx: "extrude"`, `fxColor: "ink"`) from Day 9 onwards. Climate Crisis (`crisis`) draws a squashed "3" with a black notch under the shadow, which reads as broken.
+- **Anchor and `around` to row items.** On floaters (centred with a transform) anchored stickers, `around` circles and `strike`/`underline` can land offset (Day 9: the LOGO circle and the Option A/B/C marks). Next to floaters, place stickers and draws with explicit `x`/`y`/`w`/`h`.
+- **Overlap pass before rendering:** extract a frame every 0.5 s from the build (`ffmpeg -vf fps=2,tile=4x6`) and look for stickers or bursts covering words, stamps over card text, and cards overlapping each other. Bursts fly *over* text, so keep them away from words or give the hero sticker `z: 10`.
 - **Contrast:** mint `#0CD2BA` on white measures 1.87:1, below WCAG's 3:1, so `check` runs with `--no-contrast` by design (`#09A592` is the nearest passing mint).
 - **Ignore** `nested_structure_needs_subcomposition`, `timeline_track_too_dense`, `composition_file_too_large`, `duplicate_media_discovery_risk`; they are Studio readability hints for the generated single file.
 - The watermark is centred on its **ink** (canvas glyph metrics), so it stays optically centred for any day number.

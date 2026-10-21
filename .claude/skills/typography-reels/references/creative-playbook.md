@@ -125,7 +125,7 @@ When none fits, use an emoji sticker from `engine/stickers/emoji/index.json` (97
 | The script… | Device |
 | --- | --- |
 | has a running metaphor (dating, cooking, sports…) | carry it through every beat: a dating-app **profile card** + **TAKEN stamp** for "committed", the profile card returning as "it's a match!" for "falling in love", a bed + broken heart for "sleeping with it", a title card where the 8 becomes two **rings** and a gem lands |
-| teaches steps | **STEP + giant numeral** on the left, the action on the right, and the same layout every step |
+| teaches steps | **STEP + giant numeral** on the left, the action on the right, and the same layout every step (numeral font: `titan` from Day 9; see SKILL.md) |
 | mentions a tool or website | a fake UI that *does the thing*: a **typing ChatGPT prompt** bubble, a **search bar typing the domain** with a red "taken · $4,999" result, **Google in Google colours** |
 | gives a number | **count-up** (`anim: "count"`) plus a burst of concrete examples (8 sample brand names popping around the frame) |
 | has a gross or absurd joke | a monster font (`beastly`) in red, a meme mascot (cat-omg), a bandaged-face 3D emoji, money rain |
