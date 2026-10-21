@@ -121,6 +121,75 @@ Shapes (`engine/shapes.mjs`): `swoosh-arrow`, `curl-down-arrow`, `squiggle-arrow
 
 Angles are in degrees, clockwise from 3 o'clock; `spread` optionally forces the text length (% of H).
 
+## v2 additions (the engagement layer)
+
+### Meta
+```jsonc
+"progress": true            // thin "DAY 8/75" series progress bar, top-left (retention device)
+```
+
+### Scene: transitions, camera, background
+```jsonc
+{
+  "enter": "whip-left",       // whip-left | whip-right | whip-up | zoom | zoom-out | drop | spin | blur   (enterDur, enterSfx)
+  "exit": "whip-left",        // fade | whip-left | whip-right | zoom | drop   (exitDur)
+  "drift": true,              // slow continuous push-in (1 → 1.045, or a number) so no frame is ever static
+  "camera": [
+    { "type": "punch", "at": 14.54, "scale": 1.1 },    // snap zoom and hold
+    { "type": "pulse", "at": 3.34, "scale": 1.05 },    // zoom in and back
+    { "type": "shake", "at": 14.54, "dur": 0.3, "amp": 1.5 },
+    { "type": "flash", "at": 22.06, "opacity": 0.9 },  // white flash frame
+    { "type": "tilt", "at": 5, "deg": -3 }, { "type": "reset", "at": 6 }
+  ],                          // any camera entry may carry "sfx"
+  "bg": { "pattern": "burst", "color": "bg", "color2": "mint-soft", "spin": 0.06 },   // burst | dots | grid | stripes; covers the watermark for this scene
+  "cards": [ /* Card */ ],
+  "effects": [ { "type": "burst", "sticker": "3d:sparkles", "x": 64, "y": 70, "at": 4.16, "count": 9, "size": 5, "dist": 24 } ]  // confetti-style explosion; also "rain"
+}
+```
+
+### Item: per-letter animations, effects, echo
+```jsonc
+{
+  "anim": "jitter",   // + letter anims: bounce | drop-letters | pop-letters | rise-letters | spin-letters | scatter | fix | wave | jitter | flicker
+                      // + item anims: boing | slam | zoom | slam-left | slam-right | print
+  "stagger": 0.03,    // letter delay
+  "fixAt": 30.7,      // "fix": letters start jumbled at `at`, snap into place at fixAt
+  "until": 12.0,      // jitter/wave loop end (default: scene end)
+  "fx": ["extrude", "sticker"],   // extrude (3D block shadow) | shadow (hard offset) | glow | sticker (white die-cut outline) | highlight (marker swipe behind)
+  "fxColor": "mint",              // colour for extrude/shadow/glow (defaults to the opposite of the text colour)
+  "highlightColor": "yellow", "highlightAt": 33.2,
+  "echo": { "n": 3, "step": 0.78, "stagger": 0.08, "fade": 0.16 },   // fading clones stacked below (sameness, repetition)
+  "stretchX": 1.3,
+  "sfx": "pop"        // sound on appearance: a name or { "name", "at", "volume" }
+}
+```
+
+Every element type (item, sticker, card, draw, effect, camera) accepts `"sfx"`.
+
+### Card
+```jsonc
+{ "kind": "notification", "x": 31, "y": 3, "w": 38, "size": 2.5, "app": "MESSAGES", "time": "now", "title": "Designer", "body": "Sent you the final designs!", "icon": "3d:artist-palette", "at": 0.0, "out": 1.9 }
+{ "kind": "nametag", "x": 64, "y": 30, "w": 28, "size": 3.2, "line1": "HELLO", "line2": "my name is", "name": "???", "nameStyle": "marker", "at": 25.44, "rot": -6 }
+{ "kind": "bubble", "x": 10, "y": 20, "w": 30, "size": 3, "from": "Designer", "text": "Here you go!", "side": "left", "at": 2 }
+```
+
+### Sticker
+```jsonc
+{ "name": "fire" }          // Lottie when an animated version exists; "3d:fire" / "anim:fire" / "lib:..." / "emoji:..." force a source
+{ "float": 0.8 }            // gentle up-down bob (% of H)
+{ "anim": "boing" }         // elastic hero pop
+```
+
+### Draw
+```jsonc
+{ "shape": "scribble-circle", "around": "fix", "pad": 1.2, "at": 31.0 }   // sized around a word at runtime
+```
+New shapes: `figure-eight` (the Day 8 numeral), `heart`, `spiral`, `zigzag`, `scribble-circle`, `swoosh-down-arrow`. `weight` sets the stroke (% of H); use 5–7 to *draw a numeral* itself.
+
+### SFX names
+HyperFrames bundled: `pop`, `click`, `click-soft`, `whoosh`, `whoosh-short`, `whoosh-cinematic`, `impact-bass-1`, `impact-bass-2`, `glitch-1/2/3`, `notification`, `chime`, `ping`, `sparkle`, `typing`, `key-press`, `error`, `riser`.
+Engine (`engine/sfx`): `boing`, `ding`, `swish`, `record-scratch`, `thud`. Add your own files to `engine/sfx/` or `<episode>/sfx/`.
+
 ## Validation the builder performs
 
 - Warns when an item's `at` falls outside its scene, when scenes overlap, or when a scene ends after `meta.duration`.

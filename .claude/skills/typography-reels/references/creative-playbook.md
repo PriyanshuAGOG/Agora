@@ -101,3 +101,21 @@ When none fits, use an emoji sticker from `engine/stickers/emoji/index.json` (97
   "stickers": [{ "name": "monkey-pray", "at": 13.4, "anchor": { "to": "twenty", "pos": "r", "dx": 7, "dy": -6 }, "h": 26 }]
 }
 ```
+
+## v2 device menu (Day 8 onwards)
+
+| The sentence… | Device | Day 8 example |
+| --- | --- | --- |
+| opens the episode | **notification hook** card + slam + flash/shake + impact SFX | "Designer: Sent you the final designs!" → "We **FINALLY**" |
+| says crazy / wild / insane | `comic` + `jitter` + `extrude` | CRAZY |
+| names a physical action (print, build, drop, fix) | an anim that *performs* it: `print`, `drop-letters`, `fix`, `slam-left/right` | PRINTED OUT, BUILD A BRAND (letters fall like bricks), FIXING |
+| announces a problem or turn | red `stencil` + `slam` + sirens + `record-scratch` on enter, punch + shake | PROBLEM |
+| complains about sameness | `echo` clones fading below | PRODUCT ×4 |
+| says nothing / empty / no | `outline` hollow letters, `strike` on each "no", grey colour for "no colours", 🦗 cricket "*chirp*" | NOTHING, NO LOGO, NO COLORS |
+| has an epiphany | `burst` background + flash + shake + exploding-head | IT HIT ME |
+| mentions a name / identity | HELLO-my-name-is `nametag` card with "???" | "we don't even have a NAME yet" |
+| brings two things together | the two words fly in from opposite sides (`slam-left` / `slam-right`) and a shake on the collision | DESIGNS & BRANDING → TOGETHER |
+| is about creativity / aesthetics | `drip` paint font, `calligraphy` + `highlight`, dotted `bg` | CREATE, aesthetics |
+| is excitement | `burst` bg + `jitter` + star-struck + raised-hands | CAN'T WAIT |
+
+**SFX map:** slam → `impact-bass-1/2`; sticker → `pop` / `boing`; scene whip → `swish`; reveal → `sparkle` / `ding`; typing/printing → `typing`; turn → `record-scratch`; notification → `notification`; fix/snap → `click`; falling letters → `thud`.

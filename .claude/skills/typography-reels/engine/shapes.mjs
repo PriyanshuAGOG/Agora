@@ -21,4 +21,12 @@ export const SHAPES = {
   burst: { paths: ["M50,40 L50,2", "M30,48 L6,20", "M70,48 L94,20"], split: 3 },
   // a "clock" shape also exists: it is rendered specially (outline face + spinning hand), see build.mjs
   bracket: { paths: ["M20,2 C2,2 2,2 2,20 L2,80 C2,98 2,98 20,98"] },
+  // v2
+  // figure-eight traced bottom loop first, then the top loop (journey along an "8")
+  "figure-eight": { paths: ["M50,52 C78,52 92,63 92,77 C92,91 72,98 50,98 C28,98 8,91 8,77 C8,63 22,52 50,52 C74,52 86,42 86,27 C86,12 68,2 50,2 C32,2 14,12 14,27 C14,42 26,52 50,52"] },
+  heart: { paths: ["M50,92 C20,70 2,52 4,30 C6,12 26,4 40,14 C46,18 49,24 50,28 C51,24 54,18 60,14 C74,4 94,12 96,30 C98,52 80,70 50,92"] },
+  spiral: { paths: ["M50,50 C54,46 58,52 54,56 C48,62 40,54 44,46 C50,36 64,40 66,52 C68,66 52,74 40,68 C24,60 26,36 42,30 C62,22 80,36 80,54 C80,76 58,90 38,84 C14,76 8,46 22,28"] },
+  zigzag: { paths: ["M1,60 L10,30 L20,60 L30,30 L40,60 L50,30 L60,60 L70,30 L80,60 L90,30 L99,60"] },
+  "scribble-circle": { paths: ["M60,8 C88,10 99,34 95,56 C90,84 58,98 34,92 C10,86 0,60 6,38 C12,16 36,4 58,6 C80,8 92,22 96,30"] },
+  "swoosh-down-arrow": { paths: ["M4,10 C40,4 80,20 90,80", "M76,72 L90,90 L98,70"], split: 1 },
 };

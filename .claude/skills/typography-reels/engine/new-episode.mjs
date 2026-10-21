@@ -89,4 +89,4 @@ const spec = {
 };
 fs.writeFileSync(path.join(out, "reel.spec.json"), JSON.stringify(spec, null, 2) + "\n");
 console.log(`scaffolded ${path.relative(process.cwd(), out)} — VO ${D}s, ${scenes.length} placeholder scenes`);
-console.log("next: transcribe → node words.mjs → replace TODOs → node build.mjs reel.spec.json build");
+console.log("next: node tighten-vo.mjs (optional) → bash transcribe.sh → node words.mjs → replace TODOs → node build.mjs reel.spec.json build");

@@ -194,3 +194,44 @@ The series is **typography-first, not motion-first**. About 80% of all appearanc
 - [ ] CTA (keyword or cliffhanger) + "See you tomorrow" + a Follow card styled differently from the last 3 days
 - [ ] Watermark reads `DAY N` / `Day N` for the right day; handle visible bottom-right
 - [ ] `npx hyperframes check --no-contrast` passes (mint on white is a deliberate brand choice; see the SKILL.md note)
+
+---
+
+## 11. Engagement layer (v2): the creator's direction from Day 8 on
+
+After Days 1–5, the creator asked for **"as many fonts as possible, as much styling as possible, creativity at max, crazy engaging, a viral hook at the start"**. The look of §1–6 stays: canvas, black + mint, watermark, handle, mascots, lockups that build on the voice. On top of it, every episode now gets:
+
+**Hook (first 0.5 s)**
+- Something moves on frame 1: a phone notification dropping in, a slam with a flash and screen shake, or an object flying in. Never a static first frame.
+- The payoff word of the first sentence lands as a `slam` + `impact` SFX + `shake` within ~0.3 s of being spoken.
+
+**Typography**
+- Use the full roster (104 roles, `engine/presets.mjs`). No family may appear in more than two scenes per episode, except the narrator faces (`label`, `airy`, `editorial-italic`).
+- Font-as-meaning gets literal:
+  - CRAZY → `comic` + `jitter`
+  - PRINTED → `arcade` pixel + `print` reveal
+  - PROBLEM → `stencil` in red
+  - NOTHING → hollow `outline`
+  - CREATE → `drip` paint
+  - FIXING → `cartoon` + `fix` (scrambled letters snap straight)
+  - aesthetic → `calligraphy` + highlight
+  - DESIGNS vs BRANDING → `slam-left` / `slam-right` collision
+- Effects: `extrude` for shouts, `sticker` outline for playful lines, `highlight` for the soft payoff, `echo` for repetition or sameness.
+
+**Motion**
+- Scene changes rotate through `whip-left/right/up`, `zoom`, `zoom-out`, `blur` and `drop`. The same transition never runs twice in a row; a plain cut is still fine for rapid-fire beats.
+- Every scene either `drift`s slowly or has a `camera` event (punch, pulse, shake, flash).
+- Turns ("But then…", "And then it hit me") get a `burst` background or a flash + shake. That's the visual equivalent of a beat drop.
+
+**Stickers**
+- 1–3 per scene, mixing the three libraries: a mascot for personality, an **animated** emoji for motion, a **3D** object for literal props.
+- Use animated stickers wherever an emotion is being *expressed* (fire, exploding head, siren, eyes, star-struck).
+
+**Sound**
+- SFX on every slam (impact), sticker pop (pop/boing), transition (swish/whoosh), notification (notification), reveal (sparkle/ding), print (typing), turn (record-scratch). Volumes stay low (0.3–0.55) so the voice leads.
+- A music bed under the voice, as in the originals, at about 0.15–0.2 volume. None is bundled, because music sites are blocked in this environment; drop a track into `episodes/day-NN/audio/` and add it to `audio[]`.
+
+**Pacing**
+- Tighten the voiceover first (`engine/tighten-vo.mjs`, max 0.14 s pauses); never cut words.
+- Target ≤ 45 s total. Add a 1.5–2 s visual Follow outro after the last word.
+- Series progress bar on (`meta.progress`), showing DAY N/75.

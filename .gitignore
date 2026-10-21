@@ -1,6 +1,6 @@
 node_modules/
 .hyperframes/
-episodes/*/build/
+episodes/*/build*/
 episodes/**/*.mp4
 episodes/**/*.mov
 .claude/skills/typography-reels/examples/audio/

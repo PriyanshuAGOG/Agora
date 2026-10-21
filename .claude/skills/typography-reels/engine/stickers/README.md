@@ -1,55 +1,45 @@
 # Stickers
 
-Lookup order for a sticker `name` in a spec:
+About 2,050 stickers from four libraries. When a spec names a sticker, the builder looks it up in this order:
 
-1. `<episode>/stickers/<name>.(png|webp|gif|svg|jpg)`: episode-specific or new stickers you add
-2. `engine/stickers/library/<name>.webp`: the series mascots
-3. `engine/stickers/emoji/<name>.svg`: 97 Twemoji props (names in `emoji/index.json`)
+1. `<episode>/stickers/<name>.(png|webp|gif|svg|jpg|json)`: episode-specific or new stickers you add
+2. `library/<name>.webp`: the **series mascots** (31 monkeys and cats cut out of Days 1–5)
+3. `animated/<name>.json`: **127 animated emoji** (Google Noto Animated Emoji, Lottie, seeked frame-accurately by HyperFrames)
+4. `3d/<name>.webp`: **1,826 glossy 3D emoji** (Microsoft Fluent Emoji 3D), named by Unicode name, e.g. `artist-palette`, `hammer-and-wrench`, `spiral-calendar-pad`
+5. `emoji/<name>.svg`: 97 flat Twemoji props
 
-## `library/`: mascot cut-outs (31)
+To force one source when a name exists in several, prefix it: `"3d:fire"`, `"anim:fire"`, `"lib:monkey-yay"`, `"emoji:fire"`.
+Full name lists are in `animated/index.json`, `3d/index.json` and `emoji/index.json` (name → emoji character).
 
-These were **cut out of the rendered Day 1–5 videos** (background removed automatically, so edges are soft and the resolution is limited to what was on screen). They are good enough to build with. **Replace them with the original transparent PNGs from your Canva library**, keeping the same file names, and every future episode picks up the sharper versions automatically.
+## Which library for what
 
-| Name | Looks like | Use for |
+| Want | Use |
+| --- | --- |
+| A reaction with personality (the series' signature) | `library/` mascots |
+| Movement: fire flickering, a head exploding, a siren spinning, eyes darting, confetti | `animated/` (Lottie). This is the best way to make a frame feel alive |
+| A clean, premium **object** (printer, calendar, tools, palette, medal, handshake, rocket, brick) | `3d/` |
+| A tiny inline icon inside a sentence (rebus) | `animated/` or `3d/` as a row item `{ "sticker": "heart", "size": 8 }` |
+
+Animated names include: `fire`, `exploding-head`, `mind-blown`, `police-light`, `eyes`, `sparkles`, `star-struck`, `party-popper`, `partying-face`, `joy`, `rofl`, `sob`, `scream`, `skull`, `melting`, `dotted-face`, `neutral`, `yawn`, `sleeping`, `sweat-smile`, `grimacing`, `thinking`, `monocle`, `nerd`, `money-mouth`, `money-wings`, `rocket`, `collision`, `bomb`, `zap`, `hundred`, `trophy`, `first-place`, `crown`, `gem`, `magic-wand`, `crystal-ball`, `bulb`, `alarm-clock`, `hourglass`, `bell`, `megaphone`, `handshake`, `clap`, `raised-hands`, `muscle`, `pray`, `wave`, `salute`, `thumbs-up`, `thumbs-down`, `heart-hands`, `red-heart`, `broken-heart`, `question`, `exclamation`, `check`, `cross`, `cricket`, `snail`, `turtle`, `unicorn`, `ghost`, `clown`, `robot`, `alien`, `construction`, `tools`, `package`, `gift`, `confetti`, `balloon`, `rainbow`, `plant`, `chart-up`, `printer`, and more (`animated/index.json`).
+
+## Licences and credits
+
+| Library | Licence | Credit line |
 | --- | --- | --- |
-| `monkey-thinking` | hand on chin | doubt, "hmm", questions |
-| `monkey-phone-thinking` | chin + phone | researching, scrolling, considering |
-| `monkey-giggle` | hand over a laughing mouth | laughing at ourselves |
-| `monkey-laughing-hat` | bucket hat + gold chain, big laugh | "way more than expected" |
-| `monkey-rich-laugh` | cash fan + chain, laughing | money, business ideas |
-| `monkey-shades-cash` | sunglasses + cash | worth it, profit |
-| `monkey-wink-shades` | sunglasses, tongue out | cheeky confidence |
-| `monkey-rapper` | cap, shades, chain, peace sign | swagger, title cards |
-| `monkey-peace-chain` | shades, gold teeth, peace sign | cool, winning |
-| `monkey-peace-bow` | pink bow, tongue out, double peace | cute, playful titles |
-| `monkey-doctor` | lab coat + clipboard | listing, saving, analysing |
-| `monkey-shocked-laptop` | gasping at a laptop | websites, too much info |
-| `monkey-phone` | gasping at a phone | reels, scrolling, DMs |
-| `monkey-drama` | hands over mouth | drama, shock |
-| `monkey-heart-hands` | heart hands | love, wholesome |
-| `monkey-pray` | hands together, grin | hoping, waiting for replies |
-| `monkey-sleepy-zzz` | dozing with yellow "zz" | ZERO, tired, nothing yet |
-| `monkey-yay` | arms up + yellow "YAY" | celebrating, DAY→YAY |
-| `monkey-goodbye` | waving | "see you tomorrow" (add a GOODBYE tag) |
-| `monkey-flower` | offering a tulip | follow, sweet ending |
-| `monkey-rock-angry` | about to throw a rock, anger mark | frustration, "LIKE SHARE FOLLOW" |
-| `gibbon-leap` | leaping gibbon | PHOLLOW, energy |
-| `baby-cool` | cartoon baby in sunglasses | "even a baby…" rebus |
-| `cat-facepalm` | paw on face | "okay, enough" |
-| `cat-yawn` | huge yawn | boring, eating a letter |
-| `cat-wow` | open mouth + 3D "WOW" | amazement |
-| `cat-omg` | paws on head | OMG moments |
-| `cat-what` | wide-eyed stare | "what?!" |
-| `cat-shades` | sunglasses + thumbs-up | approval |
-| `cat-interesting` | lounging, curious | "that's where it gets INTERESTING" |
-| `cat-cry-thumb` | crying with a thumbs-up | bittersweet follow |
+| `animated/`: Noto Animated Emoji (Google, via fonts.gstatic.com) | CC BY 4.0, to the best of my knowledge (Google publishes the Noto emoji animations under CC BY 4.0); confirm on the Noto Emoji animation page before commercial use | "Animated emoji: Google Noto Emoji (CC BY 4.0)" |
+| `3d/`: Fluent Emoji 3D (Microsoft), packaged by `@lobehub/fluent-emoji-3d` | MIT (stated in the package) | optional |
+| `emoji/`: Twemoji (Twitter / X and contributors) | CC BY 4.0 | "Twemoji (CC BY 4.0)" |
+| `library/`: mascot cut-outs | Cut from your own published Day 1–5 renders. The source photos are meme images, so their copyright belongs to the original owners, as it did in Days 1–5 | none |
 
-## `emoji/`: Twemoji props (97)
+Putting one line in the video description covers the CC BY libraries: *"Emoji: Google Noto & Twemoji (CC BY 4.0), Microsoft Fluent (MIT)."*
 
-Graphics © Twitter, Inc. and other contributors, licensed under **CC-BY 4.0** (https://creativecommons.org/licenses/by/4.0/), from the `@twemoji/svg` package. Credit "Twemoji" in the video description when you use them. Names include `magnifier`, `bulb`, `heart`, `eyes`, `money-wings`, `dollar`, `party`, `rocket`, `alarm-clock`, `raised-hands`, `fire`, `brain`, `package`, `scissors`, `email`, `robot`, `india`, `chart-up`; see `index.json` for the full list.
+## Mascot cut-outs (`library/`)
+
+These are soft-edged and limited to on-screen resolution. Replace them with the original transparent PNGs from your Canva library under the same names, and every future episode picks up the sharp versions. Names: `monkey-thinking`, `monkey-phone-thinking`, `monkey-giggle`, `monkey-laughing-hat`, `monkey-rich-laugh`, `monkey-shades-cash`, `monkey-wink-shades`, `monkey-rapper`, `monkey-peace-chain`, `monkey-peace-bow`, `monkey-doctor`, `monkey-shocked-laptop`, `monkey-phone`, `monkey-drama`, `monkey-heart-hands`, `monkey-pray`, `monkey-sleepy-zzz`, `monkey-yay`, `monkey-goodbye`, `monkey-flower`, `monkey-rock-angry`, `gibbon-leap`, `baby-cool`, `cat-facepalm`, `cat-yawn`, `cat-wow`, `cat-omg`, `cat-what`, `cat-shades`, `cat-interesting`, `cat-cry-thumb`.
 
 ## Adding stickers
 
-- Transparent PNG or WebP, about 600–900 px tall, subject only, no white box.
-- Name in kebab-case after **emotion + subject** (`monkey-celebrate-confetti`) so specs read well.
-- Put series-wide stickers in `engine/stickers/library/`, and one-offs in the episode's `stickers/` folder.
+- Transparent PNG/WebP (about 600–900 px tall, subject only) or a Lottie `.json`.
+- Name in kebab-case after **emotion + subject** (`monkey-celebrate-confetti`).
+- Series-wide stickers go in `library/`; one-offs go in the episode's `stickers/` folder.
+- More animated emoji: `https://fonts.gstatic.com/s/e/notoemoji/latest/<codepoint>/lottie.json` (e.g. `1f602`). More 3D: `npm i @lobehub/fluent-emoji-3d`.
