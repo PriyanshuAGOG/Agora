@@ -1,0 +1,2581 @@
+{
+  "meta": {
+    "day": 9,
+    "title": "Day 9 - Zero to Something: building the brand identity",
+    "duration": 56.91,
+    "handle": "@your.soulpreneur",
+    "watermark": {
+      "text": "DAY 9"
+    },
+    "progress": true
+  },
+  "audio": [
+    {
+      "id": "vo",
+      "src": "audio/day-09-vo-reveal.m4a",
+      "volume": 1
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "start": 0.0,
+      "end": 2.74,
+      "box": {
+        "x": 9,
+        "y": 28,
+        "w": 54
+      },
+      "camera": [
+        {
+          "type": "flash",
+          "at": 0.0,
+          "opacity": 0.7,
+          "dur": 0.15
+        },
+        {
+          "type": "shake",
+          "at": 0.02,
+          "dur": 0.26,
+          "amp": 1.3
+        }
+      ],
+      "drift": 1.04,
+      "rows": [
+        {
+          "gap": 1.3,
+          "items": [
+            {
+              "text": "Got A Business",
+              "style": "editorial-italic",
+              "size": 7.5,
+              "at": [
+                0.12,
+                0.3,
+                0.46
+              ]
+            },
+            {
+              "id": "name",
+              "text": "NAME",
+              "style": "wide",
+              "size": 8,
+              "at": 0.78,
+              "anim": "pop"
+            }
+          ]
+        },
+        {
+          "mt": 1.0,
+          "items": [
+            {
+              "text": "But No",
+              "style": "label",
+              "size": 7,
+              "at": [
+                1.18,
+                1.42
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.2,
+          "fit": 1,
+          "items": [
+            {
+              "id": "ident",
+              "text": "BRAND IDENTITY?",
+              "style": "poster",
+              "outline": true,
+              "color": "grey",
+              "size": 13,
+              "at": [
+                1.66,
+                2.06
+              ],
+              "anim": "shake"
+            }
+          ]
+        }
+      ],
+      "cards": [
+        {
+          "kind": "nametag",
+          "x": 68,
+          "y": 16,
+          "w": 23,
+          "size": 2.7,
+          "name": "DIY",
+          "nameStyle": "marker",
+          "at": 0.0,
+          "rot": 6,
+          "sfx": "impact-bass-1",
+          "stamp": {
+            "text": "NO VIBE",
+            "at": 2.12,
+            "rot": -16,
+            "y": 72,
+            "scale": 2.3
+          }
+        }
+      ],
+      "stickers": [
+        {
+          "name": "check",
+          "at": 0.95,
+          "anchor": {
+            "to": "name",
+            "pos": "r",
+            "dx": 5
+          },
+          "h": 9,
+          "sfx": "ding"
+        },
+        {
+          "name": "dotted-face",
+          "at": 2.2,
+          "x": 72,
+          "y": 62,
+          "h": 18,
+          "anim": "boing"
+        }
+      ]
+    },
+    {
+      "id": "fix",
+      "start": 2.78,
+      "end": 3.94,
+      "enter": "whip-left",
+      "enterSfx": "swish",
+      "box": {
+        "x": 14,
+        "y": 30,
+        "w": 72
+      },
+      "camera": [
+        {
+          "type": "punch",
+          "at": 3.1,
+          "scale": 1.06
+        }
+      ],
+      "rows": [
+        {
+          "align": "center",
+          "items": [
+            {
+              "text": "Let's",
+              "style": "retro-script",
+              "size": 9,
+              "at": 2.78
+            }
+          ]
+        },
+        {
+          "align": "center",
+          "mt": -0.5,
+          "items": [
+            {
+              "id": "fix",
+              "text": "FIX THAT",
+              "style": "comic",
+              "color": "mint",
+              "size": 21,
+              "at": 3.0,
+              "anim": "fix",
+              "fixAt": 3.14,
+              "fx": "extrude",
+              "sfx": "click"
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "tools",
+          "at": 3.08,
+          "x": 78,
+          "y": 12,
+          "h": 19,
+          "anim": "boing"
+        },
+        {
+          "name": "3d:toolbox",
+          "at": 3.3,
+          "x": 8,
+          "y": 62,
+          "h": 16,
+          "wobble": 5,
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": "title",
+      "start": 3.98,
+      "end": 7.12,
+      "enter": "zoom-out",
+      "floaters": [
+        {
+          "text": "This Is",
+          "style": "editorial-italic",
+          "size": 10,
+          "x": 26,
+          "y": 30,
+          "at": 3.98,
+          "anim": "slide-left"
+        },
+        {
+          "text": "DAY",
+          "style": "crisis",
+          "size": 15,
+          "x": 28,
+          "y": 50,
+          "at": 4.3,
+          "anim": "slam",
+          "sfx": "impact-bass-2"
+        },
+        {
+          "text": "Of Going From",
+          "style": "marker",
+          "size": 6.2,
+          "x": 28,
+          "y": 68,
+          "at": 5.0,
+          "anim": "pop",
+          "rot": -3
+        },
+        {
+          "id": "zero",
+          "text": "ZERO",
+          "style": "geo-black",
+          "size": 5.4,
+          "x": 71.5,
+          "y": 77,
+          "at": 5.72,
+          "anim": "pop"
+        },
+        {
+          "text": "SOMETHING",
+          "style": "blast",
+          "size": 5.4,
+          "x": 69,
+          "y": 26.5,
+          "at": 6.44,
+          "anim": "slam",
+          "sfx": "ding"
+        }
+      ],
+      "draws": [
+        {
+          "shape": "nine-balloon",
+          "x": 56,
+          "y": 7,
+          "w": 26,
+          "h": 62,
+          "weight": 5.5,
+          "color": "mint",
+          "at": 4.52,
+          "dur": 0.5,
+          "sfx": "swish"
+        },
+        {
+          "shape": "nine-balloon",
+          "x": 56,
+          "y": 7,
+          "w": 26,
+          "h": 62,
+          "weight": 0.8,
+          "color": "ink",
+          "at": 5.95,
+          "dur": 0.5
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:monkey-yay",
+          "at": 5.78,
+          "x": 80,
+          "y": 62,
+          "h": 22
+        },
+        {
+          "name": "balloon",
+          "at": 6.55,
+          "x": 86,
+          "y": 6,
+          "h": 12,
+          "float": 0.8
+        }
+      ],
+      "effects": [
+        {
+          "type": "burst",
+          "sticker": "3d:sparkles",
+          "x": 69,
+          "y": 26,
+          "at": 6.48,
+          "count": 10,
+          "size": 4,
+          "dist": 17
+        }
+      ]
+    },
+    {
+      "id": "yesterday",
+      "start": 7.16,
+      "end": 10.1,
+      "enter": "whip-up",
+      "enterSfx": "swish",
+      "box": {
+        "x": 10,
+        "y": 18,
+        "w": 56
+      },
+      "drift": true,
+      "rows": [
+        {
+          "items": [
+            {
+              "id": "yday",
+              "text": "Yesterday,",
+              "style": "editorial",
+              "color": "grey",
+              "size": 10,
+              "at": 7.16
+            }
+          ]
+        },
+        {
+          "mt": 0.6,
+          "items": [
+            {
+              "text": "We Named Our Business",
+              "style": "airy",
+              "size": 5.6,
+              "at": [
+                7.8,
+                7.96,
+                8.28,
+                8.44
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.4,
+          "items": [
+            {
+              "id": "diy",
+              "text": "DIY.",
+              "style": "titan",
+              "color": "#FF5A14",
+              "size": 24,
+              "at": 9.0,
+              "anim": "drop-letters",
+              "fx": "extrude",
+              "fxColor": "ink",
+              "sfx": "thud"
+            }
+          ]
+        }
+      ],
+      "cards": [
+        {
+          "kind": "nametag",
+          "x": 68,
+          "y": 34,
+          "w": 23,
+          "size": 2.7,
+          "name": "???",
+          "nameStyle": "marker",
+          "at": 7.3,
+          "rot": 6,
+          "sfx": "pop",
+          "stamp": {
+            "text": "DIY",
+            "at": 9.1,
+            "rot": -10,
+            "y": 64,
+            "scale": 2.9,
+            "sfx": "impact-bass-1"
+          }
+        }
+      ],
+      "stickers": [
+        {
+          "name": "3d:tear-off-calendar",
+          "at": 7.22,
+          "anchor": {
+            "to": "yday",
+            "pos": "r",
+            "dx": 6,
+            "dy": -1
+          },
+          "h": 11,
+          "wobble": 5
+        },
+        {
+          "name": "partying-face",
+          "at": 9.25,
+          "x": 83,
+          "y": 12,
+          "h": 14,
+          "anim": "boing"
+        }
+      ]
+    },
+    {
+      "id": "doityar",
+      "start": 10.14,
+      "end": 11.22,
+      "enter": "zoom",
+      "bg": {
+        "pattern": "dots",
+        "color": "bg",
+        "color2": "#FFE2D2"
+      },
+      "box": {
+        "x": 12,
+        "y": 30,
+        "w": 76
+      },
+      "rows": [
+        {
+          "align": "center",
+          "gap": 2.2,
+          "items": [
+            {
+              "text": "Do",
+              "style": "chewy",
+              "size": 22,
+              "at": 10.14,
+              "anim": "pop",
+              "colors": [
+                "#FF5A14",
+                "#141414"
+              ]
+            },
+            {
+              "text": "It",
+              "style": "chewy",
+              "size": 22,
+              "at": 10.3,
+              "anim": "pop",
+              "colors": [
+                "#FF5A14",
+                "#141414"
+              ]
+            },
+            {
+              "text": "Yar!",
+              "style": "chewy",
+              "size": 22,
+              "at": 10.54,
+              "anim": "pop",
+              "colors": [
+                "#FF5A14",
+                "#141414",
+                "#141414",
+                "#141414"
+              ],
+              "id": "yar",
+              "sfx": "boing"
+            }
+          ]
+        },
+        {
+          "align": "center",
+          "mt": 1.6,
+          "items": [
+            {
+              "text": "(yaar = buddy)",
+              "style": "airy",
+              "size": 4,
+              "at": 10.7
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "handshake",
+          "at": 10.6,
+          "anchor": {
+            "to": "yar",
+            "pos": "tr",
+            "dx": 4,
+            "dy": -4
+          },
+          "h": 13
+        }
+      ]
+    },
+    {
+      "id": "today",
+      "start": 11.26,
+      "end": 14.4,
+      "enter": "whip-left",
+      "enterSfx": "swish",
+      "box": {
+        "x": 9,
+        "y": 18,
+        "w": 66
+      },
+      "camera": [
+        {
+          "type": "pulse",
+          "at": 13.66,
+          "scale": 1.05
+        }
+      ],
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "Today, We're Turning",
+              "style": "editorial-italic",
+              "size": 7.5,
+              "at": [
+                11.26,
+                11.66,
+                11.9
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.2,
+          "items": [
+            {
+              "id": "thatname",
+              "text": "THAT NAME",
+              "style": "wide",
+              "size": 9,
+              "at": [
+                12.3,
+                12.46
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 2.2,
+          "gap": 1.2,
+          "items": [
+            {
+              "text": "Into An",
+              "style": "airy",
+              "size": 5.5,
+              "at": [
+                12.78,
+                13.02
+              ]
+            },
+            {
+              "text": "ACTUAL",
+              "style": "stencil",
+              "size": 7,
+              "at": 13.26,
+              "anim": "stamp"
+            }
+          ]
+        },
+        {
+          "mt": -0.2,
+          "items": [
+            {
+              "id": "brand",
+              "text": "BRAND",
+              "style": "bodoni",
+              "color": "mint",
+              "size": 17,
+              "at": 13.66,
+              "anim": "slam",
+              "fx": "shadow",
+              "sfx": "sparkle"
+            }
+          ]
+        }
+      ],
+      "draws": [
+        {
+          "shape": "curl-down-arrow",
+          "x": 52,
+          "y": 24,
+          "w": 14,
+          "h": 30,
+          "weight": 0.9,
+          "color": "ink",
+          "at": 12.6,
+          "dur": 0.4
+        }
+      ],
+      "stickers": [
+        {
+          "name": "magic-wand",
+          "at": 12.0,
+          "x": 76,
+          "y": 12,
+          "h": 18
+        },
+        {
+          "name": "3d:gem-stone",
+          "at": 13.75,
+          "anchor": {
+            "to": "brand",
+            "pos": "r",
+            "dx": 6
+          },
+          "h": 12,
+          "anim": "boing"
+        }
+      ],
+      "effects": [
+        {
+          "type": "burst",
+          "sticker": "3d:sparkles",
+          "x": 30,
+          "y": 58,
+          "at": 13.7,
+          "count": 9,
+          "size": 4,
+          "dist": 20
+        }
+      ]
+    },
+    {
+      "id": "step1",
+      "start": 14.44,
+      "end": 16.34,
+      "enter": "whip-up",
+      "enterSfx": "swish",
+      "box": {
+        "x": 34,
+        "y": 20,
+        "w": 58
+      },
+      "floaters": [
+        {
+          "text": "STEP",
+          "style": "label-caps",
+          "size": 5.5,
+          "x": 17,
+          "y": 26,
+          "at": 14.44,
+          "anim": "pop"
+        },
+        {
+          "text": "1",
+          "style": "crisis",
+          "color": "mint",
+          "size": 32,
+          "x": 17,
+          "y": 52,
+          "at": 14.76,
+          "anim": "slam",
+          "fx": "shadow",
+          "sfx": "impact-bass-1"
+        }
+      ],
+      "rows": [
+        {
+          "gap": 1.3,
+          "items": [
+            {
+              "text": "OPEN",
+              "style": "poster",
+              "size": 10,
+              "at": 15.18
+            },
+            {
+              "id": "gpt",
+              "text": "ChatGPT",
+              "style": "tech",
+              "color": "mint",
+              "size": 9,
+              "at": 15.5,
+              "anim": "pop-letters"
+            }
+          ]
+        }
+      ],
+      "cards": [
+        {
+          "kind": "bubble",
+          "side": "right",
+          "x": 35,
+          "y": 46,
+          "w": 54,
+          "size": 3.1,
+          "from": "You",
+          "text": "Meet my brand: DIY – Do It Yar. Paper-craft DIY kits…",
+          "at": 15.62,
+          "typeAt": 15.72,
+          "typeDur": 0.55,
+          "typeSfx": "typing",
+          "sfx": "pop"
+        }
+      ],
+      "stickers": [
+        {
+          "name": "robot",
+          "at": 15.56,
+          "anchor": {
+            "to": "gpt",
+            "pos": "r",
+            "dx": 6,
+            "dy": -1
+          },
+          "h": 12
+        }
+      ]
+    },
+    {
+      "id": "brief",
+      "start": 16.38,
+      "end": 21.52,
+      "enter": "zoom",
+      "box": {
+        "x": 9,
+        "y": 16,
+        "w": 72
+      },
+      "camera": [
+        {
+          "type": "pulse",
+          "at": 19.82,
+          "scale": 1.05
+        }
+      ],
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "And Explain Your",
+              "style": "editorial-italic",
+              "size": 7,
+              "at": [
+                16.38,
+                16.62,
+                16.94
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.6,
+          "gap": 1.8,
+          "items": [
+            {
+              "id": "biz",
+              "text": "BUSINESS,",
+              "style": "poster",
+              "size": 10,
+              "at": 17.1
+            },
+            {
+              "id": "aud",
+              "text": "TARGET AUDIENCE,",
+              "style": "wide",
+              "color": "mint",
+              "size": 6.5,
+              "at": [
+                17.74,
+                18.14
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 1.0,
+          "gap": 1.4,
+          "items": [
+            {
+              "id": "prod",
+              "text": "PRODUCTS",
+              "style": "chunky",
+              "size": 8.5,
+              "at": 18.78
+            },
+            {
+              "text": "&",
+              "style": "editorial-italic",
+              "size": 7,
+              "at": 19.42
+            },
+            {
+              "id": "vibe",
+              "text": "THE VIBE",
+              "style": "groovy",
+              "color": "pink",
+              "size": 12,
+              "at": [
+                19.66,
+                19.82
+              ],
+              "anim": "wave",
+              "sfx": "sparkle"
+            }
+          ]
+        },
+        {
+          "mt": 1.0,
+          "items": [
+            {
+              "text": "You Want Your Brand To Have",
+              "style": "airy",
+              "size": 4.8,
+              "at": [
+                20.22,
+                20.38,
+                20.54,
+                20.7,
+                21.02,
+                21.1
+              ]
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "3d:briefcase",
+          "at": 17.2,
+          "anchor": {
+            "to": "biz",
+            "pos": "l",
+            "dx": -5
+          },
+          "h": 8,
+          "anim": "boing"
+        },
+        {
+          "name": "3d:direct-hit",
+          "at": 17.95,
+          "anchor": {
+            "to": "aud",
+            "pos": "tr",
+            "dx": 2,
+            "dy": -6
+          },
+          "h": 10,
+          "sfx": {
+            "name": "pop",
+            "volume": 0.4
+          }
+        },
+        {
+          "name": "package",
+          "at": 18.9,
+          "anchor": {
+            "to": "prod",
+            "pos": "l",
+            "dx": -5
+          },
+          "h": 9
+        },
+        {
+          "name": "3d:mirror-ball",
+          "at": 19.9,
+          "anchor": {
+            "to": "vibe",
+            "pos": "tr",
+            "dx": 3,
+            "dy": -7
+          },
+          "h": 12,
+          "spinTurns": 0.6
+        },
+        {
+          "name": "sunglasses",
+          "at": 20.3,
+          "x": 84,
+          "y": 70,
+          "h": 13,
+          "anim": "boing"
+        }
+      ]
+    },
+    {
+      "id": "step2",
+      "start": 21.56,
+      "end": 24.4,
+      "enter": "whip-left",
+      "enterSfx": "swish",
+      "box": {
+        "x": 34,
+        "y": 20,
+        "w": 58
+      },
+      "floaters": [
+        {
+          "text": "STEP",
+          "style": "label-caps",
+          "size": 5.5,
+          "x": 17,
+          "y": 26,
+          "at": 21.56,
+          "anim": "pop"
+        },
+        {
+          "text": "2",
+          "style": "crisis",
+          "color": "mint",
+          "size": 32,
+          "x": 17,
+          "y": 52,
+          "at": 21.88,
+          "anim": "slam",
+          "fx": "shadow",
+          "sfx": "impact-bass-1"
+        }
+      ],
+      "rows": [
+        {
+          "gap": 1.2,
+          "items": [
+            {
+              "text": "ASK IT TO",
+              "style": "label-caps",
+              "size": 6,
+              "at": [
+                22.38,
+                22.62,
+                22.78
+              ]
+            },
+            {
+              "id": "build",
+              "text": "BUILD",
+              "style": "chunky",
+              "size": 11,
+              "at": 22.94,
+              "anim": "drop-letters",
+              "sfx": "thud"
+            }
+          ]
+        },
+        {
+          "mt": 0.8,
+          "items": [
+            {
+              "text": "Your",
+              "style": "editorial-italic",
+              "size": 7,
+              "at": 23.18
+            }
+          ]
+        },
+        {
+          "mt": -0.4,
+          "fit": 1,
+          "items": [
+            {
+              "id": "bid",
+              "text": "BRAND IDENTITY",
+              "style": "bodoni",
+              "color": "mint",
+              "size": 10,
+              "at": [
+                23.34,
+                23.74
+              ],
+              "anim": "stamp",
+              "sfx": "impact-bass-2"
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "3d:brick",
+          "at": 23.1,
+          "anchor": {
+            "to": "build",
+            "pos": "r",
+            "dx": 4
+          },
+          "h": 9,
+          "anim": "drop"
+        },
+        {
+          "name": "construction",
+          "at": 23.9,
+          "x": 80,
+          "y": 68,
+          "h": 14,
+          "anim": "boing"
+        }
+      ]
+    },
+    {
+      "id": "includes",
+      "start": 24.44,
+      "end": 28.52,
+      "enter": "zoom",
+      "floaters": [
+        {
+          "text": "Including…",
+          "style": "editorial-italic",
+          "size": 6,
+          "x": 50,
+          "y": 9,
+          "at": 24.44,
+          "anim": "pop"
+        },
+        {
+          "id": "logo",
+          "text": "LOGO",
+          "style": "titan",
+          "color": "#FF5A14",
+          "size": 11,
+          "x": 27,
+          "y": 33,
+          "at": 24.78,
+          "anim": "slam",
+          "fx": "extrude",
+          "fxColor": "ink",
+          "sfx": "impact-bass-1"
+        },
+        {
+          "text": "concepts",
+          "style": "chewy",
+          "size": 5.5,
+          "x": 27,
+          "y": 46,
+          "at": 25.26,
+          "anim": "pop"
+        },
+        {
+          "text": "COLOUR",
+          "style": "lilita",
+          "size": 9,
+          "x": 72,
+          "y": 25,
+          "at": 25.82,
+          "anim": "pop-letters",
+          "colors": [
+            "#FF5A14",
+            "#3FE8B0",
+            "#FFC312",
+            "#B7A1F2",
+            "#141414",
+            "#C93A0B"
+          ],
+          "fx": "shadow",
+          "fxColor": "ink"
+        },
+        {
+          "text": "palettes",
+          "style": "editorial-italic",
+          "size": 5,
+          "x": 72,
+          "y": 34,
+          "at": 26.2,
+          "anim": "pop"
+        },
+        {
+          "text": " ",
+          "style": "label",
+          "size": 7,
+          "box": "#FF5A14",
+          "radius": 0.5,
+          "pad": "0.1em 0.62em",
+          "x": 60,
+          "y": 44,
+          "at": 26.24,
+          "anim": "pop",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.25
+          }
+        },
+        {
+          "text": " ",
+          "style": "label",
+          "size": 7,
+          "box": "#3FE8B0",
+          "radius": 0.5,
+          "pad": "0.1em 0.62em",
+          "x": 65,
+          "y": 44,
+          "at": 26.31,
+          "anim": "pop"
+        },
+        {
+          "text": " ",
+          "style": "label",
+          "size": 7,
+          "box": "#FFC312",
+          "radius": 0.5,
+          "pad": "0.1em 0.62em",
+          "x": 70,
+          "y": 44,
+          "at": 26.38,
+          "anim": "pop",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.25
+          }
+        },
+        {
+          "text": " ",
+          "style": "label",
+          "size": 7,
+          "box": "#B7A1F2",
+          "radius": 0.5,
+          "pad": "0.1em 0.62em",
+          "x": 75,
+          "y": 44,
+          "at": 26.45,
+          "anim": "pop"
+        },
+        {
+          "text": " ",
+          "style": "label",
+          "size": 7,
+          "box": "#141414",
+          "radius": 0.5,
+          "pad": "0.1em 0.62em",
+          "x": 80,
+          "y": 44,
+          "at": 26.52,
+          "anim": "pop",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.25
+          }
+        },
+        {
+          "text": " ",
+          "style": "label",
+          "size": 7,
+          "box": "#C93A0B",
+          "radius": 0.5,
+          "pad": "0.1em 0.62em",
+          "x": 85,
+          "y": 44,
+          "at": 26.59,
+          "anim": "pop"
+        },
+        {
+          "text": "F",
+          "style": "cartoon",
+          "size": 11,
+          "x": 17.0,
+          "y": 68,
+          "at": 26.78,
+          "anim": "pop",
+          "color": "ink",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.3
+          }
+        },
+        {
+          "text": "O",
+          "style": "bodoni",
+          "size": 11,
+          "x": 22.2,
+          "y": 68,
+          "at": 26.84,
+          "anim": "pop",
+          "color": "mint"
+        },
+        {
+          "text": "N",
+          "style": "pixel",
+          "size": 11,
+          "x": 27.4,
+          "y": 68,
+          "at": 26.9,
+          "anim": "pop",
+          "color": "ink",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.3
+          }
+        },
+        {
+          "text": "T",
+          "style": "retro-script",
+          "size": 11,
+          "x": 32.6,
+          "y": 68,
+          "at": 26.96,
+          "anim": "pop",
+          "color": "mint"
+        },
+        {
+          "text": "S",
+          "style": "comic",
+          "size": 11,
+          "x": 37.8,
+          "y": 68,
+          "at": 27.02,
+          "anim": "pop",
+          "color": "ink",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.3
+          }
+        },
+        {
+          "id": "visual",
+          "text": "Visual",
+          "style": "calligraphy",
+          "size": 9,
+          "x": 64,
+          "y": 66,
+          "at": 27.5,
+          "anim": "pop"
+        },
+        {
+          "text": "STYLES",
+          "style": "drip",
+          "color": "mint",
+          "size": 9,
+          "x": 81,
+          "y": 75,
+          "at": 27.9,
+          "anim": "drop"
+        }
+      ],
+      "draws": [
+        {
+          "shape": "scribble-circle",
+          "x": 14,
+          "y": 22,
+          "w": 26,
+          "h": 26,
+          "weight": 0.7,
+          "color": "ink",
+          "at": 24.95,
+          "dur": 0.35
+        }
+      ],
+      "stickers": [
+        {
+          "name": "3d:lower-left-paintbrush",
+          "at": 26.3,
+          "x": 87,
+          "y": 11,
+          "h": 12,
+          "wobble": 6
+        },
+        {
+          "name": "3d:lower-left-crayon",
+          "at": 25.0,
+          "x": 39,
+          "y": 20,
+          "h": 11,
+          "rot": -10
+        }
+      ]
+    },
+    {
+      "id": "step3",
+      "start": 28.56,
+      "end": 32.84,
+      "enter": "whip-up",
+      "enterSfx": "swish",
+      "box": {
+        "x": 34,
+        "y": 14,
+        "w": 58
+      },
+      "floaters": [
+        {
+          "text": "STEP",
+          "style": "label-caps",
+          "size": 5.5,
+          "x": 17,
+          "y": 26,
+          "at": 28.56,
+          "anim": "pop"
+        },
+        {
+          "text": "3",
+          "style": "crisis",
+          "color": "mint",
+          "size": 32,
+          "x": 17,
+          "y": 52,
+          "at": 28.86,
+          "anim": "slam",
+          "fx": "shadow",
+          "sfx": "impact-bass-1"
+        },
+        {
+          "id": "optA",
+          "text": "Option A",
+          "style": "cartoon",
+          "size": 4.2,
+          "x": 45,
+          "y": 82,
+          "at": 29.98,
+          "anim": "pop",
+          "rot": -4,
+          "sfx": {
+            "name": "pop",
+            "volume": 0.3
+          }
+        },
+        {
+          "id": "optB",
+          "text": "Option B",
+          "style": "titan",
+          "color": "#FF5A14",
+          "size": 4.2,
+          "x": 63,
+          "y": 82,
+          "at": 30.12,
+          "anim": "pop"
+        },
+        {
+          "id": "optC",
+          "text": "Option C",
+          "style": "pixel",
+          "size": 4.2,
+          "x": 81,
+          "y": 82,
+          "at": 30.26,
+          "anim": "pop",
+          "rot": 4,
+          "sfx": {
+            "name": "pop",
+            "volume": 0.3
+          }
+        }
+      ],
+      "rows": [
+        {
+          "gap": 1.2,
+          "items": [
+            {
+              "text": "COMPARE",
+              "style": "poster",
+              "size": 10,
+              "at": 29.34
+            },
+            {
+              "text": "Different Options",
+              "style": "airy",
+              "size": 5,
+              "at": [
+                29.74,
+                29.98
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.8,
+          "gap": 1.2,
+          "items": [
+            {
+              "text": "PICK YOUR",
+              "style": "label-caps",
+              "size": 6,
+              "at": [
+                30.7,
+                30.94
+              ]
+            },
+            {
+              "id": "dir",
+              "text": "DIRECTION",
+              "style": "wide",
+              "color": "mint",
+              "size": 7,
+              "at": 31.1,
+              "anim": "slide-right"
+            }
+          ]
+        },
+        {
+          "mt": 0.8,
+          "gap": 1.2,
+          "items": [
+            {
+              "text": "&",
+              "style": "editorial-italic",
+              "size": 7,
+              "at": 31.66
+            },
+            {
+              "text": "REFINE IT",
+              "style": "editorial",
+              "size": 10,
+              "at": [
+                31.82,
+                32.38
+              ],
+              "anim": "blur",
+              "dur": 0.5
+            }
+          ]
+        }
+      ],
+      "draws": [
+        {
+          "shape": "circle",
+          "around": "optB",
+          "pad": 1.6,
+          "weight": 0.7,
+          "color": "mint",
+          "at": 30.72,
+          "dur": 0.3,
+          "sfx": "click"
+        },
+        {
+          "shape": "cross",
+          "around": "optA",
+          "pad": 0.5,
+          "weight": 0.5,
+          "color": "red",
+          "at": 31.0,
+          "dur": 0.2
+        },
+        {
+          "shape": "cross",
+          "around": "optC",
+          "pad": 0.5,
+          "weight": 0.5,
+          "color": "red",
+          "at": 31.15,
+          "dur": 0.2
+        }
+      ],
+      "stickers": [
+        {
+          "name": "3d:compass",
+          "at": 31.15,
+          "anchor": {
+            "to": "dir",
+            "pos": "r",
+            "dx": 5
+          },
+          "h": 10,
+          "spinTurns": 0.5
+        },
+        {
+          "name": "3d:sparkles",
+          "at": 32.4,
+          "x": 86,
+          "y": 52,
+          "h": 9
+        }
+      ]
+    },
+    {
+      "id": "sloppy",
+      "start": 32.88,
+      "end": 35.62,
+      "enter": "zoom",
+      "enterSfx": "record-scratch",
+      "box": {
+        "x": 8,
+        "y": 18,
+        "w": 64
+      },
+      "camera": [
+        {
+          "type": "punch",
+          "at": 35.12,
+          "scale": 1.07
+        },
+        {
+          "type": "shake",
+          "at": 35.12,
+          "dur": 0.3,
+          "amp": 1.5
+        }
+      ],
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "Because We Don't Want Our Brand",
+              "style": "airy",
+              "size": 5.3,
+              "at": [
+                32.88,
+                33.12,
+                33.28,
+                33.52,
+                33.68,
+                33.76
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.6,
+          "items": [
+            {
+              "text": "To Look Like A",
+              "style": "label",
+              "size": 7.5,
+              "at": [
+                34.06,
+                34.14,
+                34.3,
+                34.46
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.4,
+          "gap": 1.6,
+          "items": [
+            {
+              "text": "SLOPPY",
+              "style": "drip",
+              "color": "#7A4A1E",
+              "size": 15,
+              "at": 34.62,
+              "anim": "wave"
+            },
+            {
+              "id": "sh",
+              "text": "SH",
+              "style": "beastly",
+              "color": "red",
+              "size": 15,
+              "at": 35.1,
+              "anim": "slam",
+              "sfx": "impact-bass-2"
+            },
+            {
+              "sticker": "3d:pile-of-poo",
+              "size": 13,
+              "at": 35.14
+            },
+            {
+              "text": "T",
+              "style": "beastly",
+              "color": "red",
+              "size": 15,
+              "at": 35.1,
+              "anim": "slam"
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:cat-facepalm",
+          "at": 34.7,
+          "x": 76,
+          "y": 12,
+          "h": 30,
+          "anim": "boing",
+          "tag": {
+            "text": "EWW",
+            "pos": "t",
+            "size": 3.2
+          }
+        }
+      ],
+      "effects": [
+        {
+          "type": "burst",
+          "sticker": "3d:fly",
+          "x": 52,
+          "y": 68,
+          "at": 35.2,
+          "count": 7,
+          "size": 3.4,
+          "dist": 16,
+          "sfx": "boing"
+        }
+      ]
+    },
+    {
+      "id": "step4",
+      "start": 35.66,
+      "end": 39.38,
+      "enter": "whip-left",
+      "enterSfx": "swish",
+      "box": {
+        "x": 34,
+        "y": 16,
+        "w": 58
+      },
+      "floaters": [
+        {
+          "text": "STEP",
+          "style": "label-caps",
+          "size": 5.5,
+          "x": 17,
+          "y": 26,
+          "at": 35.66,
+          "anim": "pop"
+        },
+        {
+          "text": "4",
+          "style": "crisis",
+          "color": "mint",
+          "size": 32,
+          "x": 17,
+          "y": 52,
+          "at": 35.98,
+          "anim": "slam",
+          "fx": "shadow",
+          "sfx": "impact-bass-1"
+        }
+      ],
+      "rows": [
+        {
+          "gap": 1.2,
+          "items": [
+            {
+              "text": "APPLY YOUR",
+              "style": "label-caps",
+              "size": 6,
+              "at": [
+                36.46,
+                36.86
+              ]
+            },
+            {
+              "text": "IDENTITY",
+              "style": "bodoni",
+              "color": "mint",
+              "size": 9,
+              "at": 37.02,
+              "anim": "pop"
+            }
+          ]
+        },
+        {
+          "mt": 1.0,
+          "gap": 1.2,
+          "items": [
+            {
+              "text": "To Your",
+              "style": "airy",
+              "size": 5.5,
+              "at": [
+                37.5,
+                37.66
+              ]
+            },
+            {
+              "id": "pack",
+              "text": "PACKAGING",
+              "style": "stencil",
+              "size": 7.5,
+              "box": "#D9A86C",
+              "radius": 0.06,
+              "at": 37.82,
+              "anim": "stamp",
+              "sfx": "thud"
+            }
+          ]
+        },
+        {
+          "mt": 1.0,
+          "gap": 1.2,
+          "items": [
+            {
+              "text": "&",
+              "style": "editorial-italic",
+              "size": 7,
+              "at": 38.4
+            },
+            {
+              "id": "social",
+              "text": "SOCIAL MEDIA",
+              "style": "tech",
+              "size": 8,
+              "at": 38.62,
+              "anim": "pop-letters",
+              "colors": [
+                "#833AB4",
+                "#C13584",
+                "#E1306C",
+                "#FD1D1D",
+                "#F77737",
+                "#FCAF45"
+              ]
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "package",
+          "at": 37.9,
+          "anchor": {
+            "to": "pack",
+            "pos": "r",
+            "dx": 5
+          },
+          "h": 11
+        },
+        {
+          "name": "3d:mobile-phone",
+          "at": 39.0,
+          "anchor": {
+            "to": "social",
+            "pos": "r",
+            "dx": 5
+          },
+          "h": 11,
+          "anim": "boing",
+          "sfx": "notification"
+        }
+      ]
+    },
+    {
+      "id": "together",
+      "start": 39.42,
+      "end": 41.48,
+      "enter": "zoom",
+      "box": {
+        "x": 12,
+        "y": 24,
+        "w": 72
+      },
+      "camera": [
+        {
+          "type": "shake",
+          "at": 40.96,
+          "dur": 0.28,
+          "amp": 1.4
+        }
+      ],
+      "rows": [
+        {
+          "align": "center",
+          "items": [
+            {
+              "text": "To See How",
+              "style": "editorial-italic",
+              "size": 7,
+              "at": [
+                39.42,
+                39.58,
+                40.06
+              ]
+            }
+          ]
+        },
+        {
+          "align": "center",
+          "mt": 0.2,
+          "items": [
+            {
+              "text": "EVERYTHING",
+              "style": "wide",
+              "size": 9,
+              "at": 40.3,
+              "anim": "pop-letters"
+            }
+          ]
+        },
+        {
+          "align": "center",
+          "mt": 0.6,
+          "gap": 1.6,
+          "items": [
+            {
+              "text": "LOOKS",
+              "style": "poster",
+              "size": 12,
+              "at": 40.62,
+              "anim": "slam-left",
+              "sfx": "swish"
+            },
+            {
+              "id": "tog",
+              "text": "TOGETHER",
+              "style": "comic",
+              "color": "mint",
+              "size": 13,
+              "at": 40.86,
+              "anim": "slam-right",
+              "fx": "extrude",
+              "sfx": "impact-bass-1"
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "3d:jigsaw-puzzle-piece",
+          "at": 40.9,
+          "x": 8,
+          "y": 64,
+          "h": 15,
+          "anim": "slide-left",
+          "sfx": "click"
+        },
+        {
+          "name": "3d:jigsaw-puzzle-piece",
+          "at": 40.9,
+          "x": 80,
+          "y": 64,
+          "h": 15,
+          "anim": "slide-right",
+          "flip": true
+        },
+        {
+          "name": "ok-hand",
+          "at": 41.1,
+          "x": 80,
+          "y": 10,
+          "h": 14
+        }
+      ]
+    },
+    {
+      "id": "teaser",
+      "start": 41.52,
+      "end": 42.96,
+      "enter": "whip-up",
+      "enterSfx": "swish",
+      "exit": "zoom",
+      "bg": {
+        "pattern": "burst",
+        "color": "bg",
+        "color2": "#FFE2D2",
+        "spin": 0.08
+      },
+      "box": {
+        "x": 12,
+        "y": 30,
+        "w": 76
+      },
+      "camera": [
+        {
+          "type": "punch",
+          "at": 42.5,
+          "scale": 1.06
+        }
+      ],
+      "rows": [
+        {
+          "align": "center",
+          "items": [
+            {
+              "text": "And Here's",
+              "style": "editorial-italic",
+              "size": 8,
+              "at": [
+                41.52,
+                41.68
+              ]
+            }
+          ]
+        },
+        {
+          "align": "center",
+          "mt": 0.4,
+          "fit": 1,
+          "items": [
+            {
+              "text": "WHAT WE CAME UP WITH",
+              "style": "cartoon",
+              "color": "#FF5A14",
+              "size": 11,
+              "at": [
+                41.9,
+                42.06,
+                42.22,
+                42.38,
+                42.54
+              ],
+              "fx": "extrude",
+              "fxColor": "ink"
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "eyes",
+          "at": 42.0,
+          "x": 44,
+          "y": 8,
+          "h": 15,
+          "anim": "boing"
+        },
+        {
+          "name": "point-down",
+          "at": 42.6,
+          "x": 46,
+          "y": 68,
+          "h": 13,
+          "sfx": "swish"
+        }
+      ]
+    },
+    {
+      "id": "reveal-logo",
+      "start": 42.980000000000004,
+      "end": 44.82,
+      "enter": "zoom",
+      "bg": {
+        "pattern": "burst",
+        "color": "bg",
+        "color2": "#FFE2D2",
+        "spin": 0.1
+      },
+      "camera": [
+        {
+          "type": "flash",
+          "at": 43.0,
+          "opacity": 0.8,
+          "dur": 0.18
+        },
+        {
+          "type": "shake",
+          "at": 43.04,
+          "dur": 0.3,
+          "amp": 1.4
+        }
+      ],
+      "floaters": [
+        {
+          "text": "THE LOGO",
+          "style": "label-caps",
+          "size": 4,
+          "x": 50,
+          "y": 8,
+          "at": 43.26,
+          "anim": "pop"
+        }
+      ],
+      "stickers": [
+        {
+          "name": "diy-logo",
+          "at": 43.02,
+          "x": 26.5,
+          "y": 15,
+          "h": 70,
+          "anim": "slam",
+          "wobble": 2,
+          "sfx": "impact-bass-1"
+        }
+      ],
+      "effects": [
+        {
+          "type": "burst",
+          "sticker": "3d:sparkles",
+          "x": 50,
+          "y": 50,
+          "at": 43.08,
+          "count": 12,
+          "size": 5,
+          "dist": 34,
+          "sfx": "sparkle"
+        },
+        {
+          "type": "burst",
+          "sticker": "3d:party-popper",
+          "x": 50,
+          "y": 50,
+          "at": 43.46,
+          "count": 6,
+          "size": 5,
+          "dist": 40
+        }
+      ]
+    },
+    {
+      "id": "reveal-colours",
+      "start": 44.86,
+      "end": 46.42,
+      "enter": "whip-left",
+      "enterSfx": "swish",
+      "floaters": [
+        {
+          "text": "THE COLOURS",
+          "style": "label-caps",
+          "size": 4,
+          "x": 50,
+          "y": 10,
+          "at": 44.88,
+          "anim": "pop"
+        }
+      ],
+      "stickers": [
+        {
+          "name": "swatch-orange",
+          "at": 44.96,
+          "x": 3.1,
+          "y": 28,
+          "h": 46,
+          "rot": -4,
+          "anim": "drop",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.5
+          }
+        },
+        {
+          "name": "swatch-cream",
+          "at": 45.08,
+          "x": 18.3,
+          "y": 28,
+          "h": 46,
+          "rot": 3,
+          "anim": "drop",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.5
+          }
+        },
+        {
+          "name": "swatch-mint",
+          "at": 45.2,
+          "x": 33.5,
+          "y": 28,
+          "h": 46,
+          "rot": -2,
+          "anim": "drop",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.5
+          }
+        },
+        {
+          "name": "swatch-yellow",
+          "at": 45.32,
+          "x": 48.699999999999996,
+          "y": 28,
+          "h": 46,
+          "rot": 4,
+          "anim": "drop",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.5
+          }
+        },
+        {
+          "name": "swatch-lilac",
+          "at": 45.44,
+          "x": 63.9,
+          "y": 28,
+          "h": 46,
+          "rot": -3,
+          "anim": "drop",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.5
+          }
+        },
+        {
+          "name": "swatch-ink",
+          "at": 45.56,
+          "x": 79.1,
+          "y": 28,
+          "h": 46,
+          "rot": 2,
+          "anim": "drop",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "reveal-fonts",
+      "start": 46.46,
+      "end": 47.92,
+      "enter": "whip-up",
+      "enterSfx": "swish",
+      "floaters": [
+        {
+          "text": "THE FONTS",
+          "style": "label-caps",
+          "size": 4,
+          "x": 50,
+          "y": 10,
+          "at": 46.480000000000004,
+          "anim": "pop"
+        },
+        {
+          "text": "Aa",
+          "style": "titan",
+          "color": "#FF5A14",
+          "size": 26,
+          "x": 28,
+          "y": 42,
+          "at": 46.56,
+          "anim": "slam",
+          "fx": "extrude",
+          "fxColor": "ink",
+          "sfx": "impact-bass-1"
+        },
+        {
+          "text": "Titan One",
+          "style": "titan",
+          "size": 5,
+          "x": 28,
+          "y": 66,
+          "at": 46.71,
+          "anim": "pop"
+        },
+        {
+          "text": "headlines",
+          "style": "airy",
+          "size": 3.2,
+          "x": 28,
+          "y": 74,
+          "at": 46.76,
+          "anim": "pop"
+        },
+        {
+          "text": "Aa",
+          "style": "chewy",
+          "size": 26,
+          "x": 72,
+          "y": 42,
+          "at": 46.96,
+          "anim": "slam",
+          "sfx": "impact-bass-2"
+        },
+        {
+          "text": "Chewy",
+          "style": "chewy",
+          "size": 5.5,
+          "x": 72,
+          "y": 66,
+          "at": 47.11,
+          "anim": "pop"
+        },
+        {
+          "text": "the fun bits",
+          "style": "airy",
+          "size": 3.2,
+          "x": 72,
+          "y": 74,
+          "at": 47.160000000000004,
+          "anim": "pop"
+        },
+        {
+          "text": "+ Fredoka for everything else",
+          "style": "bubbly",
+          "size": 3.6,
+          "x": 50,
+          "y": 86,
+          "at": 47.36,
+          "anim": "pop",
+          "color": "grey"
+        }
+      ],
+      "draws": [
+        {
+          "shape": "underline",
+          "x": 60,
+          "y": 54,
+          "w": 24,
+          "h": 4,
+          "weight": 0.8,
+          "color": "#3FE8B0",
+          "at": 47.11,
+          "dur": 0.25
+        }
+      ]
+    },
+    {
+      "id": "reveal-merch",
+      "start": 47.96,
+      "end": 49.72,
+      "enter": "zoom",
+      "enterSfx": "swish",
+      "bg": {
+        "pattern": "dots",
+        "color": "bg",
+        "color2": "#FFE2D2"
+      },
+      "floaters": [
+        {
+          "text": "THE VIBE",
+          "style": "label-caps",
+          "size": 4,
+          "x": 50,
+          "y": 7,
+          "at": 47.980000000000004,
+          "anim": "pop"
+        }
+      ],
+      "stickers": [
+        {
+          "name": "mock-box",
+          "at": 48.01,
+          "x": 2,
+          "y": 30,
+          "h": 54,
+          "anim": "slide-right",
+          "sfx": "thud"
+        },
+        {
+          "name": "mock-phone",
+          "at": 48.21,
+          "x": 69,
+          "y": 9,
+          "h": 86,
+          "anim": "slide-up",
+          "sfx": "notification"
+        },
+        {
+          "name": "yar-mode-on",
+          "at": 48.51,
+          "x": 41,
+          "y": 12,
+          "h": 28,
+          "rot": -6,
+          "anim": "boing",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.5
+          }
+        },
+        {
+          "name": "built-bought",
+          "at": 48.71,
+          "x": 47,
+          "y": 42,
+          "h": 22,
+          "rot": 5,
+          "anim": "boing"
+        },
+        {
+          "name": "certified-diyd",
+          "at": 48.910000000000004,
+          "x": 37,
+          "y": 64,
+          "h": 30,
+          "rot": -4,
+          "anim": "stamp",
+          "sfx": "impact-bass-2"
+        },
+        {
+          "name": "diy-maxxing",
+          "at": 49.11,
+          "x": 2,
+          "y": 8,
+          "h": 22,
+          "rot": -5,
+          "anim": "boing",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "want",
+      "start": 49.78,
+      "end": 52.2,
+      "enter": "whip-left",
+      "enterSfx": "swish",
+      "box": {
+        "x": 12,
+        "y": 24,
+        "w": 64
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "Want The",
+              "style": "editorial-italic",
+              "size": 8,
+              "at": [
+                49.78,
+                50.08
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.4,
+          "items": [
+            {
+              "text": "EXACT PROMPTS",
+              "style": "tech",
+              "size": 8,
+              "at": 50.16,
+              "anim": "type",
+              "dur": 0.5,
+              "sfx": "typing"
+            }
+          ]
+        },
+        {
+          "mt": 1.0,
+          "gap": 1.2,
+          "items": [
+            {
+              "text": "& Complete",
+              "style": "label",
+              "size": 7,
+              "at": [
+                50.96,
+                51.12
+              ]
+            },
+            {
+              "id": "cl",
+              "text": "CHECKLIST?",
+              "style": "marker",
+              "color": "mint",
+              "size": 10,
+              "at": 51.52,
+              "anim": "pop"
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "robot",
+          "at": 50.2,
+          "x": 78,
+          "y": 16,
+          "h": 16,
+          "anim": "boing"
+        },
+        {
+          "name": "3d:clipboard",
+          "at": 51.6,
+          "anchor": {
+            "to": "cl",
+            "pos": "r",
+            "dx": 6
+          },
+          "h": 12,
+          "wobble": 4
+        }
+      ],
+      "draws": [
+        {
+          "shape": "check",
+          "x": 80,
+          "y": 58,
+          "w": 5,
+          "h": 6,
+          "weight": 0.8,
+          "color": "mint",
+          "at": 51.62,
+          "dur": 0.15,
+          "sfx": "click"
+        },
+        {
+          "shape": "check",
+          "x": 86,
+          "y": 58,
+          "w": 5,
+          "h": 6,
+          "weight": 0.8,
+          "color": "mint",
+          "at": 51.75,
+          "dur": 0.15
+        },
+        {
+          "shape": "check",
+          "x": 92,
+          "y": 58,
+          "w": 5,
+          "h": 6,
+          "weight": 0.8,
+          "color": "mint",
+          "at": 51.88,
+          "dur": 0.15,
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": "comment",
+      "start": 52.24,
+      "end": 54.96,
+      "enter": "zoom",
+      "box": {
+        "x": 9,
+        "y": 24,
+        "w": 50
+      },
+      "camera": [
+        {
+          "type": "pulse",
+          "at": 52.66,
+          "scale": 1.05
+        }
+      ],
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "COMMENT",
+              "style": "poster",
+              "size": 12,
+              "at": 52.24
+            }
+          ]
+        },
+        {
+          "mt": -1,
+          "items": [
+            {
+              "text": "\"BRAND\"",
+              "style": "titan",
+              "color": "#FF5A14",
+              "size": 15,
+              "at": 52.64,
+              "anim": "slam",
+              "fx": "extrude",
+              "fxColor": "ink",
+              "sfx": "impact-bass-1"
+            }
+          ]
+        },
+        {
+          "mt": 0.8,
+          "items": [
+            {
+              "text": "And I'll Send You The",
+              "style": "airy",
+              "size": 5.5,
+              "at": [
+                53.12,
+                53.2,
+                53.44,
+                53.6,
+                53.76
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0,
+          "items": [
+            {
+              "id": "wf",
+              "text": "WHOLE WORKFLOW",
+              "style": "wide",
+              "size": 7.5,
+              "at": [
+                53.92,
+                54.24
+              ],
+              "anim": "pop-letters",
+              "sfx": "sparkle"
+            }
+          ]
+        }
+      ],
+      "cards": [
+        {
+          "kind": "comment",
+          "x": 60,
+          "y": 38,
+          "w": 33,
+          "size": 3.6,
+          "avatar": "3d:smiling-face-with-heart-shaped-eyes",
+          "user": "you",
+          "text": "BRAND",
+          "meta": "just now · Reply",
+          "at": 52.4,
+          "typeAt": 52.64,
+          "typeDur": 0.3,
+          "sfx": "notification"
+        }
+      ],
+      "stickers": [
+        {
+          "name": "love-letter",
+          "at": 54.3,
+          "anchor": {
+            "to": "wf",
+            "pos": "r",
+            "dx": 5
+          },
+          "h": 11,
+          "anim": "boing"
+        },
+        {
+          "name": "point-down",
+          "at": 52.3,
+          "x": 71,
+          "y": 12,
+          "h": 11
+        }
+      ]
+    },
+    {
+      "id": "follow",
+      "start": 54.980000000000004,
+      "end": 56.91,
+      "enter": "whip-up",
+      "enterSfx": "swish",
+      "box": {
+        "x": 15,
+        "y": 36,
+        "w": 70
+      },
+      "rows": [
+        {
+          "align": "center",
+          "items": [
+            {
+              "text": "See You Tomorrow",
+              "style": "editorial-italic",
+              "size": 7,
+              "at": 55.0
+            }
+          ]
+        },
+        {
+          "align": "center",
+          "mt": -0.3,
+          "items": [
+            {
+              "text": "FOLLOW",
+              "style": "titan",
+              "color": "#FF5A14",
+              "size": 16,
+              "at": 55.26,
+              "anim": "pop-letters",
+              "fx": [
+                "extrude",
+                "sticker"
+              ],
+              "fxColor": "ink",
+              "sfx": "pop"
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "yar-mode-on",
+          "at": 55.08,
+          "x": 5,
+          "y": 14,
+          "h": 30,
+          "rot": -8,
+          "anim": "boing"
+        },
+        {
+          "name": "wave",
+          "at": 55.410000000000004,
+          "x": 80,
+          "y": 22,
+          "h": 15
+        }
+      ]
+    }
+  ]
+}

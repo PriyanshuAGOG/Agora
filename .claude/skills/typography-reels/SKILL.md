@@ -21,6 +21,7 @@ You are the editor of a daily series. Every episode is a ≤ 45 s, 16:9 typograp
 4. `references/spec-format.md`: the JSON you will write (including the v2 section).
 5. `references/episode-breakdown-days-1-5.md`: scene-by-scene reference for "how would they do this?".
 6. `engine/stickers/README.md`: about 2,050 stickers in 4 libraries, plus naming and licences.
+7. `references/diy-brand.md`: the **DIY · Do It Yar** brand (palette, fonts, the `brand:` sticker kit) that the series is building. Use it whenever the product, packaging or socials appear (Day 9 onwards).
 
 HyperFrames itself is installed in `.agents/skills/` (`/hyperframes`, `/hyperframes-core`, `/hyperframes-cli`). The engine writes valid composition HTML; you mostly need the CLI commands below.
 
@@ -55,6 +56,7 @@ HyperFrames itself is installed in `.agents/skills/` (`/hyperframes`, `/hyperfra
    - **Leave breathing room:** text blocks ≤ ~70% of the width, ≥ 8% margins, at most 3–4 rows per scene; split long sentences into two scenes.
    - **Lists and steps** get a repeating system (Day 8: "STEP" + a giant numeral on the left, the action on the right) so viewers feel the progress.
    - End teasers with a curiosity gap (Day 8: the chosen name is censored █████).
+   - **Reveals need room.** When the VO says "here's what we came up with" and the user wants to show the result, open a gap in the VO right after that line: `ffmpeg -i vo.m4a -filter_complex "[0]atrim=0:T,asetpts=N/SR/TB[a];[0]atrim=start=T,asetpts=N/SR/TB[b];anullsrc=r=44100:cl=mono,atrim=0:GAP[s];[a][s][b]concat=n=3:v=0:a=1" vo-reveal.m4a`. Cut at a near-silent sample; Day 9 cut at 42.96 s and opened 6.8 s. Shift every later word time by GAP (Day 9's spec uses `S(t)`), and fill the gap with short THE LOGO / THE COLOURS / THE FONTS / THE VIBE scenes (or leave it blank if the user will drop footage in).
    - Show the plan to the user only if they asked to review plans; otherwise proceed.
 6. **Write `episodes/day-NN/reel.spec.json`.** Item `at` = the spoken word time (multi-word lines can take per-word arrays). Leave 0.04–0.1 s between scenes. Add a 1.5–2 s Follow outro after the last word (`meta.duration` = VO + outro).
 7. **Build, check, look:**
@@ -76,7 +78,7 @@ HyperFrames itself is installed in `.agents/skills/` (`/hyperframes`, `/hyperfra
 
 - **Units:** sizes/vertical = % of frame height; `x`/`w` = % of width; times = global seconds.
 - **`fit`** scales a row to a share of the block width (poster look); overflowing rows auto-shrink.
-- **Stickers:** `x/y/h`, or `anchor: {to: <item id>, pos}` to cover letters. Names resolve episode → mascots → animated → 3D → flat; force a source with `3d:` / `anim:` / `lib:` / `emoji:`.
+- **Stickers:** `x/y/h`, or `anchor: {to: <item id>, pos}` to cover letters. Names resolve episode → brand kit → mascots → animated → 3D → flat; force a source with `brand:` / `3d:` / `anim:` / `lib:` / `emoji:`.
 - **Letter animations** (`bounce`, `jitter`, `fix`, `wave`, `scatter`, …) must finish before the scene ends. With `fix`, set `fixAt` ≈ the spoken word, and keep total stagger under ~0.3 s.
 - **Colour fonts** (`color-3d` Nabla, `honk`, `spice`) render flat/black in headless renders; prefer `fx` effects on normal fonts.
 - **Contrast:** mint `#0CD2BA` on white measures 1.87:1, below WCAG's 3:1, so `check` runs with `--no-contrast` by design (`#09A592` is the nearest passing mint).
@@ -85,6 +87,7 @@ HyperFrames itself is installed in `.agents/skills/` (`/hyperframes`, `/hyperfra
 
 ## Examples
 
+- `episodes/day-09/reel.spec.json`: the brand episode (57 s, NO-VIBE nametag hook, balloon-9 title, 4-step system, a 2×2 deliverables grid, a SH💩T rebus, a **6.8 s brand reveal opened in the VO**: logo slam, paint-chip palette, font specimens, box + Instagram mockups + sticker pack).
 - `episodes/day-08/reel.spec.json`: **the best reference** (53 s, a dating metaphor through the whole script, a dating-card hook stamped TAKEN, a two-rings title, the 5-step STEP+numeral system, typing ChatGPT/search/comment cards, a count-up, Google colours, a censored-name cliffhanger, 52 SFX).
 - `episodes/day-07/reel.spec.json`: notification hook, drawn 7 title with a climbing tracer, 15 animated stickers.
 - `examples/day-01.json`: a faithful recreation of Day 1 (the v1 baseline; needs `examples/audio/day-01.m4a`).

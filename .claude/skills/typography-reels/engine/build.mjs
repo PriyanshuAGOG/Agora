@@ -105,6 +105,7 @@ const lottieData = {}; // name -> animation JSON (embedded so render never fetch
 const STICKER_ROOTS = () => [
   path.join(specDir, "stickers"),
   specDir,
+  path.join(ENGINE, "stickers", "brand"), // the DIY / Do It Yar brand kit (logo, stickers, swatches, mockups)
   path.join(ENGINE, "stickers", "library"), // series mascots
   path.join(ENGINE, "stickers", "animated"), // Noto animated emoji (Lottie)
   path.join(ENGINE, "stickers", "3d"), // Fluent 3D emoji
@@ -114,7 +115,7 @@ function resolveSticker(name) {
   if (assetDirs.stickers.has(name)) return assetDirs.stickers.get(name);
   const exts = ["", ".png", ".webp", ".gif", ".svg", ".jpg", ".json"];
   // optional source prefix: "3d:fire", "anim:fire", "emoji:fire", "lib:monkey-yay"
-  const pre = { "3d": "3d", anim: "animated", emoji: "emoji", lib: "library" };
+  const pre = { "3d": "3d", anim: "animated", emoji: "emoji", lib: "library", brand: "brand" };
   const [p0, p1] = name.includes(":") ? name.split(":") : [null, name];
   const roots = p0 ? [path.join(ENGINE, "stickers", pre[p0] || p0)] : STICKER_ROOTS();
   for (const r of roots)

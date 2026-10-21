@@ -6,3 +6,4 @@ episodes/**/*.mov
 .claude/skills/typography-reels/examples/audio/
 episodes/*/work-*/
 episodes/*/.*hf-transaction*/
+episodes/*/render.log

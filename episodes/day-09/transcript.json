@@ -1,0 +1,707 @@
+[
+{
+"text": "Got",
+"start": 0.16,
+"end": 0.32
+},
+{
+"text": "a",
+"start": 0.32,
+"end": 0.48
+},
+{
+"text": "business",
+"start": 0.48,
+"end": 0.8
+},
+{
+"text": "name",
+"start": 0.8,
+"end": 1.2
+},
+{
+"text": "but",
+"start": 1.2,
+"end": 1.44
+},
+{
+"text": "no",
+"start": 1.44,
+"end": 1.68
+},
+{
+"text": "brand",
+"start": 1.68,
+"end": 2.08
+},
+{
+"text": "identity?",
+"start": 2.08,
+"end": 2.8
+},
+{
+"text": "Let's",
+"start": 2.8,
+"end": 3.04
+},
+{
+"text": "fix",
+"start": 3.04,
+"end": 3.44
+},
+{
+"text": "that.",
+"start": 3.44,
+"end": 4.0
+},
+{
+"text": "This",
+"start": 4.0,
+"end": 4.16
+},
+{
+"text": "is",
+"start": 4.16,
+"end": 4.32
+},
+{
+"text": "day",
+"start": 4.32,
+"end": 4.56
+},
+{
+"text": "nine",
+"start": 4.56,
+"end": 5.04
+},
+{
+"text": "of",
+"start": 5.04,
+"end": 5.28
+},
+{
+"text": "going",
+"start": 5.28,
+"end": 5.52
+},
+{
+"text": "from",
+"start": 5.52,
+"end": 5.76
+},
+{
+"text": "zero",
+"start": 5.76,
+"end": 6.24
+},
+{
+"text": "to",
+"start": 6.24,
+"end": 6.48
+},
+{
+"text": "something.",
+"start": 6.48,
+"end": 7.2
+},
+{
+"text": "Yesterday,",
+"start": 7.2,
+"end": 7.84
+},
+{
+"text": "we",
+"start": 7.84,
+"end": 8.0
+},
+{
+"text": "named",
+"start": 8.0,
+"end": 8.32
+},
+{
+"text": "our",
+"start": 8.32,
+"end": 8.48
+},
+{
+"text": "business",
+"start": 8.48,
+"end": 9.04
+},
+{
+"text": "DIY.",
+"start": 9.04,
+"end": 10.16
+},
+{
+"text": "Do",
+"start": 10.16,
+"end": 10.32
+},
+{
+"text": "it,",
+"start": 10.32,
+"end": 10.56
+},
+{
+"text": "yar.",
+"start": 10.56,
+"end": 11.28
+},
+{
+"text": "Today,",
+"start": 11.28,
+"end": 11.68
+},
+{
+"text": "we're",
+"start": 11.68,
+"end": 11.92
+},
+{
+"text": "turning",
+"start": 11.92,
+"end": 12.32
+},
+{
+"text": "that",
+"start": 12.32,
+"end": 12.48
+},
+{
+"text": "name",
+"start": 12.48,
+"end": 12.8
+},
+{
+"text": "into",
+"start": 12.8,
+"end": 13.04
+},
+{
+"text": "an",
+"start": 13.04,
+"end": 13.28
+},
+{
+"text": "actual",
+"start": 13.28,
+"end": 13.68
+},
+{
+"text": "brand.",
+"start": 13.68,
+"end": 14.48
+},
+{
+"text": "Step",
+"start": 14.48,
+"end": 14.8
+},
+{
+"text": "1.",
+"start": 14.8,
+"end": 15.2
+},
+{
+"text": "Open",
+"start": 15.2,
+"end": 15.52
+},
+{
+"text": "Chat",
+"start": 15.52,
+"end": 15.84
+},
+{
+"text": "GPT",
+"start": 15.84,
+"end": 16.4
+},
+{
+"text": "and",
+"start": 16.4,
+"end": 16.64
+},
+{
+"text": "explain",
+"start": 16.64,
+"end": 16.96
+},
+{
+"text": "your",
+"start": 16.96,
+"end": 17.12
+},
+{
+"text": "business,",
+"start": 17.12,
+"end": 17.76
+},
+{
+"text": "target",
+"start": 17.76,
+"end": 18.16
+},
+{
+"text": "audience,",
+"start": 18.16,
+"end": 18.8
+},
+{
+"text": "products,",
+"start": 18.8,
+"end": 19.44
+},
+{
+"text": "and",
+"start": 19.44,
+"end": 19.68
+},
+{
+"text": "the",
+"start": 19.68,
+"end": 19.84
+},
+{
+"text": "vibe",
+"start": 19.84,
+"end": 20.24
+},
+{
+"text": "you",
+"start": 20.24,
+"end": 20.4
+},
+{
+"text": "want",
+"start": 20.4,
+"end": 20.56
+},
+{
+"text": "your",
+"start": 20.56,
+"end": 20.72
+},
+{
+"text": "brand",
+"start": 20.72,
+"end": 21.04
+},
+{
+"text": "to",
+"start": 21.04,
+"end": 21.12
+},
+{
+"text": "have.",
+"start": 21.12,
+"end": 21.6
+},
+{
+"text": "Step",
+"start": 21.6,
+"end": 21.92
+},
+{
+"text": "2.",
+"start": 21.92,
+"end": 22.4
+},
+{
+"text": "Ask",
+"start": 22.4,
+"end": 22.64
+},
+{
+"text": "it",
+"start": 22.64,
+"end": 22.8
+},
+{
+"text": "to",
+"start": 22.8,
+"end": 22.96
+},
+{
+"text": "build",
+"start": 22.96,
+"end": 23.2
+},
+{
+"text": "your",
+"start": 23.2,
+"end": 23.36
+},
+{
+"text": "brand",
+"start": 23.36,
+"end": 23.76
+},
+{
+"text": "identity,",
+"start": 23.76,
+"end": 24.48
+},
+{
+"text": "including",
+"start": 24.48,
+"end": 24.8
+},
+{
+"text": "logo",
+"start": 24.8,
+"end": 25.28
+},
+{
+"text": "concepts,",
+"start": 25.28,
+"end": 25.84
+},
+{
+"text": "color",
+"start": 25.84,
+"end": 26.24
+},
+{
+"text": "palettes,",
+"start": 26.24,
+"end": 26.8
+},
+{
+"text": "fonts,",
+"start": 26.8,
+"end": 27.36
+},
+{
+"text": "and",
+"start": 27.36,
+"end": 27.52
+},
+{
+"text": "visual",
+"start": 27.52,
+"end": 27.92
+},
+{
+"text": "styles.",
+"start": 27.92,
+"end": 28.56
+},
+{
+"text": "Step",
+"start": 28.56,
+"end": 28.88
+},
+{
+"text": "3.",
+"start": 28.88,
+"end": 29.36
+},
+{
+"text": "Compare",
+"start": 29.36,
+"end": 29.76
+},
+{
+"text": "different",
+"start": 29.76,
+"end": 30.0
+},
+{
+"text": "options,",
+"start": 30.0,
+"end": 30.72
+},
+{
+"text": "pick",
+"start": 30.72,
+"end": 30.96
+},
+{
+"text": "your",
+"start": 30.96,
+"end": 31.12
+},
+{
+"text": "direction",
+"start": 31.12,
+"end": 31.68
+},
+{
+"text": "and",
+"start": 31.68,
+"end": 31.84
+},
+{
+"text": "refine",
+"start": 31.84,
+"end": 32.4
+},
+{
+"text": "it.",
+"start": 32.4,
+"end": 32.88
+},
+{
+"text": "Because",
+"start": 32.88,
+"end": 33.12
+},
+{
+"text": "we",
+"start": 33.12,
+"end": 33.28
+},
+{
+"text": "don't",
+"start": 33.28,
+"end": 33.52
+},
+{
+"text": "want",
+"start": 33.52,
+"end": 33.68
+},
+{
+"text": "our",
+"start": 33.68,
+"end": 33.76
+},
+{
+"text": "brand",
+"start": 33.76,
+"end": 34.08
+},
+{
+"text": "to",
+"start": 34.08,
+"end": 34.16
+},
+{
+"text": "look",
+"start": 34.16,
+"end": 34.32
+},
+{
+"text": "like",
+"start": 34.32,
+"end": 34.48
+},
+{
+"text": "a",
+"start": 34.48,
+"end": 34.64
+},
+{
+"text": "sloppy",
+"start": 34.64,
+"end": 35.12
+},
+{
+"text": "shit.",
+"start": 35.12,
+"end": 35.68
+},
+{
+"text": "Step",
+"start": 35.68,
+"end": 36.0
+},
+{
+"text": "4.",
+"start": 36.0,
+"end": 36.48
+},
+{
+"text": "Apply",
+"start": 36.48,
+"end": 36.88
+},
+{
+"text": "your",
+"start": 36.88,
+"end": 37.04
+},
+{
+"text": "identity",
+"start": 37.04,
+"end": 37.52
+},
+{
+"text": "to",
+"start": 37.52,
+"end": 37.68
+},
+{
+"text": "your",
+"start": 37.68,
+"end": 37.84
+},
+{
+"text": "packaging",
+"start": 37.84,
+"end": 38.4
+},
+{
+"text": "and",
+"start": 38.4,
+"end": 38.64
+},
+{
+"text": "social",
+"start": 38.64,
+"end": 38.96
+},
+{
+"text": "media",
+"start": 38.96,
+"end": 39.44
+},
+{
+"text": "to",
+"start": 39.44,
+"end": 39.6
+},
+{
+"text": "see",
+"start": 39.6,
+"end": 40.08
+},
+{
+"text": "how",
+"start": 40.08,
+"end": 40.32
+},
+{
+"text": "everything",
+"start": 40.32,
+"end": 40.64
+},
+{
+"text": "looks",
+"start": 40.64,
+"end": 40.88
+},
+{
+"text": "together.",
+"start": 40.88,
+"end": 41.52
+},
+{
+"text": "And",
+"start": 41.52,
+"end": 41.68
+},
+{
+"text": "here's",
+"start": 41.68,
+"end": 41.92
+},
+{
+"text": "what",
+"start": 41.92,
+"end": 42.08
+},
+{
+"text": "we",
+"start": 42.08,
+"end": 42.24
+},
+{
+"text": "came",
+"start": 42.24,
+"end": 42.4
+},
+{
+"text": "up",
+"start": 42.4,
+"end": 42.56
+},
+{
+"text": "with.",
+"start": 42.56,
+"end": 42.96
+},
+{
+"text": "Want",
+"start": 42.96,
+"end": 43.28
+},
+{
+"text": "the",
+"start": 43.28,
+"end": 43.36
+},
+{
+"text": "exact",
+"start": 43.36,
+"end": 43.76
+},
+{
+"text": "prompts",
+"start": 43.76,
+"end": 44.16
+},
+{
+"text": "and",
+"start": 44.16,
+"end": 44.32
+},
+{
+"text": "complete",
+"start": 44.32,
+"end": 44.72
+},
+{
+"text": "checklist?",
+"start": 44.72,
+"end": 45.44
+},
+{
+"text": "Comment",
+"start": 45.44,
+"end": 45.84
+},
+{
+"text": "brand",
+"start": 45.84,
+"end": 46.32
+},
+{
+"text": "and",
+"start": 46.32,
+"end": 46.4
+},
+{
+"text": "I'll",
+"start": 46.4,
+"end": 46.64
+},
+{
+"text": "send",
+"start": 46.64,
+"end": 46.8
+},
+{
+"text": "you",
+"start": 46.8,
+"end": 46.96
+},
+{
+"text": "the",
+"start": 46.96,
+"end": 47.12
+},
+{
+"text": "whole",
+"start": 47.12,
+"end": 47.44
+},
+{
+"text": "workflow.",
+"start": 47.44,
+"end": 48.16
+}
+]

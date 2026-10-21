@@ -161,6 +161,7 @@ export const STYLES = {
   gothic: { f: "League Gothic", w: 400, up: true, lh: 0.92 }, // condensed caps alt to poster
   block: { f: "Anton", w: 400, lh: 0.9 }, // big numerals "3", "4"
   chunky: { f: "Titan One", w: 400, up: true, ls: 0.12, lh: 1.0 }, // "COMPLETE DIY KIT"
+  titan: { f: "Titan One", w: 400, lh: 1.0 }, // DIY brand headline face (Day 9)
   hand: { f: "Caveat", w: 700, lh: 1.0 }, // "Okay"
   script: { f: "Kaushan Script", w: 400, lh: 1.1 }, // "PHOLLOW"
   pixel: { f: "Pixelify Sans", w: 700, lh: 0.9 }, // pixel numeral "2"

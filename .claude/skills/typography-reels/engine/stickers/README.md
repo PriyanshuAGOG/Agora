@@ -43,3 +43,7 @@ These are soft-edged and limited to on-screen resolution. Replace them with the 
 - Name in kebab-case after **emotion + subject** (`monkey-celebrate-confetti`).
 - Series-wide stickers go in `library/`; one-offs go in the episode's `stickers/` folder.
 - More animated emoji: `https://fonts.gstatic.com/s/e/notoemoji/latest/<codepoint>/lottie.json` (e.g. `1f602`). More 3D: `npm i @lobehub/fluent-emoji-3d`.
+
+## brand/ (DIY · Do It Yar kit, Day 9+)
+
+The logo, brand stickers, palette swatch cards and box/phone mockups of the brand the series is building, as HTML/CSS recreations of the creator's artwork (`brand/src/brand.html`, rendered by `brand/src/render.mjs`). It resolves before the mascot library; force it with `brand:`. Details: `references/diy-brand.md`. The artwork belongs to the creator, and the open fonts used to recreate it are OFL.

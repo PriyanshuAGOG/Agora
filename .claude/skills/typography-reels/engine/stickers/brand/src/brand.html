@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<!-- DIY / Do It Yar brand assets for Day 9, recreated from the creator's logo + sticker images.
+     render.mjs screenshots every #asset-* element to ../stickers/<name>.png (transparent). -->
+<style>
+  @font-face { font-family: "Titan One"; src: url("../../../fonts/titan-one-latin-400-normal.woff2"); }
+  @font-face { font-family: "Chewy"; src: url("../../../fonts/chewy-latin-400-normal.woff2"); }
+  @font-face { font-family: "Luckiest Guy"; src: url("../../../fonts/luckiest-guy-latin-400-normal.woff2"); }
+  @font-face { font-family: "Fredoka"; src: url("../../../fonts/fredoka-latin-700-normal.woff2"); font-weight: 700; }
+  :root {
+    --orange: #ff5a14; --orange-hi: #ff8a4c; --orange-deep: #c93a0b;
+    --cream: #fff7e8; --cream-deep: #e6dccb; --mint: #3fe8b0; --mint-deep: #1fbf8c;
+    --yellow: #ffc312; --lilac: #b7a1f2; --ink: #141414;
+  }
+  html, body { margin: 0; background: transparent; }
+  body { padding: 160px; display: flex; flex-direction: column; gap: 400px; align-items: flex-start; }
+  .asset { position: relative; display: inline-flex; flex-direction: column; align-items: center; padding: 40px;
+    filter: drop-shadow(9px 0 0 #fff) drop-shadow(-9px 0 0 #fff) drop-shadow(0 9px 0 #fff) drop-shadow(0 -9px 0 #fff)
+            drop-shadow(6px 6px 0 #fff) drop-shadow(-6px -6px 0 #fff) drop-shadow(0 0 1.2px #9a9a9a) drop-shadow(0 8px 10px rgba(0,0,0,.18)); }
+  .row { display: flex; align-items: flex-end; justify-content: center; }
+  /* bubble letters: ink outline + deep extrude + glossy fill + shine stripe */
+  .bub { position: relative; display: inline-block; font-family: "Titan One"; line-height: 1; white-space: pre; }
+  .bub > span { position: absolute; left: 0; top: 0; }
+  .bub .ink { position: relative; color: var(--ink); -webkit-text-stroke: var(--sw, 0.15em) var(--ink); text-shadow: 0.05em 0.06em 0 var(--ink); }
+  .bub .deep { color: var(--deep); transform: translate(0.025em, 0.035em); }
+  .bub .fill { background: linear-gradient(168deg, var(--hi) 0%, var(--c) 38%, var(--c) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; transform: translate(-0.012em, -0.014em); }
+  .bub .shine { background: linear-gradient(160deg, transparent 0 16%, rgba(255,255,255,.62) 16% 21%, transparent 21% 100%); -webkit-background-clip: text; background-clip: text; color: transparent; transform: translate(-0.012em, -0.014em); }
+  .o { --c: var(--orange); --hi: var(--orange-hi); --deep: var(--orange-deep); }
+  .c { --c: var(--cream); --hi: #fff; --deep: var(--cream-deep); }
+  .k { --sw: 0.07em; --c: #1d1d1d; --hi: #4a4a4a; --deep: #000; }
+  .m { --c: var(--mint); --hi: #8ff5d2; --deep: var(--mint-deep); }
+  .marker { font-family: "Chewy"; }
+  .ichar { display: inline-block; vertical-align: bottom; }
+  .bar { width: 76%; height: 0.55em; border-radius: 1em; background: linear-gradient(180deg, #7ff3cc, var(--mint) 45%, var(--mint-deep)); border: 0.12em solid var(--ink); }
+  .spark { position: absolute; }
+  /* mockups */
+  .scene3d { perspective: 1800px; padding: 80px 120px 120px 80px; }
+  .box { position: relative; width: 460px; height: 330px; transform-style: preserve-3d; transform: rotateX(-16deg) rotateY(-34deg); }
+  .face { position: absolute; box-sizing: border-box; border: 5px solid var(--ink); border-radius: 10px; }
+  .front { width: 460px; height: 330px; transform: translateZ(110px); background: linear-gradient(160deg, #ff7a3c, var(--orange) 45%, #f04c0b);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; }
+  .right { width: 220px; height: 330px; left: 0; transform: rotateY(90deg) translateZ(350px); background: linear-gradient(160deg, #d9470e, #b8370a);
+    display: flex; align-items: center; justify-content: center; }
+  .top { width: 460px; height: 220px; top: 0; transform: rotateX(90deg) translateZ(110px); background: var(--cream); }
+  .top .tape { position: absolute; left: 0; right: 0; top: 84px; height: 46px; background: var(--mint); border-top: 4px solid var(--ink); border-bottom: 4px solid var(--ink); }
+  .label { background: var(--cream); border: 5px solid var(--ink); border-radius: 18px; padding: 10px 26px 6px; transform: rotate(-3deg); box-shadow: 6px 6px 0 var(--ink); }
+  .phone { width: 470px; height: 940px; border-radius: 64px; background: var(--ink); padding: 18px; box-sizing: border-box; box-shadow: 0 30px 50px rgba(0,0,0,.25); transform: rotate(4deg); }
+  .screen { width: 100%; height: 100%; border-radius: 48px; background: #fff; overflow: hidden; font-family: "Fredoka"; font-weight: 700; color: var(--ink); position: relative; }
+  .notch { position: absolute; left: 50%; top: 14px; width: 120px; height: 30px; margin-left: -60px; background: var(--ink); border-radius: 20px; }
+  .ig-top { padding: 64px 26px 0; font-size: 30px; display: flex; justify-content: space-between; align-items: center; }
+  .ig-head { display: flex; align-items: center; gap: 22px; padding: 22px 26px 8px; }
+  .avatar { width: 128px; height: 128px; border-radius: 50%; border: 5px solid var(--orange); background: var(--cream); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .stats { display: flex; gap: 22px; text-align: center; font-size: 25px; line-height: 1.1; }
+  .stats small { display: block; font-size: 17px; color: #555; }
+  .bio { padding: 6px 26px; font-size: 21px; line-height: 1.3; }
+  .bio b { font-size: 24px; }
+  .btn { margin: 10px 26px 16px; height: 50px; border-radius: 14px; background: var(--orange); color: #fff; font-size: 24px; display: flex; align-items: center; justify-content: center; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .tile { aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; text-align: center; font-family: "Titan One"; font-size: 30px; line-height: 0.95; overflow: hidden; }
+</style>
+</head>
+<body>
+<script>
+const NS = "http://www.w3.org/2000/svg";
+// layered bubble letters; cls = o (orange) | c (cream) | k (ink) | m (mint)
+function bub(text, cls, size, extra = "") {
+  const t = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  return `<span class="bub ${cls}" style="font-size:${size}px;${extra}"><span class="ink">${t}</span><span class="deep">${t}</span><span class="fill">${t}</span><span class="shine">${t}</span></span>`;
+}
+// the winking cream "I" mascot
+function ichar(h, rot = -4, extra = "") {
+  return `<svg class="ichar" viewBox="-12 -12 124 244" style="height:${h}px;transform:rotate(${rot}deg);${extra}">
+    <rect x="6" y="8" width="88" height="208" rx="18" fill="#141414" transform="translate(6 8)"/>
+    <rect x="0" y="0" width="88" height="210" rx="18" fill="#fff7e8" stroke="#141414" stroke-width="9"/>
+    <path d="M74 14 Q82 16 82 30 L82 190 Q82 202 70 204" fill="none" stroke="#e6dccb" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="30" cy="80" r="9" fill="#141414"/><circle cx="27" cy="77" r="3" fill="#fff"/>
+    <path d="M50 70 L64 79 L50 86" fill="none" stroke="#141414" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24 104 Q44 124 66 100" fill="none" stroke="#141414" stroke-width="7" stroke-linecap="round"/>
+  </svg>`;
+}
+// yellow "pop" spark lines (three rays) or black ink dashes
+function rays(color, pos, s, rot) {
+  return `<svg class="spark" viewBox="0 0 100 100" style="${pos};width:${s}px;height:${s}px;transform:rotate(${rot}deg)">
+    <g stroke="#141414" stroke-width="16" stroke-linecap="round"><line x1="20" y1="70" x2="12" y2="18"/><line x1="44" y1="78" x2="78" y2="38"/><line x1="52" y1="94" x2="92" y2="86"/></g>
+    <g stroke="${color}" stroke-width="8" stroke-linecap="round"><line x1="20" y1="70" x2="12" y2="18"/><line x1="44" y1="78" x2="78" y2="38"/><line x1="52" y1="94" x2="92" y2="86"/></g></svg>`;
+}
+function twinkle(color, pos, s) {
+  return `<svg class="spark" viewBox="0 0 100 100" style="${pos};width:${s}px;height:${s}px"><path d="M50 4 Q56 44 96 50 Q56 56 50 96 Q44 56 4 50 Q44 44 50 4Z" fill="${color}" stroke="#141414" stroke-width="5"/></svg>`;
+}
+function star(pos, s, rot) {
+  return `<svg class="spark" viewBox="0 0 100 100" style="${pos};width:${s}px;height:${s}px;transform:rotate(${rot}deg)"><path d="M50 6 L62 36 L95 38 L69 59 L78 92 L50 73 L22 92 L31 59 L5 38 L38 36Z" fill="#ffc312" stroke="#141414" stroke-width="6" stroke-linejoin="round"/></svg>`;
+}
+const diyRow = (s) => `<div class="row" style="gap:${s * 0.02}px">${bub("D", "o", s, "transform:rotate(-6deg)")}${ichar(s * 0.86, -3, `margin:0 ${s * 0.02}px ${s * 0.06}px`)}${bub("Y", "o", s, "transform:rotate(5deg)")}</div>`;
+const logoInner = (s) => `${diyRow(s)}<div class="row" style="margin-top:${-s * 0.06}px">${bub("DoItYar", "k", s * 0.42, "font-family:Chewy;letter-spacing:0.03em")}</div><div class="bar" style="font-size:${s * 0.09}px;width:${s * 1.5}px;margin-top:${s * 0.04}px;transform:rotate(-2deg)"></div>`;
+
+const A = {};
+A["diy-logo"] = `<div class="asset">${logoInner(300)}${rays("#ffc312", "right:-50px;top:-40px", 120, 0)}${rays("#141414", "left:-40px;bottom:120px", 90, 200)}${rays("#141414", "right:-30px;bottom:110px", 80, 70)}</div>`;
+A["diy-maxxing"] = `<div class="asset">${diyRow(250)}<div class="row" style="margin-top:-14px">${bub("MA", "c", 150)}${bub("XXX", "o", 150, "transform:rotate(-3deg)")}${bub("ING", "c", 150)}</div><div class="bar" style="font-size:22px;width:560px;margin-top:6px;transform:rotate(-3deg)"></div>${twinkle("#b7a1f2", "left:120px;top:0px", 70)}${twinkle("#b7a1f2", "right:20px;top:200px", 64)}${rays("#ffc312", "right:-10px;top:-40px", 120, 0)}${rays("#ffc312", "left:-50px;top:150px", 100, 230)}</div>`;
+A["yar-mode-on"] = `<div class="asset">${bub("YAR", "o", 230, "letter-spacing:-0.02em")}<div class="row" style="margin-top:-10px">${bub("MODE:", "k", 120)}</div>
+  <div style="position:relative;margin-top:10px;width:470px;height:170px;border-radius:90px;background:linear-gradient(180deg,#8ff5d2,#3fe8b0 50%,#1fbf8c);border:12px solid #141414;box-sizing:border-box;display:flex;align-items:center;padding-left:44px">
+    ${bub("ON", "k", 110)}
+    <svg viewBox="0 0 100 100" style="position:absolute;right:6px;top:6px;width:134px;height:134px"><circle cx="50" cy="50" r="44" fill="#fff7e8" stroke="#141414" stroke-width="6"/><circle cx="34" cy="44" r="6" fill="#141414"/><path d="M54 37 L64 44 L54 50" fill="none" stroke="#141414" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 60 Q46 74 64 58" fill="none" stroke="#141414" stroke-width="6" stroke-linecap="round"/></svg>
+  </div>${rays("#ffc312", "right:-60px;top:-30px", 120, 0)}${rays("#ffc312", "left:-60px;bottom:40px", 100, 200)}${rays("#141414", "right:-50px;top:330px", 80, 60)}</div>`;
+A["certified-diyd"] = `<div class="asset" style="padding:70px">
+  <svg viewBox="0 0 600 600" style="width:600px;height:600px">
+    <circle cx="300" cy="300" r="270" fill="#141414"/><circle cx="300" cy="300" r="260" fill="#3fe8b0"/><circle cx="300" cy="300" r="210" fill="#fff7e8" stroke="#141414" stroke-width="8"/>
+    <path d="M300 520 A 250 250 0 0 1 300 40" fill="none" stroke="#1fbf8c" stroke-width="22" opacity=".55"/>
+    <defs><path id="arc" d="M120 300 A 180 180 0 0 1 480 300"/></defs>
+    <text font-family="Titan One" font-size="70" fill="#141414" letter-spacing="4"><textPath href="#arc" startOffset="50%" text-anchor="middle">CERTIFIED</textPath></text>
+  </svg>
+  <div style="position:absolute;left:0;right:0;top:300px;display:flex;justify-content:center">${bub("D", "o", 230, "transform:rotate(-6deg)")}${ichar(200, -4, "margin:0 4px 14px")}${bub("Y'D", "o", 230, "transform:rotate(4deg)")}</div>
+  ${star("left:10px;top:150px", 110, -12)}${star("right:-10px;bottom:30px", 110, 14)}${star("left:345px;top:215px", 50, 0)}${rays("#ffc312", "right:-20px;top:-10px", 120, 0)}${rays("#ffc312", "left:-30px;bottom:-10px", 110, 200)}</div>`;
+A["built-bought"] = `<div class="asset"><div class="row">${bub("BU", "o", 220)}${ichar(190, -2, "margin:0 2px 8px")}${bub("LT", "o", 220)}</div>
+  <svg viewBox="0 0 120 100" style="width:150px;height:125px;margin:-20px 0 -14px"><path d="M22 14 L96 50 L22 86" fill="none" stroke="#141414" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 14 L96 50 L22 86" fill="none" stroke="#3fe8b0" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div class="row">${bub("BOUGHT", "o", 200)}</div>${twinkle("#b7a1f2", "left:130px;top:300px", 60)}${twinkle("#b7a1f2", "right:120px;top:300px", 56)}${rays("#ffc312", "right:-60px;top:-40px", 120, 0)}${rays("#ffc312", "left:-50px;bottom:-10px", 90, 200)}</div>`;
+A["diy-i"] = `<div class="asset" style="padding:30px">${ichar(420, -6)}</div>`;
+
+A["mock-box"] = `<div class="scene3d" id="asset-mock-box" style="filter:drop-shadow(0 26px 22px rgba(0,0,0,.25))"><div class="box">
+  <div class="face top"><div class="tape"></div></div>
+  <div class="face right">${bub("BUILT > BOUGHT", "c", 34, "transform:rotate(-90deg)")}</div>
+  <div class="face front"><div class="label"><div style="transform:scale(.36);margin:-92px -150px -92px">${logoInner(260)}</div></div>
+    <div style="font-family:Fredoka;font-weight:700;color:#fff7e8;font-size:30px;letter-spacing:.06em;margin-top:14px">PAPER-CRAFT DIY KIT</div></div>
+</div></div>`;
+
+const tiles = [
+  ["#ff5a14", bub("DIY", "c", 46)], ["#fff7e8", `<span style="color:#141414">YAR<br>MODE<br><span style="color:#1fbf8c">ON</span></span>`], ["#3fe8b0", ichar(110, -6)],
+  ["#ffc312", `<span style="color:#141414;font-size:26px">BUILT<br>&gt;<br>BOUGHT</span>`], ["#141414", `<span style="color:#ff5a14">DAY<br><span style="color:#fff7e8;font-size:44px">9</span></span>`], ["#b7a1f2", `<span style="color:#fff7e8">MAX<br>XXING</span>`],
+  ["#fff7e8", `<span style="font-family:Chewy;color:#ff5a14;font-size:34px">do it<br>yar!</span>`], ["#ff5a14", `<span style="color:#141414;font-size:24px">CERTI<br>FIED<br>DIY'D</span>`], ["#3fe8b0", `<span style="color:#141414;font-size:26px">0 &rarr;<br>SOME<br>THING</span>`],
+];
+A["mock-phone"] = `<div style="padding:40px" id="asset-mock-phone"><div class="phone"><div class="screen"><div class="notch"></div>
+  <div class="ig-top"><span>doityar</span><span style="font-size:34px">&#8801;</span></div>
+  <div class="ig-head"><div class="avatar"><div style="transform:scale(.2);margin:-140px">${logoInner(260)}</div></div>
+    <div class="stats"><div>9<small>posts</small></div><div>0&rarr;?<small>followers</small></div><div>75<small>days</small></div></div></div>
+  <div class="bio"><b>DIY | Do It Yar</b><br>Paper-craft kits for people who'd rather build than buy.<br><span style="color:#ff5a14">built &gt; bought</span></div>
+  <div class="btn">Follow</div>
+  <div class="grid">${tiles.map(([bg, h]) => `<div class="tile" style="background:${bg}">${h}</div>`).join("")}</div>
+</div></div></div>`;
+
+// paint-chip swatch cards for the palette reveal
+const SW = [["orange", "#ff5a14", "Yaar Orange"], ["cream", "#fff7e8", "Kraft Cream"], ["mint", "#3fe8b0", "Glue Mint"],
+  ["yellow", "#ffc312", "Sunny Spark"], ["lilac", "#b7a1f2", "Glitter Lilac"], ["ink", "#141414", "Marker Black"]];
+for (const [k, hex, name] of SW)
+  A["swatch-" + k] = `<div style="padding:24px"><div style="width:300px;background:#fff;border:7px solid #141414;border-radius:30px;box-shadow:10px 12px 0 #141414;padding:16px 16px 18px;box-sizing:border-box">
+    <div style="height:250px;border-radius:18px;background:${hex};border:5px solid #141414"></div>
+    <div style="font-family:Chewy;font-size:44px;color:#141414;margin-top:12px;line-height:1">${name}</div>
+    <div style="font-family:Fredoka;font-weight:700;font-size:28px;color:#6b6b6b;margin-top:6px;letter-spacing:.06em">${hex.toUpperCase()}</div></div></div>`;
+
+for (const [k, html] of Object.entries(A)) {
+  const wrap = document.createElement("div");
+  wrap.innerHTML = html.trim();
+  const el = wrap.firstElementChild;
+  if (!el.id) el.id = "asset-" + k;
+  document.body.appendChild(el);
+}
+</script>
+</body>
+</html>

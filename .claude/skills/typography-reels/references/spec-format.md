@@ -111,7 +111,7 @@ An item can be an **inline sticker** (rebus) instead of text: `{ "sticker": "hea
 { "shape": "swoosh-arrow", "x": 27, "y": 65, "w": 41, "h": 14, "at": 7.3, "dur": 0.35, "color": "ink", "weight": 0.85, "flipX": false, "flipY": false, "rot": 0 }
 ```
 
-Shapes (`engine/shapes.mjs`): `swoosh-arrow`, `curl-down-arrow`, `squiggle-arrow`, `arrow-right`, `arrow-down`, `arrow-up`, `curve-arrow-up`, `underline`, `double-underline`, `circle`, `cross`, `check`, `burst`, `bracket`, plus the special `clock` (an outline face with a spinning hand: `{ "shape": "clock", "x": 74, "y": 40, "h": 9, "at": 27.6, "turns": 3 }`).
+Shapes (`engine/shapes.mjs`): `swoosh-arrow`, `curl-down-arrow`, `squiggle-arrow`, `arrow-right`, `arrow-down`, `arrow-up`, `curve-arrow-up`, `underline`, `double-underline`, `circle`, `cross`, `check`, `burst`, `bracket`, `nine-balloon` (Day 9 title; box ≈ 0.75 as wide as tall, e.g. w 26 × h 62), plus the special `clock` (an outline face with a spinning hand: `{ "shape": "clock", "x": 74, "y": 40, "h": 9, "at": 27.6, "turns": 3 }`).
 
 ## ArcText (text following a circle, as in Day 5's "To Something")
 

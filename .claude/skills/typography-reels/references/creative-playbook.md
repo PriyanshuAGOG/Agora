@@ -131,3 +131,14 @@ When none fits, use an emoji sticker from `engine/stickers/emoji/index.json` (97
 | has a gross or absurd joke | a monster font (`beastly`) in red, a meme mascot (cat-omg), a bandaged-face 3D emoji, money rain |
 | asks people to comment | an **Instagram comment card** typing the keyword + the keyword huge in `marker` |
 | reveals a result tomorrow | a **censored** reveal (█████ on the name tag) + zipper-mouth 🤐 + "(reveal soon)" |
+
+## Day 9 additions
+
+| The script… | Device |
+| --- | --- |
+| reveals something the creator made (logo, packaging, a website) | **open a reveal gap in the VO** after the teaser line (`ffmpeg` atrim + `anullsrc`, 5–7 s), shift every later word by the gap, and fill it with 3–4 short "THE LOGO / THE COLOURS / THE FONTS / THE VIBE" scenes: the logo slams on a spinning burst bg + flash + confetti, paint-chip swatch cards drop in one by one, "Aa" specimens per font, then mockups slide in with the brand stickers popping around them |
+| has brand assets but they arrived only as chat images (no files) | recreate them in HTML/CSS (`episodes/day-NN/brand/brand.html`), screenshot each with Playwright to transparent PNGs in `episodes/day-NN/stickers/` (`render.mjs`); the user can later drop the originals in under the same names |
+| names the brand | the brand's own font (`titan` = Titan One) and colours take over the payoffs: initials coloured with `colors` ("**D**o **I**t **Y**ar!"), a censored "???" name tag stamped with the name, FOLLOW in the brand face |
+| lists deliverables (logo, colours, fonts, styles) | a 2×2 grid where each word *is* its meaning: LOGO circled, COLOUR in palette colours + swatch pills, F·O·N·T·S in five fonts, Visual in calligraphy over dripping STYLES |
+| swears or says something gross | a rebus that covers the letter: SH💩T (inline `sticker` item between "SH" and "T"), red `beastly`, flies burst, cat-facepalm "EWW" |
+| says pick / choose | three "Option" chips in three fonts; one circled, the other two crossed out in red |

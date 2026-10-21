@@ -32,4 +32,7 @@ export const SHAPES = {
   seven: { paths: ["M8,6 L88,6 L32,98"] },
   "seven-climb": { paths: ["M32,98 L88,6 L8,6"] },
   "swoosh-down-arrow": { paths: ["M4,10 C40,4 80,20 90,80", "M76,72 L90,90 L98,70"], split: 1 },
+  // Day 9 title: the 9 as a balloon, drawn from the string's end (ZERO) up the wavy tail and around
+  // the loop (SOMETHING). Built for a box about 0.75 as wide as tall (e.g. w 26 x h 62 at 16:9).
+  "nine-balloon": { paths: ["M64,99 C56,90 76,82 78,72 C81,61 88,48 88,30 C88,12 70,1.5 50,1.5 C30,1.5 12,14 12,30 C12,46 30,58.5 50,58.5 C70,58.5 88,46 88,30"] },
 };
