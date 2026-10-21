@@ -66,4 +66,11 @@ sentences.forEach((s, i) => {
   console.log(`#${String(i + 1).padStart(2)} [${f(s[0].s)} → ${f(s[s.length - 1].e)}] (${(s[s.length - 1].e - s[0].s).toFixed(1)}s) ${text}`);
   console.log("     " + s.map((x) => `${x.w}@${x.s.toFixed(2)}`).join("  "));
 });
+// Long silences inside the transcript usually mean the ASR dropped a phrase: re-check those slices.
+const holes = [];
+for (let k = 1; k < words.length; k++) {
+  const gap = words[k].s - words[k - 1].s;
+  if (gap > 1.2) holes.push(`${words[k - 1].s.toFixed(2)}→${words[k].s.toFixed(2)} (${gap.toFixed(1)}s after "${words[k - 1].w}")`);
+}
+if (holes.length) console.log(`\nCHECK possible dropped words: ${holes.join(", ")}  → bash verify-slice.sh <audio> <from> <to>`);
 console.log(`\n${words.length} words, ${sentences.length} sentences, ${(words.length / (words[words.length - 1].e - words[0].s)).toFixed(2)} words/s`);

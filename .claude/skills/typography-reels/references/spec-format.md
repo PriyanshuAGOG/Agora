@@ -171,6 +171,18 @@ Every element type (item, sticker, card, draw, effect, camera) accepts `"sfx"`.
 { "kind": "notification", "x": 31, "y": 3, "w": 38, "size": 2.5, "app": "MESSAGES", "time": "now", "title": "Designer", "body": "Sent you the final designs!", "icon": "3d:artist-palette", "at": 0.0, "out": 1.9 }
 { "kind": "nametag", "x": 64, "y": 30, "w": 28, "size": 3.2, "line1": "HELLO", "line2": "my name is", "name": "???", "nameStyle": "marker", "at": 25.44, "rot": -6 }
 { "kind": "bubble", "x": 10, "y": 20, "w": 30, "size": 3, "from": "Designer", "text": "Here you go!", "side": "left", "at": 2 }
+{ "kind": "profile", "x": 60, "y": 10, "w": 26, "size": 2.7, "photo": "3d:ring", "name": "ThePerfectName", "sub": "2 days old · single?", "at": 1.95,
+  "stamp": { "text": "TAKEN", "at": 3.0, "rot": -16, "y": 40, "scale": 2.6 } }          // dating-app card; any card can take a "stamp"
+{ "kind": "search", "x": 35, "y": 52, "w": 48, "size": 2.7, "engine": "Google", "icon": "3d:globe-with-meridians", "query": "www.foldly.com",
+  "typeAt": 22.95, "typeDur": 0.55, "typeSfx": "typing", "result": "foldly.com is taken · $4,999", "resultColor": "red", "resultAt": 23.75 }
+{ "kind": "comment", "x": 58, "y": 32, "w": 34, "size": 3.6, "avatar": "3d:smiling-face-with-heart-shaped-eyes", "user": "you", "text": "NAME", "meta": "just now · Reply", "typeAt": 49.84 }
+```
+`typeAt` / `typeDur` / `typeSfx` make the text of a bubble, search or comment card type itself.
+
+### Count-up and per-letter colours
+```jsonc
+{ "text": "20+", "anim": "count", "count": { "from": 0, "to": 20, "suffix": "+", "prefix": "", "dur": 0.6 }, "at": 18.64 }
+{ "text": "Google", "colors": ["#4285F4", "#EA4335", "#FBBC05", "#4285F4", "#34A853", "#EA4335"], "anim": "pop-letters" }   // cycles per letter
 ```
 
 ### Sticker
@@ -184,7 +196,7 @@ Every element type (item, sticker, card, draw, effect, camera) accepts `"sfx"`.
 ```jsonc
 { "shape": "scribble-circle", "around": "fix", "pad": 1.2, "at": 31.0 }   // sized around a word at runtime
 ```
-New shapes: `figure-eight` (the Day 8 numeral), `heart`, `spiral`, `zigzag`, `scribble-circle`, `swoosh-down-arrow`. `weight` sets the stroke (% of H); use 5–7 to *draw a numeral* itself.
+New shapes: `figure-eight`, `seven` + `seven-climb` (the Day 7 numeral and its upward tracer), `heart`, `spiral`, `zigzag`, `scribble-circle`, `swoosh-down-arrow`. `weight` sets the stroke (% of H); use 5–7 to *draw a numeral* itself.
 
 ### SFX names
 HyperFrames bundled: `pop`, `click`, `click-soft`, `whoosh`, `whoosh-short`, `whoosh-cinematic`, `impact-bass-1`, `impact-bass-2`, `glitch-1/2/3`, `notification`, `chime`, `ping`, `sparkle`, `typing`, `key-press`, `error`, `riser`.

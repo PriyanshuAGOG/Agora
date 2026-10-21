@@ -1,607 +1,817 @@
 [
 {
-"text": "We",
+"text": "Naming",
 "start": 0.0,
-"end": 0.32
+"end": 0.48
 },
 {
-"text": "finally",
-"start": 0.32,
-"end": 0.8
+"text": "a",
+"start": 0.48,
+"end": 0.64
 },
 {
-"text": "got",
-"start": 0.8,
+"text": "brand",
+"start": 0.64,
 "end": 0.96
 },
 {
-"text": "the",
+"text": "is",
 "start": 0.96,
-"end": 1.2
+"end": 1.12
 },
 {
-"text": "designs",
-"start": 1.2,
-"end": 1.92
+"text": "easy.",
+"start": 1.12,
+"end": 1.76
 },
 {
-"text": "and",
-"start": 1.92,
-"end": 2.08
+"text": "Finding",
+"start": 1.76,
+"end": 2.24
 },
 {
-"text": "honestly",
-"start": 2.08,
-"end": 2.8
+"text": "one",
+"start": 2.24,
+"end": 2.4
 },
 {
-"text": "they",
-"start": 2.8,
-"end": 3.12
+"text": "that",
+"start": 2.4,
+"end": 2.64
 },
 {
-"text": "were",
-"start": 3.12,
-"end": 3.36
+"text": "isn't",
+"start": 2.64,
+"end": 2.96
 },
 {
-"text": "crazy",
-"start": 3.36,
-"end": 4.16
-},
-{
-"text": "good.",
-"start": 4.16,
-"end": 4.72
+"text": "committed?",
+"start": 2.96,
+"end": 3.68
 },
 {
 "text": "This",
-"start": 4.72,
-"end": 4.88
+"start": 3.68,
+"end": 3.84
 },
 {
 "text": "is",
+"start": 3.84,
+"end": 4.0
+},
+{
+"text": "day",
+"start": 4.0,
+"end": 4.24
+},
+{
+"text": "eight",
+"start": 4.24,
+"end": 4.64
+},
+{
+"text": "of",
+"start": 4.64,
+"end": 4.88
+},
+{
+"text": "going",
 "start": 4.88,
 "end": 5.12
 },
 {
-"text": "day",
+"text": "from",
 "start": 5.12,
 "end": 5.36
 },
 {
-"text": "seven",
+"text": "zero",
 "start": 5.36,
 "end": 5.84
 },
 {
-"text": "of",
+"text": "to",
 "start": 5.84,
 "end": 6.08
 },
 {
-"text": "going",
-"start": 6.08,
-"end": 6.32
-},
-{
-"text": "from",
-"start": 6.32,
-"end": 6.48
-},
-{
-"text": "zero",
-"start": 6.48,
-"end": 7.04
-},
-{
-"text": "to",
-"start": 7.04,
-"end": 7.28
-},
-{
 "text": "something.",
-"start": 7.28,
-"end": 8.0
+"start": 6.08,
+"end": 6.72
 },
 {
-"text": "I",
-"start": 8.0,
+"text": "Yesterday,",
+"start": 6.72,
+"end": 7.44
+},
+{
+"text": "we",
+"start": 7.44,
+"end": 7.68
+},
+{
+"text": "realized",
+"start": 7.68,
 "end": 8.16
 },
 {
-"text": "went",
+"text": "we",
 "start": 8.16,
 "end": 8.4
 },
 {
-"text": "through",
+"text": "didn't",
 "start": 8.4,
-"end": 8.56
+"end": 8.64
 },
 {
-"text": "the",
-"start": 8.56,
-"end": 8.72
+"text": "even",
+"start": 8.64,
+"end": 8.88
 },
 {
-"text": "collection",
-"start": 8.72,
-"end": 9.36
+"text": "have",
+"start": 8.88,
+"end": 9.04
 },
 {
-"text": "and",
-"start": 9.36,
-"end": 9.6
+"text": "a",
+"start": 9.04,
+"end": 9.12
 },
 {
-"text": "I",
-"start": 9.6,
-"end": 9.76
+"text": "brand",
+"start": 9.12,
+"end": 9.52
 },
 {
-"text": "couldn't",
-"start": 9.76,
-"end": 10.08
+"text": "name.",
+"start": 9.52,
+"end": 9.92
 },
 {
-"text": "wait",
-"start": 10.08,
-"end": 10.4
+"text": "So",
+"start": 9.92,
+"end": 10.16
 },
 {
-"text": "to",
-"start": 10.4,
-"end": 10.56
+"text": "today,",
+"start": 10.16,
+"end": 10.48
 },
 {
-"text": "see",
-"start": 10.56,
-"end": 10.72
+"text": "we're",
+"start": 10.48,
+"end": 10.8
 },
 {
-"text": "these",
-"start": 10.72,
-"end": 10.96
+"text": "finding",
+"start": 10.8,
+"end": 11.2
 },
 {
-"text": "printed",
-"start": 10.96,
-"end": 11.36
-},
-{
-"text": "out",
-"start": 11.36,
-"end": 11.52
-},
-{
-"text": "as",
-"start": 11.52,
+"text": "one.",
+"start": 11.2,
 "end": 11.76
 },
 {
-"text": "our",
+"text": "And",
 "start": 11.76,
-"end": 12.0
+"end": 11.92
 },
 {
-"text": "first",
-"start": 12.0,
-"end": 12.24
+"text": "here's",
+"start": 11.92,
+"end": 12.32
 },
 {
-"text": "product.",
-"start": 12.24,
-"end": 13.12
+"text": "how",
+"start": 12.32,
+"end": 12.48
 },
 {
-"text": "But",
-"start": 13.12,
-"end": 13.28
+"text": "you",
+"start": 12.48,
+"end": 12.72
 },
 {
-"text": "then",
-"start": 13.28,
-"end": 13.68
+"text": "can",
+"start": 12.72,
+"end": 12.88
 },
 {
-"text": "I",
-"start": 13.68,
-"end": 13.84
-},
-{
-"text": "noticed",
-"start": 13.84,
-"end": 14.4
+"text": "find",
+"start": 12.88,
+"end": 13.04
 },
 {
 "text": "a",
-"start": 14.4,
+"start": 13.04,
+"end": 13.2
+},
+{
+"text": "name",
+"start": 13.2,
+"end": 13.44
+},
+{
+"text": "for",
+"start": 13.44,
+"end": 13.6
+},
+{
+"text": "your",
+"start": 13.6,
+"end": 13.76
+},
+{
+"text": "brand",
+"start": 13.76,
+"end": 14.08
+},
+{
+"text": "too.",
+"start": 14.08,
 "end": 14.56
 },
 {
-"text": "problem.",
+"text": "Step",
 "start": 14.56,
-"end": 15.04
+"end": 14.88
 },
 {
-"text": "These",
-"start": 15.04,
+"text": "one,",
+"start": 14.88,
 "end": 15.36
 },
 {
-"text": "were",
+"text": "open",
 "start": 15.36,
-"end": 15.52
+"end": 15.68
 },
 {
-"text": "great",
-"start": 15.52,
-"end": 15.76
+"text": "Chat",
+"start": 15.68,
+"end": 16.08
 },
 {
-"text": "designs,",
-"start": 15.76,
-"end": 16.56
+"text": "GPT",
+"start": 16.08,
+"end": 16.64
 },
 {
-"text": "but",
-"start": 16.56,
-"end": 16.72
+"text": "and",
+"start": 16.64,
+"end": 16.8
 },
 {
-"text": "they",
-"start": 16.72,
-"end": 16.96
+"text": "paste",
+"start": 16.8,
+"end": 17.12
 },
 {
-"text": "looked",
-"start": 16.96,
+"text": "this",
+"start": 17.12,
 "end": 17.36
 },
 {
-"text": "like",
+"text": "prompt.",
 "start": 17.36,
-"end": 17.52
+"end": 18.0
 },
 {
-"text": "just",
-"start": 17.52,
-"end": 17.84
+"text": "It",
+"start": 18.0,
+"end": 18.16
 },
 {
-"text": "another",
-"start": 17.84,
-"end": 18.08
+"text": "will",
+"start": 18.16,
+"end": 18.32
 },
 {
-"text": "product.",
-"start": 18.08,
-"end": 18.96
+"text": "give",
+"start": 18.32,
+"end": 18.48
 },
 {
-"text": "Nothing",
-"start": 18.96,
-"end": 19.36
+"text": "you",
+"start": 18.48,
+"end": 18.64
 },
 {
-"text": "that",
-"start": 19.36,
-"end": 19.52
+"text": "20",
+"start": 18.64,
+"end": 19.04
 },
 {
-"text": "made",
-"start": 19.52,
+"text": "plus",
+"start": 19.04,
+"end": 19.44
+},
+{
+"text": "unique",
+"start": 19.44,
 "end": 19.76
 },
 {
-"text": "them",
+"text": "names",
 "start": 19.76,
-"end": 20.0
+"end": 20.16
 },
 {
-"text": "feel",
-"start": 20.0,
-"end": 20.24
+"text": "as",
+"start": 20.16,
+"end": 20.32
 },
 {
-"text": "like",
-"start": 20.24,
-"end": 20.48
+"text": "per",
+"start": 20.32,
+"end": 20.56
 },
 {
-"text": "our",
-"start": 20.48,
-"end": 20.8
+"text": "your",
+"start": 20.56,
+"end": 20.72
 },
 {
-"text": "brand.",
-"start": 20.8,
-"end": 21.52
+"text": "brand",
+"start": 20.72,
+"end": 21.12
 },
 {
-"text": "And",
-"start": 21.52,
-"end": 21.68
+"text": "and",
+"start": 21.12,
+"end": 21.28
 },
 {
-"text": "then",
-"start": 21.68,
-"end": 21.84
+"text": "niche.",
+"start": 21.28,
+"end": 21.88
 },
 {
-"text": "it",
-"start": 21.84,
-"end": 22.08
+"text": "Step",
+"start": 21.88,
+"end": 22.2
 },
 {
-"text": "hit",
-"start": 22.08,
-"end": 22.32
+"text": "2:",
+"start": 22.2,
+"end": 22.6
 },
 {
-"text": "me.",
-"start": 22.32,
-"end": 22.72
+"text": "Check",
+"start": 22.6,
+"end": 22.84
 },
 {
-"text": "We're",
-"start": 22.72,
-"end": 22.96
+"text": "the",
+"start": 22.84,
+"end": 22.92
 },
 {
-"text": "trying",
-"start": 22.96,
-"end": 23.12
+"text": "domain",
+"start": 22.92,
+"end": 23.32
 },
 {
-"text": "to",
-"start": 23.12,
-"end": 23.28
+"text": "on",
+"start": 23.32,
+"end": 23.48
 },
 {
-"text": "build",
-"start": 23.28,
-"end": 23.52
-},
-{
-"text": "a",
-"start": 23.52,
-"end": 23.68
-},
-{
-"text": "brand,",
-"start": 23.68,
+"text": "Hostinger,",
+"start": 23.48,
 "end": 24.32
 },
 {
-"text": "but",
+"text": "Because",
 "start": 24.32,
 "end": 24.56
 },
 {
-"text": "we",
+"text": "I'm",
 "start": 24.56,
-"end": 24.72
+"end": 24.8
 },
 {
-"text": "don't",
-"start": 24.72,
+"text": "not",
+"start": 24.8,
 "end": 24.96
 },
 {
-"text": "even",
+"text": "selling",
 "start": 24.96,
-"end": 25.12
-},
-{
-"text": "have",
-"start": 25.12,
 "end": 25.28
 },
 {
-"text": "a",
+"text": "my",
 "start": 25.28,
 "end": 25.44
 },
 {
-"text": "name",
+"text": "friend's",
 "start": 25.44,
-"end": 25.68
+"end": 25.84
 },
 {
-"text": "yet.",
-"start": 25.68,
-"end": 26.24
+"text": "kidney",
+"start": 25.84,
+"end": 26.32
 },
 {
-"text": "No",
-"start": 26.24,
+"text": "for",
+"start": 26.32,
 "end": 26.48
 },
 {
-"text": "logo,",
+"text": "a",
 "start": 26.48,
+"end": 26.56
+},
+{
+"text": "domain.",
+"start": 26.56,
 "end": 27.12
 },
 {
-"text": "no",
+"text": "Step",
 "start": 27.12,
-"end": 27.28
+"end": 27.44
 },
 {
-"text": "colors,",
-"start": 27.28,
-"end": 28.08
+"text": "3.",
+"start": 27.44,
+"end": 28.0
 },
 {
-"text": "nothing.",
-"start": 28.08,
-"end": 28.96
+"text": "Google",
+"start": 28.0,
+"end": 28.56
 },
 {
-"text": "So",
-"start": 28.96,
-"end": 29.28
+"text": "every",
+"start": 28.56,
+"end": 28.88
 },
 {
-"text": "over",
-"start": 29.28,
-"end": 29.52
-},
-{
-"text": "the",
-"start": 29.52,
+"text": "shortlisted",
+"start": 28.88,
 "end": 29.6
 },
 {
-"text": "next",
+"text": "name.",
 "start": 29.6,
-"end": 29.84
+"end": 30.0
 },
 {
-"text": "few",
-"start": 29.84,
-"end": 30.08
+"text": "See",
+"start": 30.0,
+"end": 30.24
 },
 {
-"text": "days,",
-"start": 30.08,
+"text": "if",
+"start": 30.24,
 "end": 30.4
 },
 {
-"text": "we're",
+"text": "another",
 "start": 30.4,
 "end": 30.64
 },
 {
-"text": "fixing",
+"text": "business",
 "start": 30.64,
-"end": 30.96
+"end": 31.12
 },
 {
-"text": "that.",
-"start": 30.96,
-"end": 31.36
+"text": "is",
+"start": 31.12,
+"end": 31.28
 },
 {
-"text": "From",
-"start": 31.36,
+"text": "already",
+"start": 31.28,
 "end": 31.6
 },
 {
-"text": "name",
+"text": "using",
 "start": 31.6,
-"end": 32.0
+"end": 31.84
 },
 {
-"text": "to",
-"start": 32.0,
-"end": 32.24
+"text": "it.",
+"start": 31.84,
+"end": 32.32
 },
 {
-"text": "entire",
-"start": 32.24,
-"end": 32.8
+"text": "Step",
+"start": 32.32,
+"end": 32.56
 },
 {
-"text": "brand",
-"start": 32.8,
+"text": "4.",
+"start": 32.56,
 "end": 33.12
 },
 {
-"text": "aesthetics.",
+"text": "Search",
 "start": 33.12,
+"end": 33.44
+},
+{
+"text": "the",
+"start": 33.44,
+"end": 33.6
+},
+{
+"text": "names",
+"start": 33.6,
+"end": 33.84
+},
+{
+"text": "on",
+"start": 33.84,
 "end": 34.08
 },
 {
-"text": "Then",
+"text": "IP",
 "start": 34.08,
-"end": 34.32
-},
-{
-"text": "we'll",
-"start": 34.32,
 "end": 34.56
 },
 {
-"text": "bring",
+"text": "and",
 "start": 34.56,
-"end": 34.72
+"end": 34.8
+},
+{
+"text": "trademark.",
+"start": 34.8,
+"end": 35.6
+},
+{
+"text": "Step",
+"start": 35.6,
+"end": 35.84
+},
+{
+"text": "5.",
+"start": 35.84,
+"end": 36.4
+},
+{
+"text": "Check",
+"start": 36.4,
+"end": 36.64
+},
+{
+"text": "if",
+"start": 36.64,
+"end": 36.8
 },
 {
 "text": "the",
-"start": 34.72,
-"end": 34.88
+"start": 36.8,
+"end": 36.96
 },
 {
-"text": "designs",
-"start": 34.88,
-"end": 35.36
+"text": "social",
+"start": 36.96,
+"end": 37.28
 },
 {
-"text": "and",
-"start": 35.36,
-"end": 35.52
+"text": "media",
+"start": 37.28,
+"end": 37.6
+},
+{
+"text": "handles",
+"start": 37.6,
+"end": 38.0
+},
+{
+"text": "are",
+"start": 38.0,
+"end": 38.16
+},
+{
+"text": "available",
+"start": 38.16,
+"end": 38.64
+},
+{
+"text": "with",
+"start": 38.64,
+"end": 38.8
 },
 {
 "text": "the",
-"start": 35.52,
-"end": 35.68
+"start": 38.8,
+"end": 38.96
 },
 {
-"text": "branding",
-"start": 35.68,
-"end": 36.16
+"text": "same",
+"start": 38.96,
+"end": 39.2
 },
 {
-"text": "together",
-"start": 36.16,
-"end": 36.72
+"text": "name.",
+"start": 39.2,
+"end": 39.84
 },
 {
-"text": "and",
-"start": 36.72,
-"end": 36.88
+"text": "Because",
+"start": 39.84,
+"end": 40.08
 },
 {
-"text": "let's",
-"start": 36.88,
-"end": 37.2
+"text": "imagine",
+"start": 40.08,
+"end": 40.64
 },
 {
-"text": "see",
-"start": 37.2,
-"end": 37.36
+"text": "falling",
+"start": 40.64,
+"end": 41.04
 },
 {
-"text": "what",
-"start": 37.36,
-"end": 37.52
+"text": "in",
+"start": 41.04,
+"end": 41.2
+},
+{
+"text": "love",
+"start": 41.2,
+"end": 41.36
+},
+{
+"text": "with",
+"start": 41.36,
+"end": 41.52
+},
+{
+"text": "a",
+"start": 41.52,
+"end": 41.68
+},
+{
+"text": "name",
+"start": 41.68,
+"end": 42.08
+},
+{
+"text": "only",
+"start": 42.08,
+"end": 42.32
+},
+{
+"text": "to",
+"start": 42.32,
+"end": 42.48
+},
+{
+"text": "find",
+"start": 42.48,
+"end": 42.64
+},
+{
+"text": "out",
+"start": 42.64,
+"end": 42.88
+},
+{
+"text": "someone",
+"start": 42.88,
+"end": 43.28
+},
+{
+"text": "else",
+"start": 43.28,
+"end": 43.52
+},
+{
+"text": "is",
+"start": 43.52,
+"end": 43.76
+},
+{
+"text": "already",
+"start": 43.76,
+"end": 44.16
+},
+{
+"text": "sleeping",
+"start": 44.16,
+"end": 44.56
+},
+{
+"text": "with",
+"start": 44.56,
+"end": 44.72
+},
+{
+"text": "it.",
+"start": 44.72,
+"end": 45.12
+},
+{
+"text": "And",
+"start": 45.12,
+"end": 45.36
+},
+{
+"text": "finally,",
+"start": 45.36,
+"end": 45.92
 },
 {
 "text": "we",
-"start": 37.52,
-"end": 37.68
+"start": 45.92,
+"end": 46.16
 },
 {
-"text": "can",
-"start": 37.68,
-"end": 37.84
+"text": "got",
+"start": 46.16,
+"end": 46.4
 },
 {
-"text": "create.",
-"start": 37.84,
-"end": 38.32
+"text": "a",
+"start": 46.4,
+"end": 46.48
 },
 {
-"text": "Can't",
-"start": 38.32,
-"end": 38.72
+"text": "name.",
+"start": 46.48,
+"end": 46.96
 },
 {
-"text": "wait.",
-"start": 38.72,
-"end": 39.26
+"text": "Want",
+"start": 46.96,
+"end": 47.2
+},
+{
+"text": "the",
+"start": 47.2,
+"end": 47.28
+},
+{
+"text": "exact",
+"start": 47.28,
+"end": 47.6
+},
+{
+"text": "prompts",
+"start": 47.6,
+"end": 48.08
+},
+{
+"text": "and",
+"start": 48.08,
+"end": 48.24
+},
+{
+"text": "complete",
+"start": 48.24,
+"end": 48.56
+},
+{
+"text": "workflow?",
+"start": 48.56,
+"end": 49.36
+},
+{
+"text": "Comment",
+"start": 49.36,
+"end": 49.84
+},
+{
+"text": "name",
+"start": 49.84,
+"end": 50.24
+},
+{
+"text": "and",
+"start": 50.24,
+"end": 50.4
+},
+{
+"text": "I'll",
+"start": 50.4,
+"end": 50.64
+},
+{
+"text": "send",
+"start": 50.64,
+"end": 50.88
+},
+{
+"text": "you",
+"start": 50.88,
+"end": 51.12
+},
+{
+"text": "everything.",
+"start": 51.12,
+"end": 51.77
 }
 ]

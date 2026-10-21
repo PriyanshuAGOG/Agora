@@ -207,7 +207,15 @@ function renderItem(item, scene, floating = false) {
   const text = item.text ?? "";
   let inner;
   let animated = true;
-  if (Array.isArray(at)) {
+  // per-letter colours (e.g. a Google-coloured "Google"): cycles through item.colors, skipping spaces
+  let ci = 0;
+  const letterColor = (c) => (item.colors && c !== " " ? `color:${color(item.colors[ci++ % item.colors.length])}` : "");
+  if (anim === "count") {
+    // count-up number: "0" -> "20+" (text is ignored; count = { from, to, prefix, suffix, dur })
+    const c = item.count || {};
+    inner = `<span id="${id}-n">${esc((c.prefix ?? "") + (c.from ?? 0) + (c.suffix ?? ""))}</span>`;
+    plan.push({ k: "count", id: `${id}-n`, at, from: c.from ?? 0, to: c.to ?? 10, prefix: c.prefix ?? "", suffix: c.suffix ?? "", dur: c.dur ?? 0.6 });
+  } else if (Array.isArray(at)) {
     // per-word timing: one time per word
     const words = text.split(/\s+/);
     if (words.length !== at.length) warn(`${id}: ${words.length} words but ${at.length} times`);
@@ -224,7 +232,7 @@ function renderItem(item, scene, floating = false) {
   } else if (LETTER_ANIMS.has(anim)) {
     const chars = [...text];
     const hidden = !["fix", "jitter"].includes(anim);
-    inner = chars.map((c, k) => `<span class="lt${hidden ? " hf-in" : ""}" id="${id}-c${k}">${c === " " ? "&nbsp;" : esc(c)}</span>`).join("");
+    inner = chars.map((c, k) => `<span class="lt${hidden ? " hf-in" : ""}" id="${id}-c${k}" style="${letterColor(c)}">${c === " " ? "&nbsp;" : esc(c)}</span>`).join("");
     const rnd = prng(hash(id) + 99);
     const rand = chars.map(() => [rnd() * 2 - 1, rnd() * 2 - 1, rnd() * 2 - 1]);
     const steps = [];
@@ -235,6 +243,8 @@ function renderItem(item, scene, floating = false) {
     plan.push({ k: "letters", id, n: chars.length, anim, at, dur: item.dur, stagger: item.stagger, end: item.until ?? scene.end, em: (item.size ?? 5) * U, rand, steps, fixAt: item.fixAt });
     checkTime(at, scene, id);
     animated = anim === "jitter" || anim === "fix"; // whole item appears at `at`, letters then move
+  } else if (item.colors) {
+    inner = [...text].map((c) => `<span style="${letterColor(c)}">${esc(c)}</span>`).join("");
   } else {
     inner = esc(text);
   }
@@ -288,7 +298,7 @@ function renderItem(item, scene, floating = false) {
   const html = `<span class="${cls}" id="${id}" style="${outer.join(";")}">${hl}<span class="tx"${allowOverlap} style="${txStyle.join(";").replace(/font-size:[^;]+/, "font-size:1em")}">${inner}</span>${echo}${ul}${strike}</span>`;
   const t0 = Array.isArray(at) ? at[0] : at;
   if (animated) {
-    plan.push({ k: "item", id, anim: LETTER_ANIMS.has(anim) ? "cut" : anim, at, dur: item.dur });
+    plan.push({ k: "item", id, anim: LETTER_ANIMS.has(anim) ? "cut" : anim === "count" ? "pop" : anim, at, dur: item.dur });
     checkTime(at, scene, id);
   }
   if (item.underline) {
@@ -436,7 +446,16 @@ function renderArcText(a, scene) {
   return `<svg class="arc hf-in" id="${id}" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><defs><path id="${id}-path" d="${d}" /></defs><text data-layout-allow-overlap style="${css}" fill="${color(a.color)}"><textPath href="#${id}-path"${a.spread ? ` textLength="${round(a.spread * U)}"` : ""}>${esc(a.text)}</textPath></text></svg>`;
 }
 
-// ---------- cards: phone notification, HELLO-my-name-is tag, chat bubble ----------
+// text inside a card that types itself when c.typeAt is set
+function typed(text, c, id) {
+  if (c.typeAt == null) return esc(text);
+  const chars = [...text];
+  plan.push({ k: "chars", id: `${id}-t`, n: chars.length, at: c.typeAt, dur: c.typeDur ?? Math.min(0.9, 0.05 * chars.length) });
+  cue(c.typeSfx ?? null, c.typeAt);
+  return chars.map((ch, k) => `<span class="ch hf-in" id="${id}-t-c${k}">${ch === " " ? "&nbsp;" : esc(ch)}</span>`).join("");
+}
+
+// ---------- cards: notification, name tag, chat bubble, dating profile, search bar, comment ----------
 function renderCard(c, scene) {
   const id = c.id ? `c-${c.id}` : nextId("c");
   const at = c.at ?? scene.start;
@@ -462,9 +481,35 @@ function renderCard(c, scene) {
     body = `<div class="card-in nametag" style="${rot}"><div class="nt-head"><div class="nt-hello">${esc(c.line1 || "HELLO")}</div><div class="nt-sub">${esc(c.line2 || "my name is")}</div></div>
           <div class="nt-body"><span id="${id}-name" style="${nameCss}">${esc(c.name ?? "")}</span></div></div>`;
   } else if (c.kind === "bubble") {
-    body = `<div class="card-in bubble ${c.side === "right" ? "b-right" : ""}" style="${rot}"><div class="b-from">${esc(c.from || "")}</div><div class="b-text">${esc(c.text || "")}</div></div>`;
+    body = `<div class="card-in bubble ${c.side === "right" ? "b-right" : ""}" style="${rot}"><div class="b-from">${esc(c.from || "")}</div><div class="b-text">${typed(c.text || "", c, id)}</div></div>`;
+  } else if (c.kind === "profile") {
+    // dating-app profile card (+ optional stamp slammed across it)
+    const photo = c.photo ? stickerMedia(resolveSticker(c.photo), "5.6em") : "";
+    const no = stickerMedia(resolveSticker(c.noIcon || "3d:cross-mark"), "1.5em");
+    const yes = stickerMedia(resolveSticker(c.yesIcon || "3d:heavy-black-heart"), "1.5em");
+    body = `<div class="card-in profile" style="${rot}"><div class="pf-photo">${photo}</div>
+          <div class="pf-info"><div class="pf-name">${esc(c.name || "")}</div><div class="pf-sub">${esc(c.sub || "")}</div></div>
+          <div class="pf-btns"><span class="pf-btn">${no}</span><span class="pf-btn pf-yes">${yes}</span></div></div>`;
+  } else if (c.kind === "search") {
+    // search / address bar whose query types itself; optional result line underneath
+    const icon = stickerMedia(resolveSticker(c.icon || "3d:left-pointing-magnifying-glass"), "1.3em");
+    const label = c.engine ? `<span class="sr-engine">${esc(c.engine)}</span>` : "";
+    body = `<div class="card-in search" style="${rot}">${label}<div class="sr-bar">${icon}<span class="sr-q">${typed(c.query || "", c, id)}</span></div>${c.result ? `<div class="sr-result hf-in" id="${id}-res" style="color:${color(c.resultColor || "ink")}">${esc(c.result)}</div>` : ""}</div>`;
+    if (c.result) plan.push({ k: "item", id: `${id}-res`, anim: c.resultAnim || "pop", at: c.resultAt ?? at + 0.8 });
+  } else if (c.kind === "comment") {
+    // Instagram-style comment row
+    const av = c.avatar ? stickerMedia(resolveSticker(c.avatar), "1.9em") : "";
+    body = `<div class="card-in comment" style="${rot}"><div class="cm-av">${av}</div><div class="cm-txt"><span class="cm-user">${esc(c.user || "you")}</span> <span class="cm-body">${typed(c.text || "", c, id)}</span><div class="cm-meta">${esc(c.meta || "Reply")}</div></div><div class="cm-heart">${stickerMedia(resolveSticker("3d:heavy-black-heart"), "1.1em")}</div></div>`;
   } else throw new Error(`unknown card kind ${c.kind}`);
-  return `<div class="card hf-in" id="${id}" data-layout-allow-overlap data-layout-allow-occlusion style="${pos}">${body}</div>`;
+  let stamp = "";
+  if (c.stamp) {
+    const sid = `${id}-stamp`;
+    const css = styleCss({ style: c.stamp.style || "stencil", size: (c.size ?? 3) * (c.stamp.scale ?? 2.4), color: c.stamp.color || "red" }).replace(/font-size:[^;]+/, `font-size:${c.stamp.scale ?? 2.4}em`);
+    stamp = `<div class="stamp hf-in" id="${sid}" style="${css};border-color:${color(c.stamp.color || "red")};left:${c.stamp.x ?? 50}%;top:${c.stamp.y ?? 42}%"><span style="display:block;transform:rotate(${c.stamp.rot ?? -14}deg)">${esc(c.stamp.text)}</span></div>`;
+    plan.push({ k: "item", id: sid, anim: c.stamp.anim || "slam", at: c.stamp.at ?? at + 1 });
+    cue(c.stamp.sfx ?? "impact-bass-2", c.stamp.at ?? at + 1);
+  }
+  return `<div class="card hf-in" id="${id}" data-layout-allow-overlap data-layout-allow-occlusion style="${pos}">${body}${stamp}</div>`;
 }
 
 // ---------- effects ----------
@@ -727,7 +772,27 @@ const html = `<!doctype html>
       .bubble { background: ${COLORS.mint}; color: #fff; border-radius: 1.2em 1.2em 1.2em 0.2em; padding: 0.6em 1em; font-family: 'Poppins'; display: inline-block; }
       .bubble.b-right { border-radius: 1.2em 1.2em 0.2em 1.2em; background: #E9E9EB; color: #111; }
       .b-from { font-size: 0.7em; font-weight: 700; opacity: 0.8; }
-      .b-text { font-size: 1em; font-weight: 600; white-space: nowrap; }
+      .b-text { font-size: 1em; font-weight: 600; white-space: normal; line-height: 1.3; }
+      .profile { background: #fff; border-radius: 1.2em; overflow: hidden; box-shadow: 0 0.6em 1.8em rgba(0,0,0,0.18); font-family: 'Poppins'; }
+      .pf-photo { height: 7.4em; background: linear-gradient(160deg, ${COLORS["mint-soft"]}, #ffffff); display: flex; align-items: center; justify-content: center; }
+      .pf-info { padding: 0.6em 0.9em 0.2em; }
+      .pf-name { font-weight: 800; font-size: 1.35em; color: #111; }
+      .pf-sub { font-weight: 400; font-size: 0.85em; color: #777; }
+      .pf-btns { display: flex; justify-content: space-around; padding: 0.5em 0 0.8em; }
+      .pf-btn { width: 2.6em; height: 2.6em; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0.2em 0.6em rgba(0,0,0,0.15); background: #fff; }
+      .stamp { position: absolute; transform: translate(-50%, -50%); border: 0.07em solid; border-radius: 0.12em; padding: 0.02em 0.25em; white-space: nowrap; z-index: 5; background: rgba(255,255,255,0.6); }
+      .search { font-family: 'Poppins'; }
+      .sr-engine { display: block; font-weight: 800; font-size: 1.1em; margin: 0 0 0.35em 0.4em; }
+      .sr-bar { display: flex; align-items: center; gap: 0.6em; background: #fff; border-radius: 2em; padding: 0.6em 1.1em; box-shadow: 0 0.35em 1.2em rgba(0,0,0,0.14), 0 0 0 1px rgba(0,0,0,0.06); }
+      .sr-q { font-size: 1.15em; font-weight: 500; color: #222; white-space: pre; }
+      .sr-result { margin: 0.5em 0 0 1.2em; font-weight: 700; font-size: 1em; }
+      .comment { display: flex; align-items: flex-start; gap: 0.7em; background: #fff; border-radius: 1em; padding: 0.8em 1em; box-shadow: 0 0.4em 1.4em rgba(0,0,0,0.14); font-family: 'Poppins'; }
+      .cm-av { width: 1.9em; height: 1.9em; border-radius: 50%; overflow: hidden; background: ${COLORS["mint-soft"]}; display: flex; align-items: center; justify-content: center; flex: none; }
+      .cm-txt { flex: 1; font-size: 1em; color: #111; }
+      .cm-user { font-weight: 700; }
+      .cm-body { font-weight: 500; }
+      .cm-meta { font-size: 0.7em; color: #8a8a8a; font-weight: 600; margin-top: 0.2em; }
+      .cm-heart { flex: none; opacity: 0.85; }
       .glitch { position: absolute; inset: 0; z-index: 40; background: #222; overflow: hidden; }
       .gb { position: absolute; width: 120%; }
       .hf-in { opacity: 0; }

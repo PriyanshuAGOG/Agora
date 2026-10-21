@@ -28,5 +28,8 @@ export const SHAPES = {
   spiral: { paths: ["M50,50 C54,46 58,52 54,56 C48,62 40,54 44,46 C50,36 64,40 66,52 C68,66 52,74 40,68 C24,60 26,36 42,30 C62,22 80,36 80,54 C80,76 58,90 38,84 C14,76 8,46 22,28"] },
   zigzag: { paths: ["M1,60 L10,30 L20,60 L30,30 L40,60 L50,30 L60,60 L70,30 L80,60 L90,30 L99,60"] },
   "scribble-circle": { paths: ["M60,8 C88,10 99,34 95,56 C90,84 58,98 34,92 C10,86 0,60 6,38 C12,16 36,4 58,6 C80,8 92,22 96,30"] },
+  // "7" drawn the way you write it (top-left → top-right → foot), and the reverse "climb" (foot → top → left end)
+  seven: { paths: ["M8,6 L88,6 L32,98"] },
+  "seven-climb": { paths: ["M32,98 L88,6 L8,6"] },
   "swoosh-down-arrow": { paths: ["M4,10 C40,4 80,20 90,80", "M76,72 L90,90 L98,70"], split: 1 },
 };

@@ -45,11 +45,16 @@ HyperFrames itself is installed in `.agents/skills/` (`/hyperframes`, `/hyperfra
    It writes a `.cuts.json` map. If the VO has filler words ("um", repeated takes), cut them with `ffmpeg atrim` segments before transcribing.
 4. **Transcribe offline (word timings):** `bash $E/transcribe.sh episodes/day-NN/audio/day-NN-vo.m4a episodes/day-NN/transcript.json`
    This uses NVIDIA Parakeet via sherpa-onnx. The model comes from GitHub releases, so it works where huggingface.co is blocked. The first run sets up about 650 MB in `~/.cache/typography-reels`.
-   Then run `node $E/words.mjs episodes/day-NN/transcript.json --gap 0.12` for numbered sentences with every word's time. Proofread names and numbers against the audio's meaning.
+   Then run `node $E/words.mjs episodes/day-NN/transcript.json --gap 0.12` for numbered sentences with every word's time.
+   **Verify it.** Parakeet occasionally drops a whole phrase: on Day 8 "Step 2: check the domain on Hostinger" vanished, leaving a 3 s hole. Any gap of more than ~1 s between words, or any odd word, gets re-transcribed on its own slice (`ffmpeg -ss A -to B` → `transcribe.py`) and cross-checked with Whisper: `bash $E/verify-slice.sh <audio> <from> <to>` prints both models' output for that slice. Then patch `transcript.json`.
 5. **Creative pass (never skip).** Read `episodes/series-log.md` (avoid repeating title concepts, fonts and Follow styles). Plan a table: `scene | time | lines (setup → payoff) | payoff font + anim | fun device | stickers (mascot / animated / 3D) | SFX | transition / camera`. Requirements:
    - Frame 1 moves (§11 hook); the first payoff slams by about 0.3 s.
    - Title card: a **new** numeral concept where ZERO→SOMETHING travels along the numeral (e.g. Day 8 *drew* the 8 as a thick mint figure-eight and traced the journey through it).
    - Every scene: ≥ 1 wordplay/font-as-meaning device, 1–3 stickers, an SFX on each hit, and a transition or camera move that differs from the previous scene.
+   - **Find the episode's metaphor.** If the script has a running joke (Day 8: brand names as dating, "committed", "falling in love", "sleeping with it"), carry it visually through hook, title and payoff.
+   - **Leave breathing room:** text blocks ≤ ~70% of the width, ≥ 8% margins, at most 3–4 rows per scene; split long sentences into two scenes.
+   - **Lists and steps** get a repeating system (Day 8: "STEP" + a giant numeral on the left, the action on the right) so viewers feel the progress.
+   - End teasers with a curiosity gap (Day 8: the chosen name is censored █████).
    - Show the plan to the user only if they asked to review plans; otherwise proceed.
 6. **Write `episodes/day-NN/reel.spec.json`.** Item `at` = the spoken word time (multi-word lines can take per-word arrays). Leave 0.04–0.1 s between scenes. Add a 1.5–2 s Follow outro after the last word (`meta.duration` = VO + outro).
 7. **Build, check, look:**
@@ -80,7 +85,8 @@ HyperFrames itself is installed in `.agents/skills/` (`/hyperframes`, `/hyperfra
 
 ## Examples
 
-- `episodes/day-08/reel.spec.json`: **the reference v2 episode** (notification hook, drawn figure-eight title, 15 animated stickers, 26 SFX, a transition per scene).
+- `episodes/day-08/reel.spec.json`: **the best reference** (53 s, a dating metaphor through the whole script, a dating-card hook stamped TAKEN, a two-rings title, the 5-step STEP+numeral system, typing ChatGPT/search/comment cards, a count-up, Google colours, a censored-name cliffhanger, 52 SFX).
+- `episodes/day-07/reel.spec.json`: notification hook, drawn 7 title with a climbing tracer, 15 animated stickers.
 - `examples/day-01.json`: a faithful recreation of Day 1 (the v1 baseline; needs `examples/audio/day-01.m4a`).
 - `examples/feature-demo.json`: alternative title-card mechanics (pixel 2, arc-text 5, ZERO-inside-the-0 for 10).
 

@@ -407,6 +407,13 @@
         case "words": // word-by-word on the voiceover's word times
           for (i = 0; i < s.n; i++) tl.set($(s.id + "-w" + i), { opacity: 1 }, s.times[Math.min(i, s.times.length - 1)]);
           break;
+        case "count": {
+          var o = { v: s.from };
+          var cel = el;
+          tl.to(o, { v: s.to, duration: s.dur, ease: "power2.out", onUpdate: function () { cel.textContent = s.prefix + Math.round(o.v) + s.suffix; } }, s.at);
+          tl.set(cel, { opacity: 1 }, s.at);
+          break;
+        }
         case "echo":
           tl.set(el, { opacity: s.op }, s.at);
           break;
