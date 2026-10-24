@@ -34,7 +34,7 @@ S = []
 S.append({
     "id": "hook-car", "start": 0.0, "end": 1.36,
     "bg": {"pattern": "burst", "color": "bg", "color2": YSOFT, "spin": 0.08},
-    "camera": [{"type": "flash", "at": 0.0, "opacity": 0.75, "dur": 0.15}, {"type": "shake", "at": 0.02, "dur": 0.3, "amp": 1.4}],
+    "camera": [{"type": "flash", "at": 0.0, "opacity": 0.75, "dur": 0.15}, {"type": "shake", "at": 0.02, "dur": 0.3, "amp": 1.4}, {"type": "pulse", "at": 0.534, "scale": 1.03}, {"type": "shake", "at": 1.0, "dur": 0.2, "amp": 1.0}],
     "box": {"x": 10, "y": 6, "w": 80},
     "rows": [
         {"align": "center", "gap": 1.4, "items": [
@@ -42,7 +42,7 @@ S.append({
             {"text": "BUILDING", "style": "wide", "size": 7.5, "at": 0.64},
             {"id": "this", "text": "THIS", "style": "titan", "color": KY, "size": 13, "at": 1.0, "anim": "slam", "fx": "extrude", "fxColor": "ink", "sfx": "impact-bass-2"}]},
     ],
-    "stickers": [img("car-hero", 0.0, 20, 33, 47, anim="slam", sfx="impact-bass-1")],
+    "stickers": [img("car-hero", 0.0, 20, 33, 47, anim="slam", sfx="impact-bass-1", wobble=1.2)],
     "draws": [{"shape": "curl-down-arrow", "x": 79, "y": 18, "w": 7, "h": 17, "weight": 0.9, "color": "ink", "at": 1.04, "dur": 0.12}],
 })
 
@@ -57,8 +57,8 @@ S.append({
         {"mt": 0.4, "items": [{"text": "of PAPER?", "style": "marker", "size": 11, "at": [2.32, 2.48], "anim": "slam"}]},
     ],
     "stickers": [
-        img("paper-stack", 1.9, 50, 18, 54, anim="drop", rot=4, sfx="swish"),
-        mascot("cat-omg", 2.55, 81, 54, 32, sfx="boing"),
+        img("paper-stack", 1.9, 50, 18, 54, anim="spin-in", rot=4, sfx="swish", wobble=2),
+        mascot("cat-omg", 2.55, 81, 54, 32, sfx="boing", tag={"text": "WAIT WHAT?!", "pos": "t", "size": 3}),
     ],
 })
 
@@ -87,6 +87,7 @@ S.append({
 # 4 YESTERDAY: brand identity, done
 S.append({
     "id": "yesterday", "start": 6.32, "end": 8.76, "enter": "whip-up", "enterSfx": "swish",
+    "bg": {"pattern": "dots", "color": "bg", "color2": YSOFT},
     "box": {"x": 8, "y": 16, "w": 52},
     "rows": [
         {"items": [{"text": "Yesterday,", "style": "editorial", "color": "grey", "size": 10, "at": 6.32}]},
@@ -103,7 +104,7 @@ S.append({
         {"shape": "check", "x": 68, "y": 34.5, "w": 4, "h": 6, "weight": 0.8, "color": MT, "at": 8.16, "dur": 0.12, "sfx": "click"},
         {"shape": "check", "x": 68, "y": 48.5, "w": 4, "h": 6, "weight": 0.8, "color": MT, "at": 8.34, "dur": 0.12, "sfx": "click"},
     ],
-    "stickers": [mascot("monkey-rapper", 7.5, 9, 58, 32)],
+    "stickers": [mascot("monkey-rapper", 7.5, 9, 58, 32, wobble=4)],
 })
 
 # 5 TODAY WE PUT IT TO WORK
@@ -117,12 +118,13 @@ S.append({
         {"mt": 0.2, "items": [{"text": "WE PUT IT", "style": "poster", "size": 12, "at": [9.28, 9.44, 9.6]}]},
         {"mt": 0.4, "items": [{"text": "TO WORK.", "style": "stencil", "size": 15, "box": KY, "radius": 0.06, "pad": "0.08em 0.3em 0.02em", "at": 9.76, "anim": "stamp", "sfx": "impact-bass-1"}]},
     ],
-    "stickers": [mascot("monkey-shocked-laptop", 9.5, 70, 30, 40)],
+    "stickers": [mascot("monkey-shocked-laptop", 9.5, 70, 30, 40, tag={"text": "WORK?!", "pos": "t", "size": 3})],
 })
 
 # 6 THE EQUATION: papercraft designs + new branding = ?
 S.append({
     "id": "equation", "start": 10.56, "end": 14.5, "enter": "whip-left", "enterSfx": "swish",
+    "camera": [{"type": "pulse", "at": 11.04, "scale": 1.04}, {"type": "punch", "at": 12.32, "scale": 1.05}, {"type": "flash", "at": 13.68, "opacity": 0.4, "dur": 0.1}, {"type": "shake", "at": 13.7, "dur": 0.25, "amp": 1.2}],
     "floaters": [
         {"text": "We Took Our", "style": "editorial-italic", "size": 6, "x": 23, "y": 20, "at": 10.56, "anim": "pop"},
         {"text": "PAPERCRAFT DESIGNS", "style": "wide", "size": 4.2, "x": 23, "y": 66, "at": 11.04, "anim": "pop-letters", "sfx": {"name": "pop", "volume": 0.4}},
@@ -136,14 +138,14 @@ S.append({
         {"text": " ", "style": "label", "size": 4, "box": MT, "radius": 0.5, "pad": "0.1em 0.9em", "x": 84.5, "y": 60, "at": 13.44, "anim": "pop"},
         {"text": "= ?", "style": "titan", "color": KO, "size": 12, "x": 50, "y": 80, "at": 13.68, "anim": "slam", "fx": "extrude", "fxColor": "ink", "sfx": "impact-bass-2"},
     ],
-    "stickers": [img("car-side", 11.0, 5, 33, 22, anim="slide-right", sfx="swish")],
+    "stickers": [img("car-side", 11.0, 5, 33, 22, anim="slam-left", sfx="swish", wobble=1)],
 })
 
 # 7 THE REVEAL: our first look at a DIY kit
 S.append({
     "id": "kit-reveal", "start": 14.52, "end": 17.86, "enter": "zoom",
     "bg": {"pattern": "burst", "color": "bg", "color2": YSOFT, "spin": 0.1},
-    "camera": [{"type": "flash", "at": 14.56, "opacity": 0.85, "dur": 0.18}, {"type": "punch", "at": 14.82, "scale": 1.06},
+    "camera": [{"type": "flash", "at": 14.56, "opacity": 0.85, "dur": 0.18}, {"type": "punch", "at": 14.82, "scale": 1.06}, {"type": "pulse", "at": 15.68, "scale": 1.04},
                {"type": "shake", "at": 14.6, "dur": 0.3, "amp": 1.3}, {"type": "pulse", "at": 16.24, "scale": 1.05}],
     "floaters": [
         {"text": "Our", "style": "editorial-italic", "size": 5, "x": 13, "y": 30, "at": 14.32 + 0.22, "anim": "pop"},
@@ -155,12 +157,14 @@ S.append({
         {"text": "look like", "style": "airy", "size": 3.2, "x": 87, "y": 52, "at": 17.2, "anim": "pop"},
     ],
     "stickers": [
-        img("kit-box", 14.56, 25.5, 22, 58, anim="slam", z=10, sfx="impact-bass-1", wobble=1.5),
+        img("kit-box", 14.56, 25.5, 22, 58, anim="slam", z=10, sfx="impact-bass-1", float=0.8),
         mascot("cat-wow", 16.9, 79, 58, 28),
     ],
     "effects": [
         {"type": "burst", "sticker": "confetti-yellow", "x": 50, "y": 50, "at": 14.6, "count": 9, "size": 3.4, "dist": 44, "sfx": "sparkle"},
         {"type": "burst", "sticker": "confetti-black", "x": 50, "y": 50, "at": 14.66, "count": 7, "size": 3, "dist": 40},
+        {"type": "rain", "sticker": "confetti-yellow", "at": 14.7, "dur": 2.4, "count": 8, "x0": 1, "x1": 7, "size": 3, "seed": 11},
+        {"type": "rain", "sticker": "confetti-orange", "at": 14.8, "dur": 2.4, "count": 6, "x0": 93, "x1": 99, "size": 3, "seed": 13},
     ],
 })
 
@@ -171,15 +175,17 @@ S.append({
     "box": {"x": 10, "y": 30, "w": 60},
     "rows": [
         {"items": [{"text": "The", "style": "editorial-italic", "color": "white", "size": 8, "at": 17.9}]},
-        {"mt": -0.6, "items": [{"text": "IDEA?", "style": "titan", "color": KY, "size": 22, "at": 18.06, "anim": "slam", "sfx": "impact-bass-2"}]},
+        {"mt": -0.6, "items": [{"text": "IDEA?", "style": "titan", "color": KY, "size": 22, "at": 18.06, "anim": "jitter", "sfx": "impact-bass-2"}]},
     ],
-    "stickers": [mascot("monkey-thinking", 18.12, 66, 26, 44, anim="pop")],
+    "stickers": [mascot("monkey-thinking", 18.12, 66, 26, 44, anim="pop", tag={"text": "hmm…", "pos": "t", "size": 3.4, "color": KY})],
+    "draws": [{"shape": "burst", "x": 44, "y": 25, "w": 9, "h": 11, "weight": 0.9, "color": KY, "at": 18.2, "dur": 0.12}],
+    "camera": [{"type": "shake", "at": 18.08, "dur": 0.25, "amp": 1.3}],
 })
 
 # 9 A BOX WITH EVERYTHING — the kit contents, with callouts
 S.append({
     "id": "contents", "start": 18.7, "end": 23.82, "enter": "zoom", "enterSfx": "impact-bass-1",
-    "camera": [{"type": "flash", "at": 18.7, "opacity": 0.5, "dur": 0.12}] + pulses(18.7, 20.0, 1.02, 2),
+    "camera": [{"type": "flash", "at": 18.7, "opacity": 0.5, "dur": 0.12}] + pulses(18.7, 20.0, 1.02, 2) + [{"type": "pulse", "at": 21.12, "scale": 1.04}, {"type": "pulse", "at": 22.16, "scale": 1.03}, {"type": "pulse", "at": 23.04, "scale": 1.03}],
     "floaters": [
         {"text": "A BOX", "style": "titan", "color": KY, "size": 11, "x": 24, "y": 20, "at": 18.72, "anim": "slam", "fx": "extrude", "fxColor": "ink"},
         {"text": "WITH EVERYTHING", "style": "wide", "size": 4.6, "x": 24, "y": 32, "at": 19.28, "anim": "pop-letters", "sfx": {"name": "pop", "volume": 0.35}},
@@ -206,13 +212,14 @@ S.append({
         {"items": [{"text": "NOT JUST A", "style": "poster", "size": 11, "at": [23.84, 24.0, 24.16]}]},
         {"mt": 0.6, "items": [{"text": "PDF", "style": "tech", "size": 20, "box": "#E6E6E6", "radius": 0.08, "pad": "0.05em 0.35em", "at": 24.32, "anim": "pop", "strike": {"at": 24.6}, "sfx": "error"}]},
     ],
-    "stickers": [mascot("monkey-drama", 24.45, 68, 30, 42)],
+    "stickers": [mascot("monkey-drama", 24.45, 68, 30, 42, tag={"text": "NOOO", "pos": "t", "size": 3.2})],
+    "camera": [{"type": "shake", "at": 24.6, "dur": 0.25, "amp": 1.3}],
 })
 
 # 11 AN ACTUAL PRODUCT: open, build, shelf
 S.append({
     "id": "product", "start": 25.02, "end": 28.92, "enter": "zoom",
-    "camera": [{"type": "pulse", "at": 25.68, "scale": 1.04}, {"type": "pulse", "at": 28.32, "scale": 1.04}],
+    "camera": [{"type": "pulse", "at": 25.68, "scale": 1.04}, {"type": "pulse", "at": 26.64, "scale": 1.03}, {"type": "pulse", "at": 27.12, "scale": 1.03}, {"type": "shake", "at": 28.32, "dur": 0.25, "amp": 1.2}],
     "box": {"x": 6, "y": 14, "w": 40},
     "rows": [
         {"items": [{"text": "An Actual", "style": "editorial-italic", "size": 7, "at": [25.04, 25.28]}]},
@@ -224,16 +231,16 @@ S.append({
             {"text": "& Put It On Your", "style": "airy", "size": 4, "at": [27.6, 27.6, 27.76, 28.0, 28.16]},
             {"text": "SHELF", "style": "marker", "size": 7, "at": 28.32, "anim": "slam", "sfx": "impact-bass-2"}]},
     ],
-    "draws": [{"shape": "underline", "x": 50, "y": 70, "w": 46, "h": 3, "weight": 1.6, "color": "ink", "at": 28.2, "dur": 0.2}],
+    "draws": [{"shape": "underline", "x": 47, "y": 59, "w": 46, "h": 3, "weight": 1.6, "color": "ink", "at": 28.2, "dur": 0.2}],
     "stickers": [
-        img("car-closeup", 25.7, 54, 22, 48, anim="slide-left", sfx="swish"),
+        img("car-hero", 25.7, 49, 24, 33, anim="slam-right", sfx="swish"),
         mascot("monkey-wink-shades", 27.0, 87, 2, 17),
     ],
 })
 
 # 12 OF COURSE… FIRST CONCEPT (music muffled)
 S.append({
-    "id": "concept", "start": 28.96, "end": 31.4, "enter": "blur",
+    "id": "concept", "start": 28.96, "end": 31.4, "enter": "blur", "drift": 1.05,
     "bg": {"pattern": "grid", "color": "bg", "color2": "#E9EEF5"},
     "camera": [{"type": "tilt", "at": 29.0, "deg": -1.5}],
     "box": {"x": 8, "y": 20, "w": 56},
@@ -255,7 +262,7 @@ def todo(text, times, big=None):
     return {"mt": 0.8, "gap": 1.2, "items": items}
 S.append({
     "id": "todo", "start": 31.44, "end": 36.52, "enter": "whip-left", "enterSfx": "swish",
-    "camera": [{"type": "reset", "at": 31.44}, {"type": "pulse", "at": 36.0, "scale": 1.05}],
+    "camera": [{"type": "reset", "at": 31.44}, {"type": "pulse", "at": 32.08, "scale": 1.03}, {"type": "pulse", "at": 33.04, "scale": 1.03}, {"type": "pulse", "at": 34.24, "scale": 1.03}, {"type": "shake", "at": 36.0, "dur": 0.3, "amp": 1.4}],
     "box": {"x": 8, "y": 14, "w": 62},
     "rows": [
         {"items": [{"text": "We Still Need To…", "style": "editorial-italic", "size": 7, "at": [31.44, 31.6, 31.76, 32.0]}]},
@@ -266,14 +273,15 @@ S.append({
     "floaters": [{"text": "how much?!", "style": "marker", "size": 5, "x": 82, "y": 86, "rot": -6, "at": 35.0, "anim": "pop"}],
     "stickers": [
         mascot("monkey-doctor", 32.2, 78, 6, 30),
-        mascot("monkey-shades-cash", 34.96, 74, 44, 34, sfx="ding"),
+        mascot("monkey-shades-cash", 34.96, 74, 44, 34, sfx="ding", wobble=5),
     ],
 })
 
 # 14 TACKLING NEXT (music back, full)
 S.append({
     "id": "next", "start": 36.56, "end": 38.2, "enter": "zoom", "enterSfx": "impact-bass-1",
-    "camera": [{"type": "shake", "at": 37.4, "dur": 0.3, "amp": 1.5}] + pulses(36.6, 38.2, 1.03),
+    "bg": {"pattern": "burst", "color": "bg", "color2": YSOFT, "spin": 0.12},
+    "camera": [{"type": "flash", "at": 37.36, "opacity": 0.45, "dur": 0.1}, {"type": "shake", "at": 37.4, "dur": 0.3, "amp": 1.5}] + pulses(36.6, 38.2, 1.03),
     "box": {"x": 8, "y": 22, "w": 66},
     "rows": [
         {"items": [{"text": "And That's What We're", "style": "editorial-italic", "size": 6.5, "at": [36.56, 36.72, 36.96, 37.12]}]},
@@ -296,7 +304,7 @@ S.append({
         tag("YES", 39.0, 22, 72, size=7, rot=-4, bg=MT, fg=INK, sfx={"name": "pop", "volume": 0.5}),
         tag("NO", 39.12, 42, 72, size=7, rot=4, bg="#E41E24", fg="white"),
     ],
-    "stickers": [mascot("monkey-pray", 38.7, 72, 36, 42)],
+    "stickers": [mascot("monkey-pray", 38.7, 72, 36, 42, tag={"text": "pls?", "pos": "t", "size": 3})],
 })
 
 # 16 BE HONEST
@@ -304,12 +312,15 @@ S.append({
     "id": "honest", "start": 39.6, "end": 40.4, "enter": "zoom", "enterSfx": "impact-bass-2",
     "box": {"x": 8, "y": 32, "w": 60},
         "rows": [{"items": [{"text": "BE HONEST.", "style": "stencil", "size": 16, "box": KY, "radius": 0.06, "pad": "0.08em 0.3em 0.02em", "at": 39.6, "anim": "stamp"}]}],
-    "stickers": [mascot("cat-what", 39.7, 72, 30, 40)],
+    "stickers": [mascot("cat-what", 39.7, 72, 30, 40, tag={"text": "…really?", "pos": "t", "size": 3})],
+    "camera": [{"type": "shake", "at": 39.75, "dur": 0.25, "amp": 1.2}],
 })
 
 # 17 OUTRO
 S.append({
     "id": "follow", "start": 40.44, "end": 42.9, "enter": "whip-up", "enterSfx": "swish",
+    "bg": {"pattern": "burst", "color": "bg", "color2": YSOFT, "spin": 0.1},
+    "effects": [{"type": "rain", "sticker": "confetti-yellow", "at": 40.7, "dur": 2.2, "count": 7, "x0": 1, "x1": 10, "size": 3, "seed": 21}, {"type": "rain", "sticker": "confetti-black", "at": 40.8, "dur": 2.2, "count": 5, "x0": 90, "x1": 99, "size": 3, "seed": 23}],
     "camera": pulses(40.6, 42.9, 1.03),
     "box": {"x": 15, "y": 30, "w": 70},
     "rows": [
@@ -331,6 +342,8 @@ spec = {
         {"id": "music", "src": "audio/music-bed.m4a", "volume": 1},
     ],
     "scenes": S,
+    "transitions": [{"type": "glitch", "at": 17.76, "dur": 0.16}, {"type": "glitch", "at": 23.72, "dur": 0.16},
+                    {"type": "glitch", "at": 31.32, "dur": 0.16}, {"type": "glitch", "at": 38.12, "dur": 0.16}],
 }
 json.dump(spec, open("episodes/day-10/reel.spec.json", "w"), indent=2, ensure_ascii=False)
 print("scenes", len(S))
