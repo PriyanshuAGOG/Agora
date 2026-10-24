@@ -142,3 +142,17 @@ When none fits, use an emoji sticker from `engine/stickers/emoji/index.json` (97
 | lists deliverables (logo, colours, fonts, styles) | a 2×2 grid where each word *is* its meaning: LOGO circled, COLOUR in palette colours + swatch pills, F·O·N·T·S in five fonts, Visual in calligraphy over dripping STYLES |
 | swears or says something gross | a rebus that covers the letter: SH💩T (inline `sticker` item between "SH" and "T"), red `beastly`, flies burst, cat-facepalm "EWW" |
 | says pick / choose | three "Option" chips in three fonts; one circled, the other two crossed out in red |
+
+## Day 10 additions
+
+| The script… | Device |
+| --- | --- |
+| opens with "how about building THIS…" | the real product image slams in on frame 1 over a spinning burst bg + flash + shake; THIS in the kit's yellow with an ink extrude and an arrow to it |
+| mentions a few sheets of paper | a generated fanned paper stack with dashed cut lines and a car template + shocked cat |
+| hits a milestone day (10) | giant two-digit numeral in Titan One, ZERO on a yellow tag rotated inside the 0's counter, a DOUBLE DIGITS! tag, paper confetti rain kept to the frame edges, beat pulses |
+| combines two things into a result | an **equation** layout: image + label, "+", the second thing, "= ?" — then the next scene reveals the answer (the kit box) |
+| asks "the idea?" | a **black** pattern-interrupt frame, music cut to silence + record scratch, then the music drops back in on the beat with the reveal |
+| lists what a product includes | the product photo with **callout tags + arrows** pointing at the parts (TEMPLATES → sheets, INSTRUCTIONS → manual) |
+| says "not just a PDF" | the dismissed thing in a grey file box, struck through in red |
+| lists open tasks | a to-do with `[ ]` boxes in arcade + poster type, the last item ending on an orange COST slam + money monkey |
+| asks the audience a question | YES / NO pills + a praying monkey, then BE HONEST stamped on a yellow box with a side-eye cat |

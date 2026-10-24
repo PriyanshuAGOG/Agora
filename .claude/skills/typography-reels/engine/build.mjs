@@ -293,7 +293,10 @@ function renderItem(item, scene, floating = false) {
       plan.push({ k: "echo", id: `${id}-e${k}`, at: (e.at ?? (Array.isArray(at) ? at[0] : at) + 0.15) + (k - 1) * (e.stagger ?? 0.1), op: round(Math.max(0.12, 0.55 - (k - 1) * (e.fade ?? 0.16))) });
     }
   }
-  const cls = `it${floating ? " fl" : ""}${animated ? " hf-in" : ""}`;
+  // Per-word / typewriter lines reveal their words one by one, but the container itself must not show early:
+  // a box background would sit there empty, and an entrance anim (stamp, slam…) would be lost. Reveal it on the first word.
+  const reveal = !animated && (item.box || (item.anim && Array.isArray(at)));
+  const cls = `it${floating ? " fl" : ""}${animated || reveal ? " hf-in" : ""}`;
   // Stickers covering words is a signature of the style, so every word allows occlusion.
   const allowOverlap = (floating || item.overlap ? " data-layout-allow-overlap" : "") + " data-layout-allow-occlusion";
   const html = `<span class="${cls}" id="${id}" style="${outer.join(";")}">${hl}<span class="tx"${allowOverlap} style="${txStyle.join(";").replace(/font-size:[^;]+/, "font-size:1em")}">${inner}</span>${echo}${ul}${strike}</span>`;
@@ -301,6 +304,8 @@ function renderItem(item, scene, floating = false) {
   if (animated) {
     plan.push({ k: "item", id, anim: LETTER_ANIMS.has(anim) ? "cut" : anim === "count" ? "pop" : anim, at, dur: item.dur });
     checkTime(at, scene, id);
+  } else if (reveal) {
+    plan.push({ k: "item", id, anim: Array.isArray(at) && item.anim && !LETTER_ANIMS.has(item.anim) && item.anim !== "type" ? item.anim : "cut", at: t0, dur: item.dur });
   }
   if (item.underline) {
     const u = item.underline === true ? {} : item.underline;
@@ -349,6 +354,12 @@ function renderSticker(st, scene) {
     outer.push(`left:${st.x ?? 70}%`, `top:${st.y ?? 15}%`);
   }
   if (st.z != null) outer.push(`z-index:${st.z}`);
+  // die-cut sticker look: a white outline (cut: true | thickness in % of H) plus a soft drop shadow
+  if (st.cut) {
+    const t = round((st.cut === true ? 0.45 : st.cut) * U);
+    const d = round(t * 0.7);
+    outer.push(`filter:drop-shadow(${t}px 0 0 #fff) drop-shadow(-${t}px 0 0 #fff) drop-shadow(0 ${t}px 0 #fff) drop-shadow(0 -${t}px 0 #fff) drop-shadow(${d}px ${d}px 0 #fff) drop-shadow(-${d}px -${d}px 0 #fff) drop-shadow(0 ${round(U * 0.6)}px ${round(U * 0.7)}px rgba(0,0,0,.28))`);
+  } else if (st.shadow) outer.push(`filter:drop-shadow(0 ${round(U * 0.8)}px ${round(U * 1.2)}px rgba(0,0,0,.3))`);
   const imgT = [];
   if (st.flip) imgT.push("scaleX(-1)");
   if (st.rot) imgT.push(`rotate(${st.rot}deg)`);

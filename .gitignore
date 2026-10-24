@@ -7,3 +7,4 @@ episodes/**/*.mov
 episodes/*/work-*/
 episodes/*/.*hf-transaction*/
 episodes/*/render.log
+episodes/*/audio/music-*.m4a

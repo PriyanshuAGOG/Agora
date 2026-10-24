@@ -99,6 +99,9 @@ An item can be an **inline sticker** (rebus) instead of text: `{ "sticker": "hea
   "anim": "pop",              // any item anim; pop is the house style
   "flip": true, "rot": 10,
   "wobble": 4,                // idle wiggle in degrees (GIF-like)
+  "cut": true,                // die-cut sticker look: white outline + soft shadow (or a thickness in % of H)
+  "shadow": true,             // soft drop shadow only (product photos)
+  "z": 10,                    // stack above effects (e.g. a hero image over its confetti burst)
   "spinTurns": 3,             // continuous spin (e.g. a clock-hand sticker)
   "z": 12,
   "tag": { "text": ".!!?", "pos": "tr", "size": 4.5, "color": "red", "style": "geo-black", "rot": -10 }

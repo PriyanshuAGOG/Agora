@@ -32,7 +32,8 @@ HyperFrames itself is installed in `.agents/skills/` (`/hyperframes`, `/hyperfra
 | Day number | yes | watermark, progress bar, title card. **Check that the VO says the same number** (Day 8's VO said "day seven"; flag mismatches to the user) |
 | Voiceover | yes | audio or video. The user prefers that you do everything else |
 | CTA | optional | comment keyword (`IDEAS`, `PROMPT`) or a teaser; if the VO has none, end on See-you-tomorrow + Follow |
-| Music bed | optional | none is bundled and music sites are blocked here, so ask once and add it to `audio[]` at volume 0.15–0.2 |
+| Music bed | optional | none is bundled (music sites are blocked here). When the user supplies one, build a **dynamic bed**, not a flat loop: see "Music" below |
+| Product images | optional | photos/renders of the product (Day 10: kit box, kit contents, the paper car). **Use them as-is**: never redraw the product in HTML. Only remove a fake checkerboard background (flood-fill from the edges) and trim empty margins. Save them to `episodes/day-NN/stickers/` |
 | Meme clips / new stickers | optional | `episodes/day-NN/media/`, `episodes/day-NN/stickers/` |
 
 ## Workflow (one episode, end to end)
@@ -73,6 +74,23 @@ HyperFrames itself is installed in `.agents/skills/` (`/hyperframes`, `/hyperfra
    ```
    That takes about 4–6 min for 41 s on 4 cores. Verify with `ffprobe` (duration, 30 fps, AAC) and decode 4–6 frames to check against the snapshots.
 9. **Log it** in `episodes/series-log.md`.
+
+## Music (Day 10 onwards)
+
+`episodes/day-10/audio/make-bed.py` is the template:
+- find the tempo and the first groove beat with librosa (`beat_track`)
+- start the track on that beat so the beat grid is `k * 60/BPM` from t = 0
+- set the bed about 13 dB under the voice (gain about 0.2 plus `sidechaincompress` keyed by the VO)
+- automate the gain to follow the edit: a punch on frame 1, swells after punchlines, a **dead stop** for a pattern-interrupt line ("The idea?"), a **low-pass "reality check"** for sober lines, and full volume for the outro
+- add camera `pulse`s on beats in high-energy scenes (`pulses()` in Day 10's `make-spec.py`)
+- add it to `audio[]` at volume 1
+Raw music files stay out of git (size and copyright).
+
+## Stickers: the user's rules (Day 10 onwards)
+
+- **No emoji** (Fluent 3D, Noto animated, Twemoji) as stickers. The user reads them as cheap.
+- Use the **animal mascots** (`lib:`) with `"cut": true` (white die-cut outline + shadow), the **brand kit**, the **user's product images**, and drawn shapes (arrows, checks, underlines).
+- Supporting graphics (confetti, paper sheets) can be generated, but never the product itself.
 
 ## Engine facts
 

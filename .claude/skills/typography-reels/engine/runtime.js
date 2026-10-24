@@ -192,10 +192,10 @@
         tl.fromTo(el, { opacity: 0, x: 8 * U }, { opacity: 1, x: 0, duration: dur || 0.22, ease: "power3.out" }, at);
         break;
       case "slam-left": // flies in from far left and collides
-        tl.fromTo(el, { opacity: 1, x: -0.6 * C.W }, { x: 0, duration: dur || 0.28, ease: "power4.out" }, at);
+        tl.fromTo(el, { opacity: 0, x: -0.6 * C.W }, { opacity: 1, x: 0, duration: dur || 0.28, ease: "power4.out" }, at);
         break;
       case "slam-right": // flies in from far right and collides
-        tl.fromTo(el, { opacity: 1, x: 0.6 * C.W }, { x: 0, duration: dur || 0.28, ease: "power4.out" }, at);
+        tl.fromTo(el, { opacity: 0, x: 0.6 * C.W }, { opacity: 1, x: 0, duration: dur || 0.28, ease: "power4.out" }, at);
         break;
       case "slide-up":
         tl.fromTo(el, { opacity: 0, y: 4 * U }, { opacity: 1, y: 0, duration: dur || 0.22, ease: "power3.out" }, at);
