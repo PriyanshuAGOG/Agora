@@ -1,0 +1,2048 @@
+{
+  "meta": {
+    "day": 11,
+    "title": "Day 11 - Zero to Something: picking the paper",
+    "duration": 51.6,
+    "handle": "@your.soulpreneur",
+    "watermark": {
+      "text": "DAY 11"
+    },
+    "progress": true
+  },
+  "audio": [
+    {
+      "id": "vo",
+      "src": "audio/day-11-vo.m4a",
+      "volume": 1
+    },
+    {
+      "id": "music",
+      "src": "audio/music-bed.m4a",
+      "volume": 1
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "start": 0.0,
+      "end": 2.28,
+      "camera": [
+        {
+          "type": "flash",
+          "at": 0.0,
+          "opacity": 0.6,
+          "dur": 0.12
+        },
+        {
+          "type": "punch",
+          "at": 0.64,
+          "scale": 1.06
+        },
+        {
+          "type": "shake",
+          "at": 0.66,
+          "dur": 0.25,
+          "amp": 1.3
+        }
+      ],
+      "box": {
+        "x": 8,
+        "y": 16,
+        "w": 62
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "We're Using",
+              "style": "editorial-italic",
+              "size": 8,
+              "at": [
+                0.0,
+                0.32
+              ],
+              "anim": "swing"
+            }
+          ]
+        },
+        {
+          "mt": -0.4,
+          "gap": 2.6,
+          "items": [
+            {
+              "id": "three",
+              "text": "THREE",
+              "style": "crisis",
+              "color": "mint",
+              "size": 15,
+              "at": 0.64,
+              "anim": "slam",
+              "fx": "shadow",
+              "fxColor": "ink",
+              "sfx": "impact-bass-1"
+            },
+            {
+              "text": "Different",
+              "style": "retro-script",
+              "size": 7,
+              "at": 0.96,
+              "anim": "pop"
+            }
+          ]
+        },
+        {
+          "mt": 0.2,
+          "items": [
+            {
+              "text": "Paper",
+              "style": "label",
+              "size": 6,
+              "at": 1.28
+            }
+          ]
+        },
+        {
+          "mt": -0.4,
+          "gap": 0,
+          "items": [
+            {
+              "text": "THI",
+              "style": "airy",
+              "size": 11,
+              "at": 1.76,
+              "anim": "pop"
+            },
+            {
+              "text": "CKNE",
+              "style": "poster",
+              "size": 11,
+              "at": 1.84,
+              "anim": "pop"
+            },
+            {
+              "text": "SSES",
+              "style": "titan",
+              "color": "mint",
+              "size": 11,
+              "at": 1.92,
+              "anim": "slam",
+              "fx": "shadow",
+              "fxColor": "ink",
+              "sfx": "thud"
+            }
+          ]
+        }
+      ],
+      "floaters": [
+        {
+          "text": " ",
+          "style": "label",
+          "size": 4,
+          "box": "mint",
+          "radius": 0.15,
+          "pad": "0.08em 3.2em",
+          "x": 82,
+          "y": 34,
+          "at": 0.7,
+          "anim": "slide-left"
+        },
+        {
+          "text": " ",
+          "style": "label",
+          "size": 4,
+          "box": "mint",
+          "radius": 0.15,
+          "pad": "0.2em 3.2em",
+          "x": 82,
+          "y": 46,
+          "at": 0.8,
+          "anim": "slide-left"
+        },
+        {
+          "text": " ",
+          "style": "label",
+          "size": 4,
+          "box": "mint",
+          "radius": 0.15,
+          "pad": "0.4em 3.2em",
+          "x": 82,
+          "y": 60,
+          "at": 0.9,
+          "anim": "slide-left"
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:monkey-shocked-laptop",
+          "at": 1.0,
+          "x": 60,
+          "y": 60,
+          "h": 28,
+          "cut": true,
+          "anim": "boing",
+          "tag": {
+            "text": ".!!?",
+            "pos": "tr",
+            "size": 3.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "car",
+      "start": 2.3,
+      "end": 3.64,
+      "enter": "whip-left",
+      "enterSfx": "swish",
+      "camera": [
+        {
+          "type": "punch",
+          "at": 2.8,
+          "scale": 1.06
+        }
+      ],
+      "box": {
+        "x": 8,
+        "y": 22,
+        "w": 40
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "To Build A",
+              "style": "editorial-italic",
+              "size": 8,
+              "at": [
+                2.32,
+                2.48,
+                2.64
+              ]
+            }
+          ]
+        },
+        {
+          "mt": -0.2,
+          "items": [
+            {
+              "text": "PAPER",
+              "style": "poster",
+              "size": 15,
+              "at": 2.8,
+              "anim": "stamp"
+            }
+          ]
+        },
+        {
+          "mt": -1.2,
+          "items": [
+            {
+              "text": "CAR.",
+              "style": "titan",
+              "color": "mint",
+              "size": 17,
+              "at": 3.2,
+              "anim": "slam",
+              "fx": "shadow",
+              "fxColor": "ink",
+              "sfx": "impact-bass-2"
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "car-hero",
+          "at": 2.82,
+          "x": 44,
+          "y": 30,
+          "h": 38,
+          "shadow": true,
+          "anim": "slam-right",
+          "sfx": "swish",
+          "wobble": 1.2
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "start": 3.66,
+      "end": 4.38,
+      "enter": "zoom",
+      "camera": [
+        {
+          "type": "shake",
+          "at": 3.92,
+          "dur": 0.25,
+          "amp": 1.4
+        }
+      ],
+      "box": {
+        "x": 14,
+        "y": 28,
+        "w": 60
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "Here's",
+              "style": "retro-script",
+              "size": 10,
+              "at": 3.66
+            }
+          ]
+        },
+        {
+          "mt": -1,
+          "items": [
+            {
+              "id": "why",
+              "text": "WHY?",
+              "style": "comic",
+              "color": "mint",
+              "size": 24,
+              "at": 3.92,
+              "anim": "jitter",
+              "fx": "shadow",
+              "fxColor": "ink",
+              "sfx": "impact-bass-1"
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:cat-what",
+          "at": 3.98,
+          "x": 56,
+          "y": 30,
+          "h": 30,
+          "cut": true,
+          "anim": "boing",
+          "tag": {
+            "text": "??",
+            "pos": "tr",
+            "size": 3.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "title",
+      "start": 4.4,
+      "end": 7.18,
+      "enter": "zoom-out",
+      "camera": [
+        {
+          "type": "pulse",
+          "at": 4.807,
+          "scale": 1.03
+        },
+        {
+          "type": "pulse",
+          "at": 5.341,
+          "scale": 1.03
+        },
+        {
+          "type": "pulse",
+          "at": 5.875,
+          "scale": 1.03
+        },
+        {
+          "type": "pulse",
+          "at": 6.409,
+          "scale": 1.03
+        },
+        {
+          "type": "pulse",
+          "at": 6.943,
+          "scale": 1.03
+        }
+      ],
+      "floaters": [
+        {
+          "text": "DAY",
+          "style": "crisis",
+          "size": 15,
+          "x": 22,
+          "y": 40,
+          "at": 4.4,
+          "anim": "slam",
+          "sfx": "impact-bass-2"
+        },
+        {
+          "text": "Of Going From",
+          "style": "retro-script",
+          "size": 7,
+          "x": 22,
+          "y": 60,
+          "at": 5.12,
+          "anim": "pop",
+          "rot": -4
+        },
+        {
+          "text": "1",
+          "style": "titan",
+          "outline": true,
+          "outlineWidth": 0.04,
+          "color": "mint",
+          "size": 50,
+          "x": 51,
+          "y": 50,
+          "at": 4.64,
+          "anim": "slam",
+          "sfx": "impact-bass-1"
+        },
+        {
+          "text": "1",
+          "style": "titan",
+          "color": "mint",
+          "size": 50,
+          "x": 67,
+          "y": 50,
+          "at": 4.8,
+          "anim": "slam",
+          "fx": "extrude",
+          "fxColor": "ink"
+        },
+        {
+          "text": "ZERO",
+          "style": "geo-black",
+          "size": 3.6,
+          "box": "ink",
+          "color": "white",
+          "radius": 0.2,
+          "pad": "0.12em 0.4em 0.06em",
+          "x": 79.5,
+          "y": 86,
+          "at": 5.84,
+          "anim": "pop",
+          "sfx": {
+            "name": "pop",
+            "volume": 0.5
+          }
+        },
+        {
+          "text": "SOMETHING",
+          "style": "blast",
+          "size": 7.5,
+          "x": 74,
+          "y": 12,
+          "at": 6.56,
+          "anim": "slam",
+          "sfx": "ding"
+        }
+      ],
+      "draws": [
+        {
+          "shape": "arrow-up",
+          "x": 78,
+          "y": 24,
+          "w": 3,
+          "h": 56,
+          "weight": 0.9,
+          "color": "ink",
+          "at": 6.0,
+          "dur": 0.4,
+          "sfx": "swish"
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:monkey-yay",
+          "at": 6.62,
+          "x": 85,
+          "y": 44,
+          "h": 26,
+          "cut": true,
+          "anim": "boing"
+        }
+      ]
+    },
+    {
+      "id": "kits",
+      "start": 7.2,
+      "end": 10.3,
+      "enter": "whip-up",
+      "enterSfx": "swish",
+      "camera": [
+        {
+          "type": "pulse",
+          "at": 7.92,
+          "scale": 1.04
+        },
+        {
+          "type": "punch",
+          "at": 9.12,
+          "scale": 1.05
+        },
+        {
+          "type": "shake",
+          "at": 9.14,
+          "dur": 0.25,
+          "amp": 1.2
+        }
+      ],
+      "box": {
+        "x": 7,
+        "y": 16,
+        "w": 42
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "We're Turning These",
+              "style": "editorial-italic",
+              "size": 6.5,
+              "at": [
+                7.2,
+                7.36,
+                7.68
+              ]
+            }
+          ]
+        },
+        {
+          "mt": -0.2,
+          "items": [
+            {
+              "text": "DESIGNS",
+              "style": "bodoni",
+              "color": "mint",
+              "size": 12,
+              "at": 7.92,
+              "anim": "wipe"
+            }
+          ]
+        },
+        {
+          "mt": 0.6,
+          "items": [
+            {
+              "text": "Into Actual",
+              "style": "airy",
+              "size": 5.5,
+              "at": [
+                8.48,
+                8.72
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0,
+          "items": [
+            {
+              "text": "DIY KITS",
+              "style": "titan",
+              "size": 13,
+              "at": 9.12,
+              "anim": "slam",
+              "fx": "shadow",
+              "fxColor": "mint",
+              "sfx": "impact-bass-1"
+            }
+          ]
+        }
+      ],
+      "draws": [
+        {
+          "shape": "curl-down-arrow",
+          "x": 47,
+          "y": 27,
+          "w": 9,
+          "h": 15,
+          "weight": 0.9,
+          "color": "mint",
+          "at": 8.5,
+          "dur": 0.35
+        }
+      ],
+      "stickers": [
+        {
+          "name": "car-side",
+          "at": 7.95,
+          "x": 52,
+          "y": 14,
+          "h": 15,
+          "shadow": true,
+          "anim": "slam-left",
+          "sfx": "swish"
+        },
+        {
+          "name": "kit-box",
+          "at": 9.12,
+          "x": 58,
+          "y": 38,
+          "h": 38,
+          "shadow": true,
+          "anim": "slam",
+          "sfx": "impact-bass-2",
+          "float": 0.6
+        }
+      ]
+    },
+    {
+      "id": "finally",
+      "start": 10.32,
+      "end": 14.12,
+      "enter": "zoom",
+      "camera": [
+        {
+          "type": "shake",
+          "at": 11.2,
+          "dur": 0.3,
+          "amp": 1.3
+        }
+      ],
+      "box": {
+        "x": 18,
+        "y": 26,
+        "w": 62
+      },
+      "rows": [
+        {
+          "align": "center",
+          "items": [
+            {
+              "text": "And Today, We",
+              "style": "editorial-italic",
+              "size": 7,
+              "at": [
+                10.32,
+                10.48,
+                10.96
+              ]
+            }
+          ]
+        },
+        {
+          "align": "center",
+          "mt": -0.4,
+          "items": [
+            {
+              "id": "fin",
+              "text": "FINALLY",
+              "style": "comic",
+              "color": "mint",
+              "size": 18,
+              "at": 11.2,
+              "anim": "jitter",
+              "fx": "shadow",
+              "fxColor": "ink",
+              "sfx": "impact-bass-1"
+            }
+          ]
+        },
+        {
+          "align": "center",
+          "mt": 0.2,
+          "gap": 1.2,
+          "items": [
+            {
+              "text": "Figured Out",
+              "style": "label",
+              "size": 6,
+              "at": [
+                11.6,
+                12.08
+              ]
+            },
+            {
+              "text": "WHAT PAPER",
+              "style": "wide",
+              "size": 6.5,
+              "at": [
+                12.24,
+                12.48
+              ]
+            }
+          ]
+        },
+        {
+          "align": "center",
+          "mt": 0.6,
+          "items": [
+            {
+              "text": "We're Going To Use",
+              "style": "airy",
+              "size": 4.6,
+              "at": [
+                12.96,
+                13.2,
+                13.36,
+                13.52
+              ]
+            }
+          ]
+        }
+      ],
+      "floaters": [
+        {
+          "text": "Matte?",
+          "style": "editorial-italic",
+          "size": 3.8,
+          "x": 12,
+          "y": 16,
+          "rot": -10,
+          "at": 12.5,
+          "anim": "pop",
+          "color": "grey"
+        },
+        {
+          "text": "Kraft?",
+          "style": "label-caps",
+          "size": 3.2,
+          "x": 86,
+          "y": 14,
+          "rot": 8,
+          "at": 12.62,
+          "anim": "pop"
+        },
+        {
+          "text": "Cardstock?",
+          "style": "label",
+          "size": 3.4,
+          "x": 10,
+          "y": 80,
+          "rot": 7,
+          "at": 12.74,
+          "anim": "pop"
+        },
+        {
+          "text": "Glossy?",
+          "style": "bodoni",
+          "color": "mint",
+          "size": 3.8,
+          "x": 88,
+          "y": 80,
+          "rot": -6,
+          "at": 12.86,
+          "anim": "pop"
+        },
+        {
+          "text": "Blah",
+          "style": "label",
+          "size": 2.8,
+          "x": 50,
+          "y": 12,
+          "at": 12.98,
+          "anim": "pop",
+          "color": "grey"
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:monkey-giggle",
+          "at": 11.3,
+          "anchor": {
+            "to": "fin",
+            "pos": "r",
+            "dx": 14,
+            "dy": 0
+          },
+          "h": 20,
+          "cut": true,
+          "anim": "boing",
+          "tag": {
+            "text": "!!",
+            "pos": "tr",
+            "size": 3.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "gsm",
+      "start": 14.16,
+      "end": 22.3,
+      "enter": "whip-left",
+      "enterSfx": "swish",
+      "camera": [
+        {
+          "type": "pulse",
+          "at": 14.72,
+          "scale": 1.04
+        },
+        {
+          "type": "pulse",
+          "at": 17.12,
+          "scale": 1.04
+        },
+        {
+          "type": "pulse",
+          "at": 19.04,
+          "scale": 1.05
+        },
+        {
+          "type": "punch",
+          "at": 21.52,
+          "scale": 1.06
+        },
+        {
+          "type": "shake",
+          "at": 21.54,
+          "dur": 0.3,
+          "amp": 1.4
+        }
+      ],
+      "box": {
+        "x": 7,
+        "y": 12,
+        "w": 64
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "We're Going With",
+              "style": "editorial-italic",
+              "size": 6.5,
+              "at": [
+                14.16,
+                14.4,
+                14.56
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.9,
+          "gap": 1.4,
+          "items": [
+            {
+              "text": "180",
+              "style": "titan",
+              "color": "mint",
+              "size": 11,
+              "at": 14.72,
+              "anim": "count",
+              "count": {
+                "from": 0,
+                "to": 180,
+                "dur": 0.45
+              },
+              "fx": "shadow",
+              "fxColor": "ink",
+              "sfx": "typing"
+            },
+            {
+              "text": "GSM",
+              "style": "label-caps",
+              "size": 4.5,
+              "at": 15.68,
+              "anim": "pop"
+            },
+            {
+              "text": "For Some Parts",
+              "style": "airy",
+              "size": 5,
+              "at": [
+                16.24,
+                16.48,
+                16.64
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.9,
+          "gap": 1.4,
+          "items": [
+            {
+              "text": "210",
+              "style": "titan",
+              "color": "mint",
+              "size": 11,
+              "at": 17.12,
+              "anim": "count",
+              "count": {
+                "from": 0,
+                "to": 210,
+                "dur": 0.45
+              },
+              "fx": "shadow",
+              "fxColor": "ink",
+              "sfx": "typing"
+            },
+            {
+              "text": "GSM",
+              "style": "label-caps",
+              "size": 4.5,
+              "at": 17.4,
+              "anim": "pop"
+            },
+            {
+              "text": "For Others",
+              "style": "airy",
+              "size": 5,
+              "at": [
+                18.0,
+                18.24
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.9,
+          "gap": 1.4,
+          "items": [
+            {
+              "text": "250",
+              "style": "titan",
+              "color": "mint",
+              "size": 11,
+              "at": 19.04,
+              "anim": "count",
+              "count": {
+                "from": 0,
+                "to": 250,
+                "dur": 0.45
+              },
+              "fx": "shadow",
+              "fxColor": "ink",
+              "sfx": "typing"
+            },
+            {
+              "text": "GSM",
+              "style": "label-caps",
+              "size": 4.5,
+              "at": 20.0,
+              "anim": "pop"
+            },
+            {
+              "text": "Extra",
+              "style": "airy",
+              "size": 5,
+              "at": 21.12
+            },
+            {
+              "id": "stiff",
+              "text": "STIFFNESS",
+              "style": "block",
+              "size": 9,
+              "at": 21.52,
+              "anim": "stamp",
+              "sfx": "impact-bass-2"
+            }
+          ]
+        }
+      ],
+      "floaters": [
+        {
+          "text": " ",
+          "style": "label",
+          "size": 4,
+          "box": "mint",
+          "radius": 0.15,
+          "pad": "0.08em 2.6em",
+          "x": 84,
+          "y": 34,
+          "at": 14.8,
+          "anim": "slide-left"
+        },
+        {
+          "text": " ",
+          "style": "label",
+          "size": 4,
+          "box": "mint",
+          "radius": 0.15,
+          "pad": "0.2em 2.6em",
+          "x": 84,
+          "y": 52,
+          "at": 17.2,
+          "anim": "slide-left"
+        },
+        {
+          "text": " ",
+          "style": "label",
+          "size": 4,
+          "box": "mint",
+          "radius": 0.15,
+          "pad": "0.4em 2.6em",
+          "x": 84,
+          "y": 70,
+          "at": 19.1,
+          "anim": "slide-left"
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:monkey-doctor",
+          "at": 15.0,
+          "x": 76,
+          "y": 4,
+          "h": 22,
+          "cut": true,
+          "anim": "boing"
+        },
+        {
+          "name": "lib:monkey-rock-angry",
+          "at": 21.6,
+          "x": 58,
+          "y": 62,
+          "h": 26,
+          "cut": true,
+          "anim": "boing",
+          "tag": {
+            "text": "STIFF",
+            "pos": "tr",
+            "size": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "folds",
+      "start": 22.32,
+      "end": 24.86,
+      "enter": "zoom",
+      "box": {
+        "x": 10,
+        "y": 22,
+        "w": 66
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "Because",
+              "style": "editorial-italic",
+              "size": 7,
+              "at": 22.32
+            }
+          ]
+        },
+        {
+          "mt": -0.2,
+          "items": [
+            {
+              "text": "NOT EVERY PIECE",
+              "style": "poster",
+              "size": 11,
+              "at": [
+                22.72,
+                22.96,
+                23.2
+              ]
+            }
+          ]
+        },
+        {
+          "mt": -0.2,
+          "gap": 1.4,
+          "items": [
+            {
+              "text": "FOLDS",
+              "style": "titan",
+              "color": "mint",
+              "size": 14,
+              "at": 23.6,
+              "anim": "spin-letters",
+              "fx": "shadow",
+              "fxColor": "ink",
+              "sfx": "swish"
+            },
+            {
+              "text": "The Same Way",
+              "style": "retro-script",
+              "size": 7,
+              "at": [
+                24.08,
+                24.24,
+                24.4
+              ]
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:monkey-thinking",
+          "at": 23.0,
+          "x": 76,
+          "y": 30,
+          "h": 40,
+          "cut": true,
+          "anim": "boing"
+        }
+      ]
+    },
+    {
+      "id": "bend",
+      "start": 24.88,
+      "end": 28.54,
+      "enter": "whip-up",
+      "enterSfx": "swish",
+      "camera": [
+        {
+          "type": "pulse",
+          "at": 25.36,
+          "scale": 1.04
+        },
+        {
+          "type": "shake",
+          "at": 27.3,
+          "dur": 0.25,
+          "amp": 1.3
+        }
+      ],
+      "floaters": [
+        {
+          "text": "Some Need To",
+          "style": "editorial-italic",
+          "size": 5.5,
+          "x": 27,
+          "y": 22,
+          "at": 24.88,
+          "anim": "pop"
+        },
+        {
+          "text": "BEND",
+          "style": "groovy",
+          "color": "mint",
+          "size": 15,
+          "x": 27,
+          "y": 42,
+          "at": 25.36,
+          "anim": "wave",
+          "fx": "shadow",
+          "fxColor": "ink",
+          "sfx": "boing"
+        },
+        {
+          "text": "easily",
+          "style": "retro-script",
+          "size": 6,
+          "x": 27,
+          "y": 60,
+          "at": 25.76,
+          "anim": "pop"
+        },
+        {
+          "text": "VS",
+          "style": "comic",
+          "size": 6,
+          "box": "ink",
+          "color": "white",
+          "radius": 0.5,
+          "pad": "0.15em 0.35em 0.05em",
+          "x": 50,
+          "y": 44,
+          "at": 26.32,
+          "anim": "slam",
+          "sfx": "impact-bass-2"
+        },
+        {
+          "text": "Others Need To",
+          "style": "editorial-italic",
+          "size": 5.5,
+          "x": 73,
+          "y": 22,
+          "at": 26.64,
+          "anim": "pop"
+        },
+        {
+          "text": "HOLD",
+          "style": "block",
+          "size": 15,
+          "x": 73,
+          "y": 42,
+          "at": 27.28,
+          "anim": "stamp",
+          "sfx": "thud"
+        },
+        {
+          "text": "THEIR SHAPE",
+          "style": "label-caps",
+          "size": 5,
+          "x": 73,
+          "y": 60,
+          "at": 27.52,
+          "anim": "pop"
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:gibbon-leap",
+          "at": 25.5,
+          "x": 8,
+          "y": 66,
+          "h": 26,
+          "cut": true,
+          "anim": "slam-left"
+        },
+        {
+          "name": "lib:monkey-rock-angry",
+          "at": 27.4,
+          "x": 80,
+          "y": 66,
+          "h": 26,
+          "cut": true,
+          "anim": "boing"
+        }
+      ]
+    },
+    {
+      "id": "glossy",
+      "start": 28.56,
+      "end": 32.34,
+      "enter": "zoom",
+      "bg": {
+        "pattern": "dots",
+        "color": "bg",
+        "color2": "mint-soft"
+      },
+      "camera": [
+        {
+          "type": "flash",
+          "at": 31.36,
+          "opacity": 0.45,
+          "dur": 0.12
+        },
+        {
+          "type": "punch",
+          "at": 31.36,
+          "scale": 1.06
+        }
+      ],
+      "box": {
+        "x": 8,
+        "y": 18,
+        "w": 60
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "And Instead Of Going With",
+              "style": "airy",
+              "size": 5,
+              "at": [
+                28.56,
+                28.8,
+                28.96,
+                29.28,
+                29.52
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.2,
+          "items": [
+            {
+              "text": "BASIC PAPER,",
+              "style": "label-caps",
+              "color": "grey",
+              "size": 8,
+              "at": [
+                29.68,
+                30.08
+              ],
+              "strike": {
+                "at": 30.4
+              }
+            }
+          ]
+        },
+        {
+          "mt": 0.8,
+          "items": [
+            {
+              "text": "We're Exploring",
+              "style": "editorial-italic",
+              "size": 6.5,
+              "at": [
+                30.64,
+                30.88
+              ]
+            }
+          ]
+        },
+        {
+          "mt": -0.2,
+          "fit": 1,
+          "items": [
+            {
+              "id": "gloss",
+              "text": "GLOSSY PRINTING",
+              "style": "bodoni",
+              "color": "mint",
+              "size": 12,
+              "at": 31.36,
+              "anim": "slam",
+              "fx": [
+                "shadow",
+                "glow"
+              ],
+              "fxColor": "ink",
+              "sfx": "sparkle"
+            }
+          ]
+        }
+      ],
+      "draws": [
+        {
+          "shape": "burst",
+          "x": 4,
+          "y": 60,
+          "w": 6,
+          "h": 8,
+          "weight": 0.7,
+          "color": "mint",
+          "at": 31.45,
+          "dur": 0.12
+        },
+        {
+          "shape": "burst",
+          "x": 66,
+          "y": 56,
+          "w": 6,
+          "h": 8,
+          "weight": 0.7,
+          "color": "ink",
+          "at": 31.5,
+          "dur": 0.12
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:cat-shades",
+          "at": 31.5,
+          "x": 74,
+          "y": 30,
+          "h": 40,
+          "cut": true,
+          "anim": "boing",
+          "tag": {
+            "text": "SHINY",
+            "pos": "tr",
+            "size": 3.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "cost",
+      "start": 32.36,
+      "end": 33.82,
+      "enter": "blur",
+      "box": {
+        "x": 10,
+        "y": 26,
+        "w": 60
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "It'll",
+              "style": "editorial-italic",
+              "size": 7,
+              "at": 32.4
+            }
+          ]
+        },
+        {
+          "mt": -0.4,
+          "gap": 1.4,
+          "items": [
+            {
+              "text": "COST US",
+              "style": "poster",
+              "size": 13,
+              "at": [
+                32.72,
+                32.96
+              ]
+            },
+            {
+              "text": "MOOORE",
+              "style": "titan",
+              "color": "mint",
+              "size": 13,
+              "at": 33.2,
+              "anim": "stretch",
+              "fx": "shadow",
+              "fxColor": "ink"
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:cat-cry-thumb",
+          "at": 33.0,
+          "x": 74,
+          "y": 36,
+          "h": 40,
+          "cut": true,
+          "anim": "boing",
+          "tag": {
+            "text": "my wallet",
+            "pos": "tr",
+            "size": 2.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "premium",
+      "start": 33.84,
+      "end": 38.46,
+      "enter": "zoom",
+      "enterSfx": "impact-bass-1",
+      "camera": [
+        {
+          "type": "flash",
+          "at": 34.18,
+          "opacity": 0.4,
+          "dur": 0.1
+        },
+        {
+          "type": "pulse",
+          "at": 34.714,
+          "scale": 1.025
+        },
+        {
+          "type": "pulse",
+          "at": 35.782,
+          "scale": 1.025
+        },
+        {
+          "type": "punch",
+          "at": 36.16,
+          "scale": 1.06
+        }
+      ],
+      "box": {
+        "x": 6,
+        "y": 14,
+        "w": 46
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "But We Want These Models To Look Like",
+              "style": "airy",
+              "size": 3.8,
+              "at": [
+                33.84,
+                34.08,
+                34.24,
+                34.48,
+                34.72,
+                35.12,
+                35.28,
+                35.44
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.8,
+          "items": [
+            {
+              "text": "PREMIUM",
+              "style": "bodoni-light",
+              "size": 9,
+              "at": 35.68,
+              "anim": "wipe",
+              "sfx": "sparkle"
+            }
+          ]
+        },
+        {
+          "mt": -0.6,
+          "fit": 1,
+          "items": [
+            {
+              "text": "COLLECTIBLES",
+              "style": "bodoni",
+              "color": "mint",
+              "size": 11,
+              "at": 36.16,
+              "anim": "slam",
+              "fx": "shadow",
+              "fxColor": "ink",
+              "sfx": "impact-bass-2"
+            }
+          ]
+        },
+        {
+          "mt": 1.0,
+          "items": [
+            {
+              "text": "Not Just Paper Crafts",
+              "style": "retro-script",
+              "size": 5.5,
+              "at": [
+                37.04,
+                37.2,
+                37.44,
+                37.76
+              ],
+              "strike": {
+                "at": 37.95
+              }
+            }
+          ]
+        }
+      ],
+      "draws": [
+        {
+          "shape": "burst",
+          "x": 52,
+          "y": 16,
+          "w": 7,
+          "h": 9,
+          "weight": 0.8,
+          "color": "mint",
+          "at": 36.2,
+          "dur": 0.12
+        },
+        {
+          "shape": "burst",
+          "x": 90,
+          "y": 60,
+          "w": 7,
+          "h": 9,
+          "weight": 0.8,
+          "color": "mint",
+          "at": 36.3,
+          "dur": 0.12
+        }
+      ],
+      "stickers": [
+        {
+          "name": "car-hero",
+          "at": 34.3,
+          "x": 52,
+          "y": 26,
+          "h": 30,
+          "shadow": true,
+          "anim": "slam-right",
+          "sfx": "swish",
+          "float": 0.6
+        },
+        {
+          "name": "lib:monkey-shades-cash",
+          "at": 36.3,
+          "x": 82,
+          "y": 56,
+          "h": 28,
+          "cut": true,
+          "anim": "boing",
+          "tag": {
+            "text": "$$$",
+            "pos": "tr",
+            "size": 3.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "test",
+      "start": 38.48,
+      "end": 44.28,
+      "enter": "whip-left",
+      "enterSfx": "swish",
+      "camera": [
+        {
+          "type": "pulse",
+          "at": 39.44,
+          "scale": 1.03
+        },
+        {
+          "type": "pulse",
+          "at": 40.56,
+          "scale": 1.03
+        },
+        {
+          "type": "pulse",
+          "at": 42.24,
+          "scale": 1.03
+        }
+      ],
+      "box": {
+        "x": 8,
+        "y": 14,
+        "w": 62
+      },
+      "rows": [
+        {
+          "gap": 1.4,
+          "items": [
+            {
+              "text": "Now We Need To",
+              "style": "editorial-italic",
+              "size": 6.5,
+              "at": [
+                38.48,
+                38.72,
+                38.88,
+                38.96
+              ]
+            },
+            {
+              "id": "test",
+              "text": "TEST",
+              "style": "stencil",
+              "size": 10,
+              "at": 39.12,
+              "anim": "stamp",
+              "sfx": "impact-bass-2"
+            }
+          ]
+        },
+        {
+          "mt": 1.0,
+          "items": [
+            {
+              "text": "1. HOW THE PRINTS LOOK",
+              "style": "poster",
+              "color": "mint",
+              "size": 7,
+              "at": [
+                39.44,
+                39.44,
+                39.6,
+                39.68,
+                40.16
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.4,
+          "items": [
+            {
+              "text": "2. HOW THE PIECES FOLD",
+              "style": "poster",
+              "color": "mint",
+              "size": 7,
+              "at": [
+                40.56,
+                40.56,
+                40.72,
+                40.88,
+                41.28
+              ]
+            }
+          ]
+        },
+        {
+          "mt": 0.4,
+          "items": [
+            {
+              "text": "3. HOW IT ALL COMES TOGETHER",
+              "style": "poster",
+              "color": "mint",
+              "size": 7,
+              "at": [
+                42.0,
+                42.24,
+                42.4,
+                42.64,
+                43.44,
+                43.68
+              ]
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:monkey-doctor",
+          "at": 39.2,
+          "anchor": {
+            "to": "test",
+            "pos": "r",
+            "dx": 13,
+            "dy": -3
+          },
+          "h": 24,
+          "cut": true,
+          "anim": "boing"
+        },
+        {
+          "name": "lib:monkey-phone-thinking",
+          "at": 42.3,
+          "x": 78,
+          "y": 56,
+          "h": 30,
+          "cut": true,
+          "anim": "boing"
+        }
+      ]
+    },
+    {
+      "id": "notjust",
+      "start": 44.3,
+      "end": 45.9,
+      "enter": "cut",
+      "enterSfx": "record-scratch",
+      "bg": {
+        "color": "ink"
+      },
+      "box": {
+        "x": 10,
+        "y": 30,
+        "w": 64
+      },
+      "rows": [
+        {
+          "items": [
+            {
+              "text": "Because We're",
+              "style": "editorial-italic",
+              "color": "white",
+              "size": 7,
+              "at": [
+                44.32,
+                44.56
+              ]
+            }
+          ]
+        },
+        {
+          "mt": -0.2,
+          "items": [
+            {
+              "text": "NOT JUST",
+              "style": "poster",
+              "color": "white",
+              "size": 12,
+              "at": [
+                44.8,
+                44.96
+              ]
+            }
+          ]
+        },
+        {
+          "mt": -0.4,
+          "items": [
+            {
+              "text": "SELLING PAPER",
+              "style": "titan",
+              "color": "mint",
+              "size": 11,
+              "at": [
+                45.12,
+                45.44
+              ],
+              "strike": {
+                "at": 45.7
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "experience",
+      "start": 45.93,
+      "end": 47.64,
+      "enter": "zoom",
+      "enterSfx": "impact-bass-1",
+      "bg": {
+        "pattern": "burst",
+        "color": "bg",
+        "color2": "mint-soft",
+        "spin": 0.14
+      },
+      "camera": [
+        {
+          "type": "flash",
+          "at": 45.93,
+          "opacity": 0.7,
+          "dur": 0.12
+        },
+        {
+          "type": "shake",
+          "at": 46.9,
+          "dur": 0.3,
+          "amp": 1.5
+        },
+        {
+          "type": "pulse",
+          "at": 46.463,
+          "scale": 1.03
+        },
+        {
+          "type": "pulse",
+          "at": 46.997,
+          "scale": 1.03
+        }
+      ],
+      "box": {
+        "x": 8,
+        "y": 30,
+        "w": 84
+      },
+      "rows": [
+        {
+          "align": "center",
+          "items": [
+            {
+              "text": "We're Building An",
+              "style": "editorial-italic",
+              "size": 7,
+              "at": [
+                46.0,
+                46.24,
+                46.64
+              ]
+            }
+          ]
+        },
+        {
+          "align": "center",
+          "mt": -0.4,
+          "fit": 0.9,
+          "items": [
+            {
+              "text": "EXPERIENCE",
+              "style": "titan",
+              "color": "mint",
+              "size": 15,
+              "at": 46.88,
+              "anim": "pop-letters",
+              "fx": [
+                "extrude",
+                "sticker"
+              ],
+              "fxColor": "ink",
+              "sfx": "impact-bass-2"
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:monkey-yay",
+          "at": 47.0,
+          "x": 83,
+          "y": 58,
+          "h": 24,
+          "cut": true,
+          "anim": "boing"
+        }
+      ],
+      "effects": [
+        {
+          "type": "rain",
+          "sticker": "confetti-mint",
+          "at": 46.0,
+          "dur": 1.6,
+          "count": 7,
+          "x0": 1,
+          "x1": 9,
+          "size": 3,
+          "seed": 31
+        },
+        {
+          "type": "rain",
+          "sticker": "confetti-black",
+          "at": 46.1,
+          "dur": 1.6,
+          "count": 5,
+          "x0": 91,
+          "x1": 99,
+          "size": 3,
+          "seed": 33
+        }
+      ]
+    },
+    {
+      "id": "turns",
+      "start": 47.68,
+      "end": 49.16,
+      "enter": "whip-up",
+      "enterSfx": "swish",
+      "box": {
+        "x": 10,
+        "y": 30,
+        "w": 62
+      },
+      "rows": [
+        {
+          "gap": 1.4,
+          "items": [
+            {
+              "text": "Let's See",
+              "style": "retro-script",
+              "size": 9,
+              "at": [
+                47.68,
+                47.92
+              ]
+            },
+            {
+              "text": "How This",
+              "style": "label",
+              "size": 6,
+              "at": [
+                48.08,
+                48.24
+              ]
+            }
+          ]
+        },
+        {
+          "mt": -0.2,
+          "gap": 2.6,
+          "items": [
+            {
+              "text": "TURNS",
+              "style": "titan",
+              "color": "mint",
+              "size": 14,
+              "at": 48.4,
+              "anim": "spin-letters",
+              "fx": "shadow",
+              "fxColor": "ink",
+              "sfx": "swish"
+            },
+            {
+              "text": "OUT",
+              "style": "poster",
+              "size": 14,
+              "at": 48.64,
+              "anim": "slam"
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:cat-interesting",
+          "at": 48.0,
+          "x": 74,
+          "y": 34,
+          "h": 38,
+          "cut": true,
+          "anim": "boing"
+        }
+      ]
+    },
+    {
+      "id": "follow",
+      "start": 49.2,
+      "end": 51.6,
+      "enter": "zoom",
+      "camera": [
+        {
+          "type": "pulse",
+          "at": 49.668,
+          "scale": 1.03
+        },
+        {
+          "type": "pulse",
+          "at": 50.202,
+          "scale": 1.03
+        },
+        {
+          "type": "pulse",
+          "at": 50.736,
+          "scale": 1.03
+        },
+        {
+          "type": "pulse",
+          "at": 51.27,
+          "scale": 1.03
+        }
+      ],
+      "box": {
+        "x": 15,
+        "y": 34,
+        "w": 70
+      },
+      "rows": [
+        {
+          "align": "center",
+          "items": [
+            {
+              "text": "See You Tomorrow",
+              "style": "editorial-italic",
+              "size": 7,
+              "at": 49.22
+            }
+          ]
+        },
+        {
+          "align": "center",
+          "mt": -0.3,
+          "items": [
+            {
+              "text": "FOLLOW",
+              "style": "titan",
+              "color": "mint",
+              "size": 17,
+              "at": 49.5,
+              "anim": "pop-letters",
+              "fx": [
+                "extrude",
+                "sticker"
+              ],
+              "fxColor": "ink",
+              "sfx": "pop"
+            }
+          ]
+        }
+      ],
+      "stickers": [
+        {
+          "name": "lib:monkey-goodbye",
+          "at": 49.4,
+          "x": 6,
+          "y": 18,
+          "h": 34,
+          "cut": true,
+          "anim": "boing",
+          "tag": {
+            "text": "GOODBYE",
+            "pos": "t",
+            "size": 3
+          }
+        },
+        {
+          "name": "lib:monkey-heart-hands",
+          "at": 49.8,
+          "x": 80,
+          "y": 52,
+          "h": 30,
+          "cut": true,
+          "anim": "boing"
+        }
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "type": "glitch",
+      "at": 3.56,
+      "dur": 0.14
+    },
+    {
+      "type": "glitch",
+      "at": 14.04,
+      "dur": 0.14
+    },
+    {
+      "type": "glitch",
+      "at": 28.46,
+      "dur": 0.14
+    },
+    {
+      "type": "glitch",
+      "at": 44.18,
+      "dur": 0.14
+    }
+  ]
+}

@@ -425,8 +425,13 @@
           var body = [], heads = [];
           for (i = 0; i < s.n; i++) (i < s.split ? body : heads).push($(s.id + "-p" + i));
           var bodyDur = heads.length ? s.dur * 0.75 : s.dur;
+          // each stroke stays fully hidden until it starts drawing (a zero-length round cap can paint a dot)
+          tl.set(body, { opacity: 1 }, s.at);
           tl.to(body, { strokeDashoffset: 0, duration: bodyDur, ease: "power1.inOut" }, s.at);
-          if (heads.length) tl.to(heads, { strokeDashoffset: 0, duration: s.dur - bodyDur, ease: "none" }, s.at + bodyDur);
+          if (heads.length) {
+            tl.set(heads, { opacity: 1 }, s.at + bodyDur);
+            tl.to(heads, { strokeDashoffset: 0, duration: s.dur - bodyDur, ease: "none" }, s.at + bodyDur);
+          }
           break;
         }
         case "enter":

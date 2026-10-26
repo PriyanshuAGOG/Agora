@@ -1,0 +1,727 @@
+[
+{
+"text": "We're",
+"start": 0.0,
+"end": 0.32
+},
+{
+"text": "using",
+"start": 0.32,
+"end": 0.64
+},
+{
+"text": "three",
+"start": 0.64,
+"end": 0.96
+},
+{
+"text": "different",
+"start": 0.96,
+"end": 1.28
+},
+{
+"text": "paper",
+"start": 1.28,
+"end": 1.76
+},
+{
+"text": "thicknesses",
+"start": 1.76,
+"end": 2.32
+},
+{
+"text": "to",
+"start": 2.32,
+"end": 2.48
+},
+{
+"text": "build",
+"start": 2.48,
+"end": 2.64
+},
+{
+"text": "a",
+"start": 2.64,
+"end": 2.8
+},
+{
+"text": "paper",
+"start": 2.8,
+"end": 3.2
+},
+{
+"text": "car.",
+"start": 3.2,
+"end": 3.68
+},
+{
+"text": "Here's",
+"start": 3.68,
+"end": 3.92
+},
+{
+"text": "why.",
+"start": 3.92,
+"end": 4.4
+},
+{
+"text": "Day",
+"start": 4.4,
+"end": 4.64
+},
+{
+"text": "11",
+"start": 4.64,
+"end": 5.12
+},
+{
+"text": "of",
+"start": 5.12,
+"end": 5.36
+},
+{
+"text": "going",
+"start": 5.36,
+"end": 5.6
+},
+{
+"text": "from",
+"start": 5.6,
+"end": 5.84
+},
+{
+"text": "zero",
+"start": 5.84,
+"end": 6.32
+},
+{
+"text": "to",
+"start": 6.32,
+"end": 6.56
+},
+{
+"text": "something.",
+"start": 6.56,
+"end": 7.2
+},
+{
+"text": "We're",
+"start": 7.2,
+"end": 7.36
+},
+{
+"text": "turning",
+"start": 7.36,
+"end": 7.68
+},
+{
+"text": "these",
+"start": 7.68,
+"end": 7.92
+},
+{
+"text": "designs",
+"start": 7.92,
+"end": 8.48
+},
+{
+"text": "into",
+"start": 8.48,
+"end": 8.72
+},
+{
+"text": "actual",
+"start": 8.72,
+"end": 9.12
+},
+{
+"text": "DIY",
+"start": 9.12,
+"end": 9.84
+},
+{
+"text": "kits.",
+"start": 9.84,
+"end": 10.32
+},
+{
+"text": "And",
+"start": 10.32,
+"end": 10.48
+},
+{
+"text": "today,",
+"start": 10.48,
+"end": 10.96
+},
+{
+"text": "we",
+"start": 10.96,
+"end": 11.2
+},
+{
+"text": "finally",
+"start": 11.2,
+"end": 11.6
+},
+{
+"text": "figured",
+"start": 11.6,
+"end": 12.08
+},
+{
+"text": "out",
+"start": 12.08,
+"end": 12.24
+},
+{
+"text": "what",
+"start": 12.24,
+"end": 12.48
+},
+{
+"text": "paper",
+"start": 12.48,
+"end": 12.96
+},
+{
+"text": "we're",
+"start": 12.96,
+"end": 13.2
+},
+{
+"text": "going",
+"start": 13.2,
+"end": 13.36
+},
+{
+"text": "to",
+"start": 13.36,
+"end": 13.52
+},
+{
+"text": "use.",
+"start": 13.52,
+"end": 14.16
+},
+{
+"text": "We're",
+"start": 14.16,
+"end": 14.4
+},
+{
+"text": "going",
+"start": 14.4,
+"end": 14.56
+},
+{
+"text": "with",
+"start": 14.56,
+"end": 14.72
+},
+{
+"text": "180",
+"start": 14.72,
+"end": 15.68
+},
+{
+"text": "GSM",
+"start": 15.68,
+"end": 16.24
+},
+{
+"text": "for",
+"start": 16.24,
+"end": 16.48
+},
+{
+"text": "some",
+"start": 16.48,
+"end": 16.64
+},
+{
+"text": "parts,",
+"start": 16.64,
+"end": 17.12
+},
+{
+"text": "210",
+"start": 17.12,
+"end": 18.0
+},
+{
+"text": "for",
+"start": 18.0,
+"end": 18.24
+},
+{
+"text": "others,",
+"start": 18.24,
+"end": 18.88
+},
+{
+"text": "and",
+"start": 18.88,
+"end": 19.04
+},
+{
+"text": "250",
+"start": 19.04,
+"end": 20.0
+},
+{
+"text": "GSM",
+"start": 20.0,
+"end": 20.64
+},
+{
+"text": "where",
+"start": 20.64,
+"end": 20.8
+},
+{
+"text": "we",
+"start": 20.8,
+"end": 20.96
+},
+{
+"text": "need",
+"start": 20.96,
+"end": 21.12
+},
+{
+"text": "extra",
+"start": 21.12,
+"end": 21.52
+},
+{
+"text": "stiffness.",
+"start": 21.52,
+"end": 22.32
+},
+{
+"text": "Because",
+"start": 22.32,
+"end": 22.72
+},
+{
+"text": "not",
+"start": 22.72,
+"end": 22.96
+},
+{
+"text": "every",
+"start": 22.96,
+"end": 23.2
+},
+{
+"text": "piece",
+"start": 23.2,
+"end": 23.6
+},
+{
+"text": "folds",
+"start": 23.6,
+"end": 24.08
+},
+{
+"text": "the",
+"start": 24.08,
+"end": 24.24
+},
+{
+"text": "same",
+"start": 24.24,
+"end": 24.4
+},
+{
+"text": "way.",
+"start": 24.4,
+"end": 24.88
+},
+{
+"text": "Some",
+"start": 24.88,
+"end": 25.12
+},
+{
+"text": "need",
+"start": 25.12,
+"end": 25.28
+},
+{
+"text": "to",
+"start": 25.28,
+"end": 25.36
+},
+{
+"text": "bend",
+"start": 25.36,
+"end": 25.76
+},
+{
+"text": "easily",
+"start": 25.76,
+"end": 26.32
+},
+{
+"text": "while",
+"start": 26.32,
+"end": 26.64
+},
+{
+"text": "others",
+"start": 26.64,
+"end": 26.96
+},
+{
+"text": "need",
+"start": 26.96,
+"end": 27.12
+},
+{
+"text": "to",
+"start": 27.12,
+"end": 27.28
+},
+{
+"text": "hold",
+"start": 27.28,
+"end": 27.52
+},
+{
+"text": "their",
+"start": 27.52,
+"end": 27.76
+},
+{
+"text": "shape.",
+"start": 27.76,
+"end": 28.56
+},
+{
+"text": "And",
+"start": 28.56,
+"end": 28.8
+},
+{
+"text": "instead",
+"start": 28.8,
+"end": 28.96
+},
+{
+"text": "of",
+"start": 28.96,
+"end": 29.28
+},
+{
+"text": "going",
+"start": 29.28,
+"end": 29.52
+},
+{
+"text": "with",
+"start": 29.52,
+"end": 29.68
+},
+{
+"text": "basic",
+"start": 29.68,
+"end": 30.08
+},
+{
+"text": "paper,",
+"start": 30.08,
+"end": 30.64
+},
+{
+"text": "we're",
+"start": 30.64,
+"end": 30.88
+},
+{
+"text": "exploring",
+"start": 30.88,
+"end": 31.36
+},
+{
+"text": "glossy",
+"start": 31.36,
+"end": 31.92
+},
+{
+"text": "printing.",
+"start": 31.92,
+"end": 32.4
+},
+{
+"text": "It'll",
+"start": 32.4,
+"end": 32.72
+},
+{
+"text": "cost",
+"start": 32.72,
+"end": 32.96
+},
+{
+"text": "us",
+"start": 32.96,
+"end": 33.2
+},
+{
+"text": "more,",
+"start": 33.2,
+"end": 33.84
+},
+{
+"text": "but",
+"start": 33.84,
+"end": 34.08
+},
+{
+"text": "we",
+"start": 34.08,
+"end": 34.24
+},
+{
+"text": "want",
+"start": 34.24,
+"end": 34.48
+},
+{
+"text": "these",
+"start": 34.48,
+"end": 34.72
+},
+{
+"text": "models",
+"start": 34.72,
+"end": 35.12
+},
+{
+"text": "to",
+"start": 35.12,
+"end": 35.28
+},
+{
+"text": "look",
+"start": 35.28,
+"end": 35.44
+},
+{
+"text": "like",
+"start": 35.44,
+"end": 35.68
+},
+{
+"text": "premium",
+"start": 35.68,
+"end": 36.16
+},
+{
+"text": "collectibles,",
+"start": 36.16,
+"end": 37.04
+},
+{
+"text": "not",
+"start": 37.04,
+"end": 37.2
+},
+{
+"text": "just",
+"start": 37.2,
+"end": 37.44
+},
+{
+"text": "paper",
+"start": 37.44,
+"end": 37.76
+},
+{
+"text": "crafts.",
+"start": 37.76,
+"end": 38.48
+},
+{
+"text": "Now",
+"start": 38.48,
+"end": 38.72
+},
+{
+"text": "we",
+"start": 38.72,
+"end": 38.88
+},
+{
+"text": "need",
+"start": 38.88,
+"end": 38.96
+},
+{
+"text": "to",
+"start": 38.96,
+"end": 39.12
+},
+{
+"text": "test",
+"start": 39.12,
+"end": 39.44
+},
+{
+"text": "how",
+"start": 39.44,
+"end": 39.6
+},
+{
+"text": "the",
+"start": 39.6,
+"end": 39.68
+},
+{
+"text": "prints",
+"start": 39.68,
+"end": 40.16
+},
+{
+"text": "look,",
+"start": 40.16,
+"end": 40.56
+},
+{
+"text": "how",
+"start": 40.56,
+"end": 40.72
+},
+{
+"text": "the",
+"start": 40.72,
+"end": 40.88
+},
+{
+"text": "pieces",
+"start": 40.88,
+"end": 41.28
+},
+{
+"text": "fold",
+"start": 41.28,
+"end": 42.0
+},
+{
+"text": "and",
+"start": 42.0,
+"end": 42.24
+},
+{
+"text": "how",
+"start": 42.24,
+"end": 42.4
+},
+{
+"text": "the",
+"start": 42.4,
+"end": 42.64
+},
+{
+"text": "finished",
+"start": 42.64,
+"end": 43.04
+},
+{
+"text": "model",
+"start": 43.04,
+"end": 43.44
+},
+{
+"text": "comes",
+"start": 43.44,
+"end": 43.68
+},
+{
+"text": "together.",
+"start": 43.68,
+"end": 44.32
+},
+{
+"text": "Because",
+"start": 44.32,
+"end": 44.56
+},
+{
+"text": "we're",
+"start": 44.56,
+"end": 44.8
+},
+{
+"text": "not",
+"start": 44.8,
+"end": 44.96
+},
+{
+"text": "just",
+"start": 44.96,
+"end": 45.12
+},
+{
+"text": "selling",
+"start": 45.12,
+"end": 45.44
+},
+{
+"text": "paper,",
+"start": 45.44,
+"end": 46.0
+},
+{
+"text": "we're",
+"start": 46.0,
+"end": 46.24
+},
+{
+"text": "building",
+"start": 46.24,
+"end": 46.64
+},
+{
+"text": "an",
+"start": 46.64,
+"end": 46.88
+},
+{
+"text": "experience.",
+"start": 46.88,
+"end": 47.68
+},
+{
+"text": "Let's",
+"start": 47.68,
+"end": 47.92
+},
+{
+"text": "see",
+"start": 47.92,
+"end": 48.08
+},
+{
+"text": "how",
+"start": 48.08,
+"end": 48.24
+},
+{
+"text": "this",
+"start": 48.24,
+"end": 48.4
+},
+{
+"text": "turns",
+"start": 48.4,
+"end": 48.64
+},
+{
+"text": "out.",
+"start": 48.64,
+"end": 49.16
+}
+]

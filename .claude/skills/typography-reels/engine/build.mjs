@@ -406,14 +406,14 @@ function renderDraw(d, scene) {
     // sized at runtime around a word's box (+ padding in % of H)
     anchors.push({ id, around: `i-${d.around}`, pad: (d.pad ?? 1.5) * U, paths: shape.paths });
     const paths = shape.paths
-      .map((p, k) => `<path id="${id}-p${k}" d="" pathLength="1" fill="none" stroke="${stroke}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray:1 1;stroke-dashoffset:1" />`)
+      .map((p, k) => `<path id="${id}-p${k}" d="" pathLength="1" fill="none" stroke="${stroke}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray:1 1;stroke-dashoffset:1;opacity:0" />`)
       .join("");
     return `<div class="dr hf-in" id="${id}" data-layout-allow-occlusion style="left:0;top:0;width:10px;height:10px"><svg id="${id}-svg" viewBox="0 0 10 10" style="width:100%;height:100%;overflow:visible${flip ? `;transform:${flip}` : ""}">${paths}</svg></div>`;
   }
   // Scale the 100x100 shape into the real pixel box so dash-based drawing stays exact.
   const bw = ((d.w ?? 30) / 100) * W, bh = ((d.h ?? 12) / 100) * H;
   const paths = shape.paths
-    .map((p, k) => `<path id="${id}-p${k}" d="${scalePath(p, bw / 100, bh / 100)}" pathLength="1" fill="none" stroke="${stroke}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray:1 1;stroke-dashoffset:1" />`)
+    .map((p, k) => `<path id="${id}-p${k}" d="${scalePath(p, bw / 100, bh / 100)}" pathLength="1" fill="none" stroke="${stroke}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray:1 1;stroke-dashoffset:1;opacity:0" />`)
     .join("");
   return `<div class="dr hf-in" id="${id}" data-layout-allow-occlusion style="left:${d.x}%;top:${d.y}%;width:${round(bw)}px;height:${round(bh)}px"><svg viewBox="0 0 ${round(bw)} ${round(bh)}" style="width:100%;height:100%;overflow:visible${flip ? `;transform:${flip}` : ""}">${paths}</svg></div>`;
 }

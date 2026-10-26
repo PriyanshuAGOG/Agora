@@ -72,7 +72,7 @@ HyperFrames itself is installed in `.agents/skills/` (`/hyperframes`, `/hyperfra
    node $E/build.mjs episodes/day-NN/reel.spec.json episodes/day-NN/build-1440 --res 1440
    cd episodes/day-NN/build-1440 && npx hyperframes render --quality delivery --output ../day-NN.mp4
    ```
-   That takes about 4–6 min for 41 s on 4 cores. Verify with `ffprobe` (duration, 30 fps, AAC) and decode 4–6 frames to check against the snapshots.
+   That takes about 4–6 min for 41 s on 4 cores. Then **normalise the audio** (the renderer's mix level drifts by up to 6 dB between episodes; Day 11 came out at −20.6 LUFS): render to `../day-NN-raw.mp4`, then `bash $E/finish-audio.sh ../day-NN-raw.mp4 ../day-NN.mp4` (two-pass loudnorm to −14 LUFS, video copied). Verify with `ffprobe` (duration, 30 fps, AAC), then do the **0.5 s overlap pass** on the final MP4.
 9. **Log it** in `episodes/series-log.md`.
 
 ## Music (Day 10 onwards)
@@ -85,6 +85,10 @@ HyperFrames itself is installed in `.agents/skills/` (`/hyperframes`, `/hyperfra
 - add camera `pulse`s on beats in high-energy scenes (`pulses()` in Day 10's `make-spec.py`)
 - add it to `audio[]` at volume 1
 Raw music files stay out of git (size and copyright).
+
+## Colours: the user's rule (Day 11 onwards)
+
+Keep the **series palette from Day 1**: ink `#000`, mint `#0CD2BA` (payoffs, giant numerals, bars), pale mint (watermark, `mint-soft` backgrounds), white, and grey for dismissed words. Red is only for reaction tags and strikes. Product photos keep their own colours, but **no kit-yellow or brand-orange type or backgrounds**: Day 10's yellow theme was a one-off. Get "crazier" through motion, sound, glitches and stickers, not new colours.
 
 ## Stickers: the user's rules (Day 10 onwards)
 
